@@ -624,19 +624,28 @@ async function runOCR(type) {
   const el = document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted');
 
   ocrRunning[type] = true;
-  el.textContent = '🔍 正在识别文字...';
+  el.textContent = '🔍 准备识别...';
   el.classList.add('show');
 
   try {
-    // Check if Tesseract loaded (CDN may fail in China)
     if (typeof Tesseract === 'undefined') {
-      el.textContent = '⚠️ OCR库加载失败（CDN不可用）。请切换到✏️文字模式，手动粘贴内容。';
+      el.textContent = '⚠️ OCR加载失败。请切换✏️文字模式手动粘贴。';
       el.classList.add('show');
       ocrRunning[type] = false;
       return;
     }
 
-    const { data } = await Tesseract.recognize(img, 'chi_sim+eng', {
+    // Compress image for faster OCR
+    const cvs = document.createElement('canvas');
+    const maxW = 1000;
+    let w = img.naturalWidth || img.width, h = img.naturalHeight || img.height;
+    if (w > maxW) { h = Math.round(h * maxW / w); w = maxW; }
+    cvs.width = w; cvs.height = h;
+    cvs.getContext('2d').drawImage(img, 0, 0, w, h);
+    const compressed = cvs.toDataURL('image/jpeg', 0.6);
+
+    el.textContent = '🔍 正在识别文字...';
+    const { data } = await Tesseract.recognize(compressed, 'chi_sim+eng', {
       logger: m => {
         if (m.status === 'recognizing text') {
           el.textContent = `🔍 识别中... ${Math.round(m.progress * 100)}%`;
@@ -645,7 +654,7 @@ async function runOCR(type) {
     });
 
     ocrTexts[type] = data.text.trim();
-    el.textContent = '📝 ' + data.text.substring(0, 300) + (data.text.length > 300 ? '...' : '');
+    el.textContent = '✅ ' + data.text.substring(0, 250) + (data.text.length > 250 ? '...' : '');
     el.classList.add('show');
   } catch (e) {
     el.textContent = '⚠️ 识别失败，请确保图片清晰或切换到文字模式';
