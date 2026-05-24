@@ -131,11 +131,32 @@ def check_photo():
     base_url = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
     client = OpenAI(api_key=api_key, base_url=base_url)
 
-    def extract_text_ocr(image_b64, label):
+    def extract_text_vision(image_b64, label):
+        """Try DeepSeek vision first, fall back to easyocr"""
+        # Try 1: DeepSeek vision API (v4-flash supports images)
+        try:
+            resp = client.chat.completions.create(
+                model="deepseek-v4-flash",
+                max_tokens=2048,
+                temperature=0.1,
+                messages=[{
+                    "role": "user",
+                    "content": [
+                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_b64}"}},
+                        {"type": "text", "text": f"提取图片中所有文字，保持格式，只输出文字。"}
+                    ]
+                }]
+            )
+            text = (resp.choices[0].message.content or "").strip()
+            if text:
+                return text
+        except Exception:
+            pass  # Fall through to OCR
+
+        # Try 2: easyocr (works locally but heavy for cloud)
         try:
             img_data = base64.b64decode(image_b64)
             img = Image.open(io.BytesIO(img_data))
-            # Resize large images for faster OCR
             if max(img.size) > 2000:
                 ratio = 2000 / max(img.size)
                 img = img.resize((int(img.size[0]*ratio), int(img.size[1]*ratio)))
@@ -143,17 +164,16 @@ def check_photo():
             reader = get_ocr_reader()
             results = reader.readtext(img_array, detail=0)
             text = "\n".join(results).strip()
-            if not text:
-                raise Exception(f"未能从{label}中识别到文字，请确保图片清晰")
-            return text
-        except Exception as e:
-            if "未能" in str(e):
-                raise
-            raise Exception(f"{label}文字提取失败: {str(e)}")
+            if text:
+                return text
+        except Exception:
+            pass
+
+        raise Exception(f"未能从{label}中识别到文字，请确保图片清晰")
 
     try:
-        jd_text = extract_text_ocr(jd_image, "岗位描述")
-        resume_text = extract_text_ocr(resume_image, "简历")
+        jd_text = extract_text_vision(jd_image, "岗位描述")
+        resume_text = extract_text_vision(resume_image, "简历")
 
         if not jd_text or not resume_text:
             return jsonify({"error": "图片中未识别到文字，请确保图片清晰"}), 400
