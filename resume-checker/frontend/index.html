@@ -600,14 +600,19 @@ let ocrRunning = { jd: false, resume: false };
 // Tesseract.js loaded on-demand when switching to photo mode
 let tesseractLoaded = false;
 let tesseractLoading = false;
+const TESSERACT_CDNS = [
+  'https://registry.npmmirror.com/tesseract.js/5.1.5/files/dist/tesseract.min.js',
+  'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js',
+];
 
-function loadTesseract() {
+function loadTesseract(retryIdx = 0) {
   if (tesseractLoaded || tesseractLoading) return;
+  if (retryIdx >= TESSERACT_CDNS.length) return;
   tesseractLoading = true;
   const s = document.createElement('script');
-  s.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js';
-  s.onload = () => { tesseractLoaded = true; };
-  s.onerror = () => { tesseractLoading = false; };
+  s.src = TESSERACT_CDNS[retryIdx];
+  s.onload = () => { tesseractLoaded = true; tesseractLoading = false; };
+  s.onerror = () => { tesseractLoading = false; loadTesseract(retryIdx + 1); };
   document.head.appendChild(s);
 }
 
