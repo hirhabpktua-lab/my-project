@@ -635,17 +635,20 @@ async function runOCR(type) {
       return;
     }
 
-    // Compress image for faster OCR
-    const cvs = document.createElement('canvas');
-    const maxW = 1000;
-    let w = img.naturalWidth || img.width, h = img.naturalHeight || img.height;
-    if (w > maxW) { h = Math.round(h * maxW / w); w = maxW; }
-    cvs.width = w; cvs.height = h;
-    cvs.getContext('2d').drawImage(img, 0, 0, w, h);
-    const compressed = cvs.toDataURL('image/jpeg', 0.6);
+    // Slightly resize large images for speed, keep quality high for accuracy
+    let src = img;
+    const maxW = 2000;
+    const w = img.naturalWidth || img.width, h = img.naturalHeight || img.height;
+    if (w > maxW) {
+      const cvs = document.createElement('canvas');
+      const ratio = maxW / w;
+      cvs.width = maxW; cvs.height = Math.round(h * ratio);
+      cvs.getContext('2d').drawImage(img, 0, 0, cvs.width, cvs.height);
+      src = cvs;
+    }
 
     el.textContent = '🔍 正在识别文字...';
-    const { data } = await Tesseract.recognize(compressed, 'chi_sim+eng', {
+    const { data } = await Tesseract.recognize(src, 'chi_sim+eng', {
       logger: m => {
         if (m.status === 'recognizing text') {
           el.textContent = `🔍 识别中... ${Math.round(m.progress * 100)}%`;
