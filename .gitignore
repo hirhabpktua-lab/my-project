@@ -1,0 +1,5 @@
+.cc-connect/
+.playwright-mcp/
+*.png
+*.md
+!CLAUDE.md

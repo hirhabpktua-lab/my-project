@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": ["Bash"]
+  },
+  "enabledPlugins": {
+    "github@claude-plugins-official": true,
+    "gitlab@claude-plugins-official": true,
+    "linear@claude-plugins-official": true
+  }
+}
