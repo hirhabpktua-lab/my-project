@@ -6,20 +6,23 @@ import os
 import re
 import base64
 import io
-from PIL import Image
-import numpy as np
 
 FRONTEND_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend"))
 
-# Lazy-load easyocr (first call takes a few seconds to load model)
-_ocr_reader = None
-
-def get_ocr_reader():
-    global _ocr_reader
-    if _ocr_reader is None:
-        import easyocr
-        _ocr_reader = easyocr.Reader(['ch_sim', 'en'], gpu=False, verbose=False)
-    return _ocr_reader
+# Check if OCR libraries are available (local dev) or not (cloud deploy)
+try:
+    from PIL import Image
+    import numpy as np
+    import easyocr
+    _ocr_reader = None
+    def get_ocr_reader():
+        global _ocr_reader
+        if _ocr_reader is None:
+            _ocr_reader = easyocr.Reader(['ch_sim', 'en'], gpu=False, verbose=False)
+        return _ocr_reader
+    HAS_OCR = True
+except ImportError:
+    HAS_OCR = False
 
 app = Flask(__name__, static_folder=FRONTEND_DIR, static_url_path="")
 CORS(app)
@@ -131,49 +134,25 @@ def check_photo():
     base_url = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
     client = OpenAI(api_key=api_key, base_url=base_url)
 
-    def extract_text_vision(image_b64, label):
-        """Try DeepSeek vision first, fall back to easyocr"""
-        # Try 1: DeepSeek vision API (v4-flash supports images)
-        try:
-            resp = client.chat.completions.create(
-                model="deepseek-v4-flash",
-                max_tokens=2048,
-                temperature=0.1,
-                messages=[{
-                    "role": "user",
-                    "content": [
-                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_b64}"}},
-                        {"type": "text", "text": f"提取图片中所有文字，保持格式，只输出文字。"}
-                    ]
-                }]
-            )
-            text = (resp.choices[0].message.content or "").strip()
-            if text:
-                return text
-        except Exception:
-            pass  # Fall through to OCR
-
-        # Try 2: easyocr (works locally but heavy for cloud)
-        try:
-            img_data = base64.b64decode(image_b64)
-            img = Image.open(io.BytesIO(img_data))
-            if max(img.size) > 2000:
-                ratio = 2000 / max(img.size)
-                img = img.resize((int(img.size[0]*ratio), int(img.size[1]*ratio)))
-            img_array = np.array(img)
-            reader = get_ocr_reader()
-            results = reader.readtext(img_array, detail=0)
-            text = "\n".join(results).strip()
-            if text:
-                return text
-        except Exception:
-            pass
-
-        raise Exception(f"未能从{label}中识别到文字，请确保图片清晰")
+    def extract_text_ocr(image_b64, label):
+        if not HAS_OCR:
+            raise Exception("拍照模式仅支持本地版（双击start.bat启动），线上请使用下方✏️粘贴文字模式。")
+        img_data = base64.b64decode(image_b64)
+        img = Image.open(io.BytesIO(img_data))
+        if max(img.size) > 2000:
+            ratio = 2000 / max(img.size)
+            img = img.resize((int(img.size[0]*ratio), int(img.size[1]*ratio)))
+        img_array = np.array(img)
+        reader = get_ocr_reader()
+        results = reader.readtext(img_array, detail=0)
+        text = "\n".join(results).strip()
+        if not text:
+            raise Exception(f"未能从{label}中识别到文字，请确保图片清晰")
+        return text
 
     try:
-        jd_text = extract_text_vision(jd_image, "岗位描述")
-        resume_text = extract_text_vision(resume_image, "简历")
+        jd_text = extract_text_ocr(jd_image, "岗位描述")
+        resume_text = extract_text_ocr(resume_image, "简历")
 
         if not jd_text or not resume_text:
             return jsonify({"error": "图片中未识别到文字，请确保图片清晰"}), 400
