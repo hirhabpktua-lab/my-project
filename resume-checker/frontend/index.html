@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>简历ATS关键词检查器 — 看看你的简历能不能过AI筛</title>
+<title>简历智能评分 — AI驱动的ATS匹配分析</title>
 <style>
   :root {
     --bg: #0a0c12;
@@ -330,8 +330,8 @@
 <div class="container">
 
   <div class="header">
-    <h1>简历ATS关键词检查器</h1>
-    <p>把岗位描述和你的简历粘贴进来，看看能不能过 AI 初筛</p>
+    <h1>📊 简历智能评分服务</h1>
+    <p>AI 驱动 · ATS关键词匹配 · 精准定位简历短板</p>
   </div>
 
   <!-- Activation -->
@@ -340,15 +340,15 @@
     <input type="text" id="codeInput" placeholder="输入使用码激活工具" maxlength="30">
     <button onclick="verifyCode()">激活</button>
     <span class="status inactive" id="codeStatus">未激活</span>
-    <a class="buy-link" href="https://mbd.pub" target="_blank" id="buyLink">💰 获取使用码 ¥9.9</a>
+    <a class="buy-link" href="https://mbd.pub" target="_blank" id="buyLink">💰 购买激活码 ¥9.9</a>
   </div>
 
   <!-- Main tool area -->
   <div id="toolArea" class="locked-overlay">
     <!-- Mode toggle -->
     <div class="mode-toggle">
-      <button class="mode-btn active" id="btnTextMode" onclick="switchMode('text')">✏️ 粘贴文字</button>
-      <button class="mode-btn" id="btnPhotoMode" onclick="switchMode('photo')">📷 拍照上传</button>
+      <button class="mode-btn active" id="btnTextMode" onclick="switchMode('text')">✏️ 文字输入</button>
+      <button class="mode-btn" id="btnPhotoMode" onclick="switchMode('photo')">📷 拍照识别</button>
     </div>
 
     <!-- Text mode -->
@@ -363,7 +363,7 @@
           <textarea id="resumeInput" placeholder="粘贴你的简历...&#10;&#10;例如：&#10;张三，5年前端开发经验，熟练掌握 React、Vue.js、JavaScript，参与过多个中大型项目开发..."></textarea>
         </div>
       </div>
-      <button class="check-btn" id="checkBtn" onclick="checkResume()">🔍 开始检查</button>
+      <button class="check-btn" id="checkBtn" onclick="checkResume()">📊 开始评分</button>
     </div>
 
     <!-- Photo mode -->
@@ -392,13 +392,13 @@
           <div class="extracted-text" id="resumeExtracted"></div>
         </div>
       </div>
-      <button class="check-btn" id="photoCheckBtn" onclick="checkPhoto()">📷 拍照分析</button>
+      <button class="check-btn" id="photoCheckBtn" onclick="checkPhoto()">📊 拍照评分</button>
     </div>
 
     <!-- Loading -->
     <div class="loading" id="loading">
       <div class="spinner"></div>
-      <p style="color:var(--muted)">AI 正在分析中...</p>
+      <p style="color:var(--muted)">AI 正在评估简历匹配度...</p>
     </div>
 
     <!-- Error -->
@@ -409,24 +409,29 @@
       <div class="score-circle" id="scoreCircle">--</div>
 
       <div class="result-section">
-        <h3><span class="icon">✅</span>命中的关键词</h3>
+        <h3><span class="icon">✅</span>关键能力匹配</h3>
         <div class="keyword-tags" id="matchedTags"></div>
       </div>
 
       <div class="result-section">
-        <h3><span class="icon">❌</span>缺失的关键词</h3>
+        <h3><span class="icon">❌</span>能力缺口</h3>
         <div class="keyword-tags" id="missingTags"></div>
       </div>
 
       <div class="result-section">
-        <h3><span class="icon">📝</span>修改建议</h3>
+        <h3><span class="icon">✨</span>优化后简历</h3>
+        <div id="optimizedResume" style="background:var(--input-bg);padding:1rem;border-radius:8px;font-size:0.88rem;line-height:1.7;white-space:pre-wrap;"></div>
+      </div>
+
+      <div class="result-section">
+        <h3><span class="icon">📝</span>优化建议</h3>
         <ul class="suggestion-list" id="suggestions"></ul>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    数据不会上传服务器 · 仅用于本次分析 · 用完即焚
+    隐私安全 · 数据不落盘 · 分析即焚 · AI 驱动评分
   </div>
 </div>
 
@@ -553,6 +558,15 @@ function renderResult(data) {
     `<span class="tag miss">${escapeHtml(k)}</span>`
   ).join('') || '<span style="color:var(--muted)">未检测到缺失关键词</span>';
 
+  // Optimized resume
+  const optDiv = document.getElementById('optimizedResume');
+  if (data.optimized) {
+    optDiv.textContent = data.optimized;
+    optDiv.style.display = '';
+  } else {
+    optDiv.style.display = 'none';
+  }
+
   // Suggestions
   const sugList = document.getElementById('suggestions');
   sugList.innerHTML = (data.suggestions || []).map(s =>
@@ -577,9 +591,52 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-// ── Photo mode ──
+// ── Photo mode with client-side OCR ──
 let currentMode = 'text';
 let photoData = { jd: null, resume: null };  // base64 strings
+let ocrTexts = { jd: '', resume: '' };       // extracted text
+let ocrRunning = { jd: false, resume: false };
+
+// Load Tesseract.js from CDN
+const tesseractScript = document.createElement('script');
+tesseractScript.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js';
+document.head.appendChild(tesseractScript);
+
+async function runOCR(type) {
+  const img = document.getElementById(type === 'jd' ? 'jdPreview' : 'resumePreview');
+  if (!img.src || !img.src.startsWith('data:')) return;
+
+  const label = type === 'jd' ? '岗位描述' : '简历';
+  const el = document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted');
+
+  ocrRunning[type] = true;
+  el.textContent = '🔍 正在识别文字...';
+  el.classList.add('show');
+
+  try {
+    // Wait for Tesseract to be available
+    while (typeof Tesseract === 'undefined') {
+      await new Promise(r => setTimeout(r, 500));
+    }
+
+    const { data } = await Tesseract.recognize(img, 'chi_sim+eng', {
+      logger: m => {
+        if (m.status === 'recognizing text') {
+          el.textContent = `🔍 识别中... ${Math.round(m.progress * 100)}%`;
+        }
+      }
+    });
+
+    ocrTexts[type] = data.text.trim();
+    el.textContent = '📝 ' + data.text.substring(0, 300) + (data.text.length > 300 ? '...' : '');
+    el.classList.add('show');
+  } catch (e) {
+    el.textContent = '⚠️ 识别失败，请确保图片清晰或切换到文字模式';
+    el.classList.add('show');
+    ocrTexts[type] = '';
+  }
+  ocrRunning[type] = false;
+}
 
 function switchMode(mode) {
   currentMode = mode;
@@ -611,7 +668,11 @@ function handlePhoto(type, input) {
     const box = document.getElementById(type === 'jd' ? 'jdUploadBox' : 'resumeUploadBox');
     box.classList.add('has-image');
 
-    document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted').classList.remove('show');
+    // Trigger OCR after image loads
+    const preview = document.getElementById(type === 'jd' ? 'jdPreview' : 'resumePreview');
+    preview.onload = () => runOCR(type);
+    // If image already cached, trigger immediately
+    if (preview.complete) runOCR(type);
   };
   reader.readAsDataURL(file);
 }
@@ -623,6 +684,7 @@ function clearPhoto(type) {
   const box = document.getElementById(type === 'jd' ? 'jdUploadBox' : 'resumeUploadBox');
   box.classList.remove('has-image');
   document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted').classList.remove('show');
+  ocrTexts[type] = '';
   // Reset file input
   const fileInput = document.getElementById(type === 'jd' ? 'jdFileInput' : 'resumeFileInput');
   fileInput.value = '';
@@ -630,8 +692,26 @@ function clearPhoto(type) {
 
 async function checkPhoto() {
   if (!activated) { alert('请先输入使用码激活工具'); return; }
-  if (!photoData.jd || !photoData.resume) {
-    showError('请先拍摄岗位描述和简历两张照片');
+
+  // Wait for OCR to finish
+  if (ocrRunning.jd || ocrRunning.resume) {
+    showError('文字识别进行中，请稍候...');
+    return;
+  }
+
+  const jd = ocrTexts.jd || '';
+  const resume = ocrTexts.resume || '';
+
+  if (!jd || !resume) {
+    showError('请先等待文字识别完成，或切换到文字模式手动输入');
+    return;
+  }
+  if (jd.length < 20) {
+    showError('岗位描述识别文字太短，请确保图片清晰或切换到文字模式');
+    return;
+  }
+  if (resume.length < 30) {
+    showError('简历识别文字太短，请确保图片清晰或切换到文字模式');
     return;
   }
 
@@ -641,28 +721,16 @@ async function checkPhoto() {
   document.getElementById('photoCheckBtn').disabled = true;
 
   try {
-    const res = await fetch(`${API_BASE}/api/check-photo`, {
+    const res = await fetch(`${API_BASE}/api/check`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ jd_image: photoData.jd, resume_image: photoData.resume })
+      body: JSON.stringify({ jd, resume })
     });
     const data = await res.json();
 
     if (data.error) {
       showError(data.error);
       return;
-    }
-
-    // Show extracted text
-    if (data.jd_text) {
-      const el = document.getElementById('jdExtracted');
-      el.textContent = '识别文字：' + data.jd_text.substring(0, 200) + '...';
-      el.classList.add('show');
-    }
-    if (data.resume_text) {
-      const el = document.getElementById('resumeExtracted');
-      el.textContent = '识别文字：' + data.resume_text.substring(0, 200) + '...';
-      el.classList.add('show');
     }
 
     renderResult(data);
