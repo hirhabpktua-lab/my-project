@@ -101,6 +101,92 @@ def check_resume():
         return jsonify({"error": f"AI 调用失败: {str(e)}"}), 500
 
 
+@app.route("/api/check-photo", methods=["POST"])
+def check_photo():
+    data = request.get_json()
+    jd_image = data.get("jd_image", "").strip()      # base64 (no data: prefix needed)
+    resume_image = data.get("resume_image", "").strip()
+
+    if not jd_image or not resume_image:
+        return jsonify({"error": "请同时上传岗位描述照片和简历照片"}), 400
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("DEEPSEEK_API_KEY")
+    if not api_key:
+        return jsonify({"error": "服务端未配置 API Key"}), 500
+
+    base_url = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
+    client = OpenAI(api_key=api_key, base_url=base_url)
+
+    def extract_text(image_b64, label):
+        try:
+            resp = client.chat.completions.create(
+                model="deepseek-chat",
+                max_tokens=2048,
+                temperature=0.1,
+                messages=[{
+                    "role": "user",
+                    "content": [
+                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_b64}"}},
+                        {"type": "text", "text": f"请提取这张{label}图片中的所有文字内容，保持原有格式和排版，直接输出文字不要加任何说明。"}
+                    ]
+                }]
+            )
+            return (resp.choices[0].message.content or "").strip()
+        except Exception as e:
+            raise Exception(f"{label}文字提取失败: {str(e)}")
+
+    try:
+        jd_text = extract_text(jd_image, "岗位描述")
+        resume_text = extract_text(resume_image, "简历")
+
+        if not jd_text or not resume_text:
+            return jsonify({"error": "图片中未识别到文字，请确保图片清晰"}), 400
+
+        # Run the standard ATS analysis with extracted text
+        analysis_prompt = f"""你是一个专业的ATS简历筛选系统。请分析以下岗位描述和简历的匹配度。
+
+## 岗位描述：
+{jd_text}
+
+## 简历内容：
+{resume_text}
+
+请输出严格的JSON格式（不要包含其他文字）：
+{{
+  "matched": ["关键词1", "关键词2", ...],
+  "missing": ["缺失关键词1", "缺失关键词2", ...],
+  "score": 75,
+  "suggestions": ["建议1：补充XX相关经验描述", "建议2：...", "建议3：..."]
+}}
+
+要求：
+- matched: 简历中已经体现的关键词/技能/经验（至少3个）
+- missing: 岗位描述中要求但简历中没有或不够突出的关键词（至少3个）
+- score: 0-100的匹配度评分
+- suggestions: 3-5条具体的修改建议，每条建议要具体到"补什么词、怎么写"
+- 请用中文输出，关键词保留中英文混合"""
+
+        resp = client.chat.completions.create(
+            model="deepseek-chat",
+            max_tokens=1024,
+            temperature=0.3,
+            messages=[{"role": "user", "content": analysis_prompt}],
+        )
+        content = resp.choices[0].message.content or ""
+        json_match = re.search(r'\{[\s\S]*\}', content)
+        if json_match:
+            result = json.loads(json_match.group())
+            # Include extracted texts so frontend can show them
+            result["jd_text"] = jd_text
+            result["resume_text"] = resume_text
+            return jsonify(result)
+        else:
+            return jsonify({"error": "AI 分析失败"}), 500
+
+    except Exception as e:
+        return jsonify({"error": f"AI 调用失败: {str(e)}"}), 500
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=False)

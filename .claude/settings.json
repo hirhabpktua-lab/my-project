@@ -1,11 +1,11 @@
 {
   "permissions": {
-    "allow": ["Bash"]
+    "allow": ["Read", "Grep", "Glob", "Bash", "Edit", "Write", "WebFetch", "WebSearch"]
   },
   "enabledPlugins": {
     "github@claude-plugins-official": true,
-    "gitlab@claude-plugins-official": true,
-    "linear@claude-plugins-official": true,
+    "gitlab@claude-plugins-official": false,
+    "linear@claude-plugins-official": false,
     "superpowers@claude-plugins-official": true
   }
 }

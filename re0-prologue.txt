@@ -1,0 +1,2918 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - search [ref=e4]:
+        - textbox "Type to search" [ref=e5]
+      - navigation [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "ReZero Github" [ref=e9] [cursor=pointer]:
+              - /url: https://github.com/re-zero-khis/re0-web
+          - listitem [ref=e10]
+          - listitem [ref=e11]:
+            - link "导读" [ref=e12] [cursor=pointer]:
+              - /url: ../../../
+          - listitem [ref=e13]:
+            - link "登场人物" [ref=e14] [cursor=pointer]:
+              - /url: ../../character.html
+          - listitem [ref=e15]:
+            - link "译名字典" [ref=e16] [cursor=pointer]:
+              - /url: ../../translation.html
+          - listitem [ref=e17]: 汉化版
+          - listitem [ref=e18]:
+            - link "第一章 『怒涛般的第一天』（初见篇） " [ref=e19] [cursor=pointer]:
+              - /url: ./
+              - text: 第一章 『怒涛般的第一天』（初见篇）
+              - generic [ref=e20]: 
+            - list [ref=e21]:
+              - listitem [ref=e22]:
+                - link "序章 『开始的余温』" [ref=e23] [cursor=pointer]:
+                  - /url: 00.html
+              - listitem [ref=e24]:
+                - link "01 『无法使用的十元硬币』" [ref=e25] [cursor=pointer]:
+                  - /url: 01.html
+              - listitem [ref=e26]:
+                - link "02 『不要得意忘形，神明如是说』" [ref=e27] [cursor=pointer]:
+                  - /url: 02.html
+              - listitem [ref=e28]:
+                - link "03 『第一次见识到魔法』" [ref=e29] [cursor=pointer]:
+                  - /url: 03.html
+              - listitem [ref=e30]:
+                - link "04 『膝枕的报恩』" [ref=e31] [cursor=pointer]:
+                  - /url: 04.html
+              - listitem [ref=e32]:
+                - link "05 『你的名字是？』" [ref=e33] [cursor=pointer]:
+                  - /url: 05.html
+              - listitem [ref=e34]:
+                - link "06 『第一次的终结』" [ref=e35] [cursor=pointer]:
+                  - /url: 06.html
+              - listitem [ref=e36]:
+                - link "07 『无法理解的再会』" [ref=e37] [cursor=pointer]:
+                  - /url: 07.html
+              - listitem [ref=e38]:
+                - link "08 『苦酒的味道』" [ref=e39] [cursor=pointer]:
+                  - /url: 08.html
+              - listitem [ref=e40]:
+                - link "09 『王牌的打法』" [ref=e41] [cursor=pointer]:
+                  - /url: 09.html
+              - listitem [ref=e42]:
+                - link "10 『失言的代价』" [ref=e43] [cursor=pointer]:
+                  - /url: 10.html
+              - listitem [ref=e44]:
+                - link "11 『迟来的抵抗』" [ref=e45] [cursor=pointer]:
+                  - /url: 11.html
+              - listitem [ref=e46]:
+                - link "12 『再会的魔女』" [ref=e47] [cursor=pointer]:
+                  - /url: 12.html
+              - listitem [ref=e48]:
+                - link "13 『终结与开始』" [ref=e49] [cursor=pointer]:
+                  - /url: 13.html
+              - listitem [ref=e50]:
+                - link "14 『事不过四』" [ref=e51] [cursor=pointer]:
+                  - /url: 14.html
+              - listitem [ref=e52]:
+                - link "15 『被称为「剑圣」的男人』" [ref=e53] [cursor=pointer]:
+                  - /url: 15.html
+              - listitem [ref=e54]:
+                - link "16 『贫民窟中的交涉』" [ref=e55] [cursor=pointer]:
+                  - /url: 16.html
+              - listitem [ref=e56]:
+                - link "17 『赃物库中的交涉』" [ref=e57] [cursor=pointer]:
+                  - /url: 17.html
+              - listitem [ref=e58]:
+                - link "18 『赃物库的攻防战』" [ref=e59] [cursor=pointer]:
+                  - /url: 18.html
+              - listitem [ref=e60]:
+                - link "19 『精灵术士的战斗』" [ref=e61] [cursor=pointer]:
+                  - /url: 19.html
+              - listitem [ref=e62]:
+                - link "20 『登场角色凑齐了』" [ref=e63] [cursor=pointer]:
+                  - /url: 20.html
+              - listitem [ref=e64]:
+                - link "21 『剑圣的威力』" [ref=e65] [cursor=pointer]:
+                  - /url: 21.html
+              - listitem [ref=e66]:
+                - link "22 『从零开始的异世界生活』" [ref=e67] [cursor=pointer]:
+                  - /url: 22.html
+              - listitem [ref=e68]:
+                - link "幕間 『月亮都看在眼里』" [ref=e69] [cursor=pointer]:
+                  - /url: 23.html
+              - listitem [ref=e70]:
+                - link "后记 『篇章插图』" [ref=e71] [cursor=pointer]:
+                  - /url: 99.html
+          - listitem [ref=e72]:
+            - link "第二章 『动荡的一周』（宅邸篇） " [ref=e73] [cursor=pointer]:
+              - /url: ../chapter020/
+              - text: 第二章 『动荡的一周』（宅邸篇）
+              - generic [ref=e74]: 
+            - list:
+              - listitem [ref=e75]:
+                - link "序章 『赎罪的开端』" [ref=e76] [cursor=pointer]:
+                  - /url: ../chapter020/00.html
+              - listitem [ref=e77]:
+                - link "01 『陌生的天花板、无尽的走廊』" [ref=e78] [cursor=pointer]:
+                  - /url: ../chapter020/01.html
+              - listitem [ref=e79]:
+                - link "02 『禁书库管理员和双胞胎女仆』" [ref=e80] [cursor=pointer]:
+                  - /url: ../chapter020/02.html
+              - listitem [ref=e81]:
+                - link "03 『嫁不出去了』" [ref=e82] [cursor=pointer]:
+                  - /url: ../chapter020/03.html
+              - listitem [ref=e83]:
+                - link "04 『异世界的魔女』" [ref=e84] [cursor=pointer]:
+                  - /url: ../chapter020/04.html
+              - listitem [ref=e85]:
+                - link "05 『察觉到的情感』" [ref=e86] [cursor=pointer]:
+                  - /url: ../chapter020/05.html
+              - listitem [ref=e87]:
+                - link "06 『主人归来』" [ref=e88] [cursor=pointer]:
+                  - /url: ../chapter020/06.html
+              - listitem [ref=e89]:
+                - link "07 『罗兹瓦尔宅邸』" [ref=e90] [cursor=pointer]:
+                  - /url: ../chapter020/07.html
+              - listitem [ref=e91]:
+                - link "08 『关于这个国家和那个孩子』" [ref=e92] [cursor=pointer]:
+                  - /url: ../chapter020/08.html
+              - listitem [ref=e93]:
+                - link "09 『三度死亡的功绩』" [ref=e94] [cursor=pointer]:
+                  - /url: ../chapter020/09.html
+              - listitem [ref=e95]:
+                - link "10 『不道德的交涉』" [ref=e96] [cursor=pointer]:
+                  - /url: ../chapter020/10.html
+              - listitem [ref=e97]:
+                - link "11 『餐后』" [ref=e98] [cursor=pointer]:
+                  - /url: ../chapter020/11.html
+              - listitem [ref=e99]:
+                - link "12 『相性不合的两个人』" [ref=e100] [cursor=pointer]:
+                  - /url: ../chapter020/12.html
+              - listitem [ref=e101]:
+                - link "13 『不可及的约定之晨』" [ref=e102] [cursor=pointer]:
+                  - /url: ../chapter020/13.html
+              - listitem [ref=e103]:
+                - link "14 『反抗宣言』" [ref=e104] [cursor=pointer]:
+                  - /url: ../chapter020/14.html
+              - listitem [ref=e105]:
+                - link "15 『第二次失算与期待落空』" [ref=e106] [cursor=pointer]:
+                  - /url: ../chapter020/15.html
+              - listitem [ref=e107]:
+                - link "16 『在二次轮回的困惑』" [ref=e108] [cursor=pointer]:
+                  - /url: ../chapter020/16.html
+              - listitem [ref=e109]:
+                - link "17 『锁链的声音』" [ref=e110] [cursor=pointer]:
+                  - /url: ../chapter020/17.html
+              - listitem [ref=e111]:
+                - link "18 『三度轮回』" [ref=e112] [cursor=pointer]:
+                  - /url: ../chapter020/18.html
+              - listitem [ref=e113]:
+                - link "19 『发表成果』" [ref=e114] [cursor=pointer]:
+                  - /url: ../chapter020/19.html
+              - listitem [ref=e115]:
+                - link "20 『孤独的黄昏』" [ref=e116] [cursor=pointer]:
+                  - /url: ../chapter020/20.html
+              - listitem [ref=e117]:
+                - link "21 『和鬼捉迷藏』" [ref=e118] [cursor=pointer]:
+                  - /url: ../chapter020/21.html
+              - listitem [ref=e119]:
+                - link "22 『无法用言语表达』" [ref=e120] [cursor=pointer]:
+                  - /url: ../chapter020/22.html
+              - listitem [ref=e121]:
+                - link "23 『临时契约』" [ref=e122] [cursor=pointer]:
+                  - /url: ../chapter020/23.html
+              - listitem [ref=e123]:
+                - link "24 『渴望已久的清晨』" [ref=e124] [cursor=pointer]:
+                  - /url: ../chapter020/24.html
+              - listitem [ref=e125]:
+                - link "25 『难以消逝的哀嚎』" [ref=e126] [cursor=pointer]:
+                  - /url: ../chapter020/25.html
+              - listitem [ref=e127]:
+                - link "26 『第三个选择』" [ref=e128] [cursor=pointer]:
+                  - /url: ../chapter020/26.html
+              - listitem [ref=e129]:
+                - link "27 『伤痛』" [ref=e130] [cursor=pointer]:
+                  - /url: ../chapter020/27.html
+              - listitem [ref=e131]:
+                - link "28 『觉悟与告白』" [ref=e132] [cursor=pointer]:
+                  - /url: ../chapter020/28.html
+              - listitem [ref=e133]:
+                - link "29 『菜月昴的重生』" [ref=e134] [cursor=pointer]:
+                  - /url: ../chapter020/29.html
+              - listitem [ref=e135]:
+                - link "30 『菜月昴的丑态』" [ref=e136] [cursor=pointer]:
+                  - /url: ../chapter020/30.html
+              - listitem [ref=e137]:
+                - link "31 『小丑的恸哭』" [ref=e138] [cursor=pointer]:
+                  - /url: ../chapter020/31.html
+              - listitem [ref=e139]:
+                - link "32 『哭着、哭喊着、不哭了之后』" [ref=e140] [cursor=pointer]:
+                  - /url: ../chapter020/32.html
+              - listitem [ref=e141]:
+                - link "33 『见到光明与模糊之影』" [ref=e142] [cursor=pointer]:
+                  - /url: ../chapter020/33.html
+              - listitem [ref=e143]:
+                - link "34 『魔女与精灵与魔法使』" [ref=e144] [cursor=pointer]:
+                  - /url: ../chapter020/34.html
+              - listitem [ref=e145]:
+                - link "35 『购物的约定』" [ref=e146] [cursor=pointer]:
+                  - /url: ../chapter020/35.html
+              - listitem [ref=e147]:
+                - link "36 『提前拜访村庄』" [ref=e148] [cursor=pointer]:
+                  - /url: ../chapter020/36.html
+              - listitem [ref=e149]:
+                - link "37 『咒术师的真面目』" [ref=e150] [cursor=pointer]:
+                  - /url: ../chapter020/37.html
+              - listitem [ref=e151]:
+                - link "38 『勇气的含义』" [ref=e152] [cursor=pointer]:
+                  - /url: ../chapter020/38.html
+              - listitem [ref=e153]:
+                - link "39 『熬夜畅谈的约定』" [ref=e154] [cursor=pointer]:
+                  - /url: ../chapter020/39.html
+              - listitem [ref=e155]:
+                - link "40 『魔兽之牙』" [ref=e156] [cursor=pointer]:
+                  - /url: ../chapter020/40.html
+              - listitem [ref=e157]:
+                - link "41 『鬼』" [ref=e158] [cursor=pointer]:
+                  - /url: ../chapter020/41.html
+              - listitem [ref=e159]:
+                - link "42 『蒸芋头』" [ref=e160] [cursor=pointer]:
+                  - /url: ../chapter020/42.html
+              - listitem [ref=e161]:
+                - link "43 『夹缝中求生存』" [ref=e162] [cursor=pointer]:
+                  - /url: ../chapter020/43.html
+              - listitem [ref=e163]:
+                - link "44 『绝望的利用方式』" [ref=e164] [cursor=pointer]:
+                  - /url: ../chapter020/44.html
+              - listitem [ref=e165]:
+                - link "45 『余香的效果』" [ref=e166] [cursor=pointer]:
+                  - /url: ../chapter020/45.html
+              - listitem [ref=e167]:
+                - link "46 『鬼的一闪』" [ref=e168] [cursor=pointer]:
+                  - /url: ../chapter020/46.html
+              - listitem [ref=e169]:
+                - link "47 『雷姆』" [ref=e170] [cursor=pointer]:
+                  - /url: ../chapter020/47.html
+              - listitem [ref=e171]:
+                - link "48 『ALL IN』" [ref=e172] [cursor=pointer]:
+                  - /url: ../chapter020/48.html
+              - listitem [ref=e173]:
+                - link "49 『未来的故事』" [ref=e174] [cursor=pointer]:
+                  - /url: ../chapter020/49.html
+              - listitem [ref=e175]:
+                - link "幕間 『月下的密谈』" [ref=e176] [cursor=pointer]:
+                  - /url: ../chapter020/50.html
+              - listitem [ref=e177]:
+                - link "后记 『篇章插图』" [ref=e178] [cursor=pointer]:
+                  - /url: ../chapter020/99.html
+          - listitem [ref=e179]:
+            - link "番外編 『Oneday』 " [ref=e180] [cursor=pointer]:
+              - /url: ../chapter021/
+              - text: 番外編 『Oneday』
+              - generic [ref=e181]: 
+            - list:
+              - listitem [ref=e182]:
+                - link "01 『中毒症状』" [ref=e183] [cursor=pointer]:
+                  - /url: ../chapter021/01.html
+              - listitem [ref=e184]:
+                - link "02 『第一次蛋黄酱骚动』" [ref=e185] [cursor=pointer]:
+                  - /url: ../chapter021/02.html
+          - listitem [ref=e186]:
+            - link "第三章 『再次来到王都』（王选篇） " [ref=e187] [cursor=pointer]:
+              - /url: ../chapter030/
+              - text: 第三章 『再次来到王都』（王选篇）
+              - generic [ref=e188]: 
+            - list:
+              - listitem [ref=e189]:
+                - link "序章 『愚蠢者的固执』" [ref=e190] [cursor=pointer]:
+                  - /url: ../chapter030/00.html
+              - listitem [ref=e191]:
+                - link "01 『安稳的早上』" [ref=e192] [cursor=pointer]:
+                  - /url: ../chapter030/01.html
+              - listitem [ref=e193]:
+                - link "02 『佣人们的茶话』" [ref=e194] [cursor=pointer]:
+                  - /url: ../chapter030/02.html
+              - listitem [ref=e195]:
+                - link "03 『王都旅行计划』" [ref=e196] [cursor=pointer]:
+                  - /url: ../chapter030/03.html
+              - listitem [ref=e197]:
+                - link "04 『旅行出发，前途叵测』" [ref=e198] [cursor=pointer]:
+                  - /url: ../chapter030/04.html
+              - listitem [ref=e199]:
+                - link "05 『当约定实现时』" [ref=e200] [cursor=pointer]:
+                  - /url: ../chapter030/05.html
+              - listitem [ref=e201]:
+                - link "06 『危险的二人』" [ref=e202] [cursor=pointer]:
+                  - /url: ../chapter030/06.html
+              - listitem [ref=e203]:
+                - link "07 『橙色的少女』" [ref=e204] [cursor=pointer]:
+                  - /url: ../chapter030/07.html
+              - listitem [ref=e205]:
+                - link "08 『赌博的结果』" [ref=e206] [cursor=pointer]:
+                  - /url: ../chapter030/08.html
+              - listitem [ref=e207]:
+                - link "09 『加護x再会x约定』" [ref=e208] [cursor=pointer]:
+                  - /url: ../chapter030/09.html
+              - listitem [ref=e209]:
+                - link "10 『汇合与告别』" [ref=e210] [cursor=pointer]:
+                  - /url: ../chapter030/10.html
+              - listitem [ref=e211]:
+                - link "11 『三个臭皮匠胜过诸葛亮』" [ref=e212] [cursor=pointer]:
+                  - /url: ../chapter030/11.html
+              - listitem [ref=e213]:
+                - link "12 『潜入王城的结果』" [ref=e214] [cursor=pointer]:
+                  - /url: ../chapter030/12.html
+              - listitem [ref=e215]:
+                - link "13 『同郷』" [ref=e216] [cursor=pointer]:
+                  - /url: ../chapter030/13.html
+              - listitem [ref=e217]:
+                - link "14 『王选开始』" [ref=e218] [cursor=pointer]:
+                  - /url: ../chapter030/14.html
+              - listitem [ref=e219]:
+                - link "15 『关系恶劣的候选者』" [ref=e220] [cursor=pointer]:
+                  - /url: ../chapter030/15.html
+              - listitem [ref=e221]:
+                - link "16 『所信表明』" [ref=e222] [cursor=pointer]:
+                  - /url: ../chapter030/16.html
+              - listitem [ref=e223]:
+                - link "17 『傲慢的演说』" [ref=e224] [cursor=pointer]:
+                  - /url: ../chapter030/17.html
+              - listitem [ref=e225]:
+                - link "18 『強欲商人』" [ref=e226] [cursor=pointer]:
+                  - /url: ../chapter030/18.html
+              - listitem [ref=e227]:
+                - link "19 『银发魔女的愿望』" [ref=e228] [cursor=pointer]:
+                  - /url: ../chapter030/19.html
+              - listitem [ref=e229]:
+                - link "20 『自称骑士的菜月・昴』" [ref=e230] [cursor=pointer]:
+                  - /url: ../chapter030/20.html
+              - listitem [ref=e231]:
+                - link "21 『肤浅的代价和老人的意志』" [ref=e232] [cursor=pointer]:
+                  - /url: ../chapter030/21.html
+              - listitem [ref=e233]:
+                - link "22 『最后的主从』" [ref=e234] [cursor=pointer]:
+                  - /url: ../chapter030/22.html
+              - listitem [ref=e235]:
+                - link "23 『自称騎士与騎士』" [ref=e236] [cursor=pointer]:
+                  - /url: ../chapter030/23.html
+              - listitem [ref=e237]:
+                - link "24 『决斗的始末』" [ref=e238] [cursor=pointer]:
+                  - /url: ../chapter030/24.html
+              - listitem [ref=e239]:
+                - link "25 『孤身一人』" [ref=e240] [cursor=pointer]:
+                  - /url: ../chapter030/25.html
+              - listitem [ref=e241]:
+                - link "幕間 『骑士们的疑惑』" [ref=e242] [cursor=pointer]:
+                  - /url: ../chapter030/85.html
+              - listitem [ref=e243]:
+                - link "26 『腐败的精神』" [ref=e244] [cursor=pointer]:
+                  - /url: ../chapter030/26.html
+              - listitem [ref=e245]:
+                - link "27 『市井之声』" [ref=e246] [cursor=pointer]:
+                  - /url: ../chapter030/27.html
+              - listitem [ref=e247]:
+                - link "28 『没用的上进心』" [ref=e248] [cursor=pointer]:
+                  - /url: ../chapter030/28.html
+              - listitem [ref=e249]:
+                - link "29 『动荡的局势』" [ref=e250] [cursor=pointer]:
+                  - /url: ../chapter030/29.html
+              - listitem [ref=e251]:
+                - link "30 『雷姆的决意』" [ref=e252] [cursor=pointer]:
+                  - /url: ../chapter030/30.html
+              - listitem [ref=e253]:
+                - link "31 『交渉x商談x断絶』" [ref=e254] [cursor=pointer]:
+                  - /url: ../chapter030/31.html
+              - listitem [ref=e255]:
+                - link "32 『名为绝望的病』" [ref=e256] [cursor=pointer]:
+                  - /url: ../chapter030/32.html
+              - listitem [ref=e257]:
+                - link "33 『白色的终焉』" [ref=e258] [cursor=pointer]:
+                  - /url: ../chapter030/33.html
+              - listitem [ref=e259]:
+                - link "34 『疯狂的外侧』" [ref=e260] [cursor=pointer]:
+                  - /url: ../chapter030/34.html
+              - listitem [ref=e261]:
+                - link "35 『帰路』" [ref=e262] [cursor=pointer]:
+                  - /url: ../chapter030/35.html
+              - listitem [ref=e263]:
+                - link "36 『血腥咆哮』" [ref=e264] [cursor=pointer]:
+                  - /url: ../chapter030/36.html
+              - listitem [ref=e265]:
+                - link "37 『怠惰』" [ref=e266] [cursor=pointer]:
+                  - /url: ../chapter030/37.html
+              - listitem [ref=e267]:
+                - link "38 『回归现实』" [ref=e268] [cursor=pointer]:
+                  - /url: ../chapter030/38.html
+              - listitem [ref=e269]:
+                - link "39 『奇跡』" [ref=e270] [cursor=pointer]:
+                  - /url: ../chapter030/39.html
+              - listitem [ref=e271]:
+                - link "40 『杀机的里侧』" [ref=e272] [cursor=pointer]:
+                  - /url: ../chapter030/40.html
+              - listitem [ref=e273]:
+                - link "41 『幼稚的交涉』" [ref=e274] [cursor=pointer]:
+                  - /url: ../chapter030/41.html
+              - listitem [ref=e275]:
+                - link "42 『決裂之夜』" [ref=e276] [cursor=pointer]:
+                  - /url: ../chapter030/42.html
+              - listitem [ref=e277]:
+                - link "43 『猪的欲望』" [ref=e278] [cursor=pointer]:
+                  - /url: ../chapter030/43.html
+              - listitem [ref=e279]:
+                - link "44 『再次从王都出发』" [ref=e280] [cursor=pointer]:
+                  - /url: ../chapter030/44.html
+              - listitem [ref=e281]:
+                - link "45 『遭遇』" [ref=e282] [cursor=pointer]:
+                  - /url: ../chapter030/45.html
+              - listitem [ref=e283]:
+                - link "46 『白鯨之顎』" [ref=e284] [cursor=pointer]:
+                  - /url: ../chapter030/46.html
+              - listitem [ref=e285]:
+                - link "47 『丑态的尽头』" [ref=e286] [cursor=pointer]:
+                  - /url: ../chapter030/47.html
+              - listitem [ref=e287]:
+                - link "48 『不允许化为话语』" [ref=e288] [cursor=pointer]:
+                  - /url: ../chapter030/48.html
+              - listitem [ref=e289]:
+                - link "49 『終焉之兽』" [ref=e290] [cursor=pointer]:
+                  - /url: ../chapter030/49.html
+              - listitem [ref=e291]:
+                - link "50 『罪孽所在』" [ref=e292] [cursor=pointer]:
+                  - /url: ../chapter030/50.html
+              - listitem [ref=e293]:
+                - link "51 『悲愿』" [ref=e294] [cursor=pointer]:
+                  - /url: ../chapter030/51.html
+              - listitem [ref=e295]:
+                - link "52 『从零开始』" [ref=e296] [cursor=pointer]:
+                  - /url: ../chapter030/52.html
+              - listitem [ref=e297]:
+                - link "53 『被配给的手牌』" [ref=e298] [cursor=pointer]:
+                  - /url: ../chapter030/53.html
+              - listitem [ref=e299]:
+                - link "54 『同盟交渉』" [ref=e300] [cursor=pointer]:
+                  - /url: ../chapter030/54.html
+              - listitem [ref=e301]:
+                - link "55 『前哨』" [ref=e302] [cursor=pointer]:
+                  - /url: ../chapter030/55.html
+              - listitem [ref=e303]:
+                - link "56 『决战前夜』" [ref=e304] [cursor=pointer]:
+                  - /url: ../chapter030/56.html
+              - listitem [ref=e305]:
+                - link "57 『白鯨攻略戦』" [ref=e306] [cursor=pointer]:
+                  - /url: ../chapter030/57.html
+              - listitem [ref=e307]:
+                - link "58 『雾的威胁』" [ref=e308] [cursor=pointer]:
+                  - /url: ../chapter030/58.html
+              - listitem [ref=e309]:
+                - link "59 『反抗绝望的赌博』" [ref=e310] [cursor=pointer]:
+                  - /url: ../chapter030/59.html
+              - listitem [ref=e311]:
+                - link "60 『维鲁海鲁姆・梵・阿斯特雷亚』" [ref=e312] [cursor=pointer]:
+                  - /url: ../chapter030/60.html
+              - listitem [ref=e313]:
+                - link "61 『前往梅瑟斯领地的道路』" [ref=e314] [cursor=pointer]:
+                  - /url: ../chapter030/61.html
+              - listitem [ref=e315]:
+                - link "62 『過去与未来一起清算』" [ref=e316] [cursor=pointer]:
+                  - /url: ../chapter030/62.html
+              - listitem [ref=e317]:
+                - link "63 『怠惰一閃』" [ref=e318] [cursor=pointer]:
+                  - /url: ../chapter030/63.html
+              - listitem [ref=e319]:
+                - link "64 『魔女教狩猎的始末』" [ref=e320] [cursor=pointer]:
+                  - /url: ../chapter030/64.html
+              - listitem [ref=e321]:
+                - link "65 『怠惰的后果』" [ref=e322] [cursor=pointer]:
+                  - /url: ../chapter030/65.html
+              - listitem [ref=e323]:
+                - link "66 『——战斗吧！』" [ref=e324] [cursor=pointer]:
+                  - /url: ../chapter030/66.html
+              - listitem [ref=e325]:
+                - link "67 『精灵骑士』" [ref=e326] [cursor=pointer]:
+                  - /url: ../chapter030/67.html
+              - listitem [ref=e327]:
+                - link "68 『怠惰捕获战线』" [ref=e328] [cursor=pointer]:
+                  - /url: ../chapter030/68.html
+              - listitem [ref=e329]:
+                - link "69 『时光的碎片』" [ref=e330] [cursor=pointer]:
+                  - /url: ../chapter030/69.html
+              - listitem [ref=e331]:
+                - link "70 『回归的意义』" [ref=e332] [cursor=pointer]:
+                  - /url: ../chapter030/70.html
+              - listitem [ref=e333]:
+                - link "71 『禁书库的少女』" [ref=e334] [cursor=pointer]:
+                  - /url: ../chapter030/71.html
+              - listitem [ref=e335]:
+                - link "72 『不理解和理解』" [ref=e336] [cursor=pointer]:
+                  - /url: ../chapter030/72.html
+              - listitem [ref=e337]:
+                - link "73 『恶毒的怠惰』" [ref=e338] [cursor=pointer]:
+                  - /url: ../chapter030/73.html
+              - listitem [ref=e339]:
+                - link "74 『履行的契约』" [ref=e340] [cursor=pointer]:
+                  - /url: ../chapter030/74.html
+              - listitem [ref=e341]:
+                - link "75 『再会x推迟x逆转的契机』" [ref=e342] [cursor=pointer]:
+                  - /url: ../chapter030/75.html
+              - listitem [ref=e343]:
+                - link "76 『幕后舞台×阴谋诡计×拉钩约定』" [ref=e344] [cursor=pointer]:
+                  - /url: ../chapter030/76.html
+              - listitem [ref=e345]:
+                - link "77 『俘虏交涉与再会』" [ref=e346] [cursor=pointer]:
+                  - /url: ../chapter030/77.html
+              - listitem [ref=e347]:
+                - link "78 『狂人与狂语』" [ref=e348] [cursor=pointer]:
+                  - /url: ../chapter030/78.html
+              - listitem [ref=e349]:
+                - link "79 『自称的骑士与最优的骑士』" [ref=e350] [cursor=pointer]:
+                  - /url: ../chapter030/79.html
+              - listitem [ref=e351]:
+                - link "80 『怠惰的终焉』 ★" [ref=e352] [cursor=pointer]:
+                  - /url: ../chapter030/80.html
+              - listitem [ref=e353]:
+                - link "81 『追跡』" [ref=e354] [cursor=pointer]:
+                  - /url: ../chapter030/81.html
+              - listitem [ref=e355]:
+                - link "82 『名为爱的福音』" [ref=e356] [cursor=pointer]:
+                  - /url: ../chapter030/82.html
+              - listitem [ref=e357]:
+                - link "83 『答案』" [ref=e358] [cursor=pointer]:
+                  - /url: ../chapter030/83.html
+              - listitem [ref=e359]:
+                - link "84 『只是那样而已的故事』" [ref=e360] [cursor=pointer]:
+                  - /url: ../chapter030/84.html
+              - listitem [ref=e361]:
+                - link "幕間 『龙车里的一幕』" [ref=e362] [cursor=pointer]:
+                  - /url: ../chapter030/86.html
+              - listitem [ref=e363]:
+                - link "断章 『菜月・雷姆』" [ref=e364] [cursor=pointer]:
+                  - /url: ../chapter030/87.html
+              - listitem [ref=e365]:
+                - link "幕間 『我开动了』" [ref=e366] [cursor=pointer]:
+                  - /url: ../chapter030/88.html
+              - listitem [ref=e367]:
+                - link "幕間 『各自的誓言』" [ref=e368] [cursor=pointer]:
+                  - /url: ../chapter030/89.html
+              - listitem [ref=e369]:
+                - link "番外編 『王様』" [ref=e370] [cursor=pointer]:
+                  - /url: ../chapter030/90.html
+              - listitem [ref=e371]:
+                - link "后记 『篇章插图』" [ref=e372] [cursor=pointer]:
+                  - /url: ../chapter030/99.html
+          - listitem [ref=e373]:
+            - link "第四章 『永远的契约』（圣域篇） " [ref=e374] [cursor=pointer]:
+              - /url: ../chapter040/
+              - text: 第四章 『永远的契约』（圣域篇）
+              - generic [ref=e375]: 
+            - list:
+              - listitem [ref=e376]:
+                - link "序章 『坟墓』" [ref=e377] [cursor=pointer]:
+                  - /url: ../chapter040/00.html
+              - listitem [ref=e378]:
+                - link "01 『可以回去的地方』" [ref=e379] [cursor=pointer]:
+                  - /url: ../chapter040/01.html
+              - listitem [ref=e380]:
+                - link "02 『咒骂与感谢』" [ref=e381] [cursor=pointer]:
+                  - /url: ../chapter040/02.html
+              - listitem [ref=e382]:
+                - link "03 『与重逢擦肩而过』" [ref=e383] [cursor=pointer]:
+                  - /url: ../chapter040/03.html
+              - listitem [ref=e384]:
+                - link "04 『下一个地方』" [ref=e385] [cursor=pointer]:
+                  - /url: ../chapter040/04.html
+              - listitem [ref=e386]:
+                - link "05 『爱蜜莉娅阵营』" [ref=e387] [cursor=pointer]:
+                  - /url: ../chapter040/05.html
+              - listitem [ref=e388]:
+                - link "06 『去圣域的路上』" [ref=e389] [cursor=pointer]:
+                  - /url: ../chapter040/06.html
+              - listitem [ref=e390]:
+                - link "07 『实验场』" [ref=e391] [cursor=pointer]:
+                  - /url: ../chapter040/07.html
+              - listitem [ref=e392]:
+                - link "08 『等待已久的再会』" [ref=e393] [cursor=pointer]:
+                  - /url: ../chapter040/08.html
+              - listitem [ref=e394]:
+                - link "09 『墓所』" [ref=e395] [cursor=pointer]:
+                  - /url: ../chapter040/09.html
+              - listitem [ref=e396]:
+                - link "10 『求知欲的化身』" [ref=e397] [cursor=pointer]:
+                  - /url: ../chapter040/10.html
+              - listitem [ref=e398]:
+                - link "11 『傲慢x怠惰x憤怒』" [ref=e399] [cursor=pointer]:
+                  - /url: ../chapter040/11.html
+              - listitem [ref=e400]:
+                - link "12 『茶会礼物』" [ref=e401] [cursor=pointer]:
+                  - /url: ../chapter040/12.html
+              - listitem [ref=e402]:
+                - link "13 『罗兹瓦尔的思念』" [ref=e403] [cursor=pointer]:
+                  - /url: ../chapter040/13.html
+              - listitem [ref=e404]:
+                - link "14 『回答疑问』" [ref=e405] [cursor=pointer]:
+                  - /url: ../chapter040/14.html
+              - listitem [ref=e406]:
+                - link "15 『资格与试炼』" [ref=e407] [cursor=pointer]:
+                  - /url: ../chapter040/15.html
+              - listitem [ref=e408]:
+                - link "16 『菜月家的早晨』" [ref=e409] [cursor=pointer]:
+                  - /url: ../chapter040/16.html
+              - listitem [ref=e410]:
+                - link "17 『恋爱话题』" [ref=e411] [cursor=pointer]:
+                  - /url: ../chapter040/17.html
+              - listitem [ref=e412]:
+                - link "18 『父子』" [ref=e413] [cursor=pointer]:
+                  - /url: ../chapter040/18.html
+              - listitem [ref=e414]:
+                - link "19 『作业』" [ref=e415] [cursor=pointer]:
+                  - /url: ../chapter040/19.html
+              - listitem [ref=e416]:
+                - link "20 『试炼結果』" [ref=e417] [cursor=pointer]:
+                  - /url: ../chapter040/20.html
+              - listitem [ref=e418]:
+                - link "21 『重新下定决心』" [ref=e419] [cursor=pointer]:
+                  - /url: ../chapter040/21.html
+              - listitem [ref=e420]:
+                - link "22 『软弱』" [ref=e421] [cursor=pointer]:
+                  - /url: ../chapter040/22.html
+              - listitem [ref=e422]:
+                - link "23 『迈出的一步』" [ref=e423] [cursor=pointer]:
+                  - /url: ../chapter040/23.html
+              - listitem [ref=e424]:
+                - link "24 『等待』" [ref=e425] [cursor=pointer]:
+                  - /url: ../chapter040/24.html
+              - listitem [ref=e426]:
+                - link "25 『冰之森』" [ref=e427] [cursor=pointer]:
+                  - /url: ../chapter040/25.html
+              - listitem [ref=e428]:
+                - link "26 『停滞不前』" [ref=e429] [cursor=pointer]:
+                  - /url: ../chapter040/26.html
+              - listitem [ref=e430]:
+                - link "27 『低语』" [ref=e431] [cursor=pointer]:
+                  - /url: ../chapter040/27.html
+              - listitem [ref=e432]:
+                - link "28 『茶会对话』" [ref=e433] [cursor=pointer]:
+                  - /url: ../chapter040/28.html
+              - listitem [ref=e434]:
+                - link "29 『杂食系男子』" [ref=e435] [cursor=pointer]:
+                  - /url: ../chapter040/29.html
+              - listitem [ref=e436]:
+                - link "30 『归途中的违和感』" [ref=e437] [cursor=pointer]:
+                  - /url: ../chapter040/30.html
+              - listitem [ref=e438]:
+                - link "31 『妹抖・妹抖・妹抖』" [ref=e439] [cursor=pointer]:
+                  - /url: ../chapter040/31.html
+              - listitem [ref=e440]:
+                - link "32 『1/4』" [ref=e441] [cursor=pointer]:
+                  - /url: ../chapter040/32.html
+              - listitem [ref=e442]:
+                - link "33 『风吹的密道』" [ref=e443] [cursor=pointer]:
+                  - /url: ../chapter040/33.html
+              - listitem [ref=e444]:
+                - link "34 『终结的世界』" [ref=e445] [cursor=pointer]:
+                  - /url: ../chapter040/34.html
+              - listitem [ref=e446]:
+                - link "35 『少女的福音』" [ref=e447] [cursor=pointer]:
+                  - /url: ../chapter040/35.html
+              - listitem [ref=e448]:
+                - link "36 『在无法理解的尽头』" [ref=e449] [cursor=pointer]:
+                  - /url: ../chapter040/36.html
+              - listitem [ref=e450]:
+                - link "37 『首次摸索』" [ref=e451] [cursor=pointer]:
+                  - /url: ../chapter040/37.html
+              - listitem [ref=e452]:
+                - link "38 『芋虫』" [ref=e453] [cursor=pointer]:
+                  - /url: ../chapter040/38.html
+              - listitem [ref=e454]:
+                - link "39 『友人』" [ref=e455] [cursor=pointer]:
+                  - /url: ../chapter040/39.html
+              - listitem [ref=e456]:
+                - link "40 『協力者』" [ref=e457] [cursor=pointer]:
+                  - /url: ../chapter040/40.html
+              - listitem [ref=e458]:
+                - link "41 『虎』" [ref=e459] [cursor=pointer]:
+                  - /url: ../chapter040/41.html
+              - listitem [ref=e460]:
+                - link "42 『生命的价值』" [ref=e461] [cursor=pointer]:
+                  - /url: ../chapter040/42.html
+              - listitem [ref=e462]:
+                - link "43 『然后谁也——』" [ref=e463] [cursor=pointer]:
+                  - /url: ../chapter040/43.html
+              - listitem [ref=e464]:
+                - link "44 『禁忌』" [ref=e465] [cursor=pointer]:
+                  - /url: ../chapter040/44.html
+              - listitem [ref=e466]:
+                - link "45 『茶会的条件』" [ref=e467] [cursor=pointer]:
+                  - /url: ../chapter040/45.html
+              - listitem [ref=e468]:
+                - link "46 『蝗害』" [ref=e469] [cursor=pointer]:
+                  - /url: ../chapter040/46.html
+              - listitem [ref=e470]:
+                - link "47 『相性不好的对手』" [ref=e471] [cursor=pointer]:
+                  - /url: ../chapter040/47.html
+              - listitem [ref=e472]:
+                - link "48 『茶会的代价』" [ref=e473] [cursor=pointer]:
+                  - /url: ../chapter040/48.html
+              - listitem [ref=e474]:
+                - link "49 『LOVELOVELOVELOVELOVELOVEYOUー』" [ref=e475] [cursor=pointer]:
+                  - /url: ../chapter040/49.html
+              - listitem [ref=e476]:
+                - link "50 『远处处的吼声』" [ref=e477] [cursor=pointer]:
+                  - /url: ../chapter040/50.html
+              - listitem [ref=e478]:
+                - link "51 『LOVELOVELOVE……LOVELOVELOVEME–』" [ref=e479] [cursor=pointer]:
+                  - /url: ../chapter040/51.html
+              - listitem [ref=e480]:
+                - link "52 『细微的变化』" [ref=e481] [cursor=pointer]:
+                  - /url: ../chapter040/52.html
+              - listitem [ref=e482]:
+                - link "53 『重叠的疑问』" [ref=e483] [cursor=pointer]:
+                  - /url: ../chapter040/53.html
+              - listitem [ref=e484]:
+                - link "54 『地狱什么的我早已知晓』" [ref=e485] [cursor=pointer]:
+                  - /url: ../chapter040/54.html
+              - listitem [ref=e486]:
+                - link "55 『水晶中的少女』" [ref=e487] [cursor=pointer]:
+                  - /url: ../chapter040/55.html
+              - listitem [ref=e488]:
+                - link "56 『圣域的存在理由』" [ref=e489] [cursor=pointer]:
+                  - /url: ../chapter040/56.html
+              - listitem [ref=e490]:
+                - link "57 『不老不死的实验』" [ref=e491] [cursor=pointer]:
+                  - /url: ../chapter040/57.html
+              - listitem [ref=e492]:
+                - link "58 『婆婆』" [ref=e493] [cursor=pointer]:
+                  - /url: ../chapter040/58.html
+              - listitem [ref=e494]:
+                - link "59 『甜蜜的烤点心与并不甜蜜的话语』" [ref=e495] [cursor=pointer]:
+                  - /url: ../chapter040/59.html
+              - listitem [ref=e496]:
+                - link "60 『结束终焉的话语』" [ref=e497] [cursor=pointer]:
+                  - /url: ../chapter040/60.html
+              - listitem [ref=e498]:
+                - link "61 『跨越四百年的悲鸣』" [ref=e499] [cursor=pointer]:
+                  - /url: ../chapter040/61.html
+              - listitem [ref=e500]:
+                - link "62 『罗兹瓦尔宅邸的惨剧』" [ref=e501] [cursor=pointer]:
+                  - /url: ../chapter040/62.html
+              - listitem [ref=e502]:
+                - link "63 『死之共感』" [ref=e503] [cursor=pointer]:
+                  - /url: ../chapter040/63.html
+              - listitem [ref=e504]:
+                - link "64 『支离破碎的世界』" [ref=e505] [cursor=pointer]:
+                  - /url: ../chapter040/64.html
+              - listitem [ref=e506]:
+                - link "65 『雪中的热情』" [ref=e507] [cursor=pointer]:
+                  - /url: ../chapter040/65.html
+              - listitem [ref=e508]:
+                - link "66 『赤色的雪景』" [ref=e509] [cursor=pointer]:
+                  - /url: ../chapter040/66.html
+              - listitem [ref=e510]:
+                - link "67 『魔人』" [ref=e511] [cursor=pointer]:
+                  - /url: ../chapter040/67.html
+              - listitem [ref=e512]:
+                - link "68 『死的味道』" [ref=e513] [cursor=pointer]:
+                  - /url: ../chapter040/68.html
+              - listitem [ref=e514]:
+                - link "69 『骗子』" [ref=e515] [cursor=pointer]:
+                  - /url: ../chapter040/69.html
+              - listitem [ref=e516]:
+                - link "70 『地狱的更深处』" [ref=e517] [cursor=pointer]:
+                  - /url: ../chapter040/70.html
+              - listitem [ref=e518]:
+                - link "71 『Ending List』" [ref=e519] [cursor=pointer]:
+                  - /url: ../chapter040/71.html
+              - listitem [ref=e520]:
+                - link "幕間 『茶会』" [ref=e521] [cursor=pointer]:
+                  - /url: ../chapter040/131.html
+              - listitem [ref=e522]:
+                - link "72 『BAD END 1、5、11』" [ref=e523] [cursor=pointer]:
+                  - /url: ../chapter040/72.html
+              - listitem [ref=e524]:
+                - link "73 『软弱的所在之处』" [ref=e525] [cursor=pointer]:
+                  - /url: ../chapter040/73.html
+              - listitem [ref=e526]:
+                - link "74 『魔女的企图与提案』" [ref=e527] [cursor=pointer]:
+                  - /url: ../chapter040/74.html
+              - listitem [ref=e528]:
+                - link "75 『那个人』" [ref=e529] [cursor=pointer]:
+                  - /url: ../chapter040/75.html
+              - listitem [ref=e530]:
+                - link "76 『≠莎缇拉』" [ref=e531] [cursor=pointer]:
+                  - /url: ../chapter040/76.html
+              - listitem [ref=e532]:
+                - link "77 『孤身一人的……』" [ref=e533] [cursor=pointer]:
+                  - /url: ../chapter040/77.html
+              - listitem [ref=e534]:
+                - link "78 『欲哭的声音』" [ref=e535] [cursor=pointer]:
+                  - /url: ../chapter040/78.html
+              - listitem [ref=e536]:
+                - link "79 『梦的终结』" [ref=e537] [cursor=pointer]:
+                  - /url: ../chapter040/79.html
+              - listitem [ref=e538]:
+                - link "幕間 『宾客散去』" [ref=e539] [cursor=pointer]:
+                  - /url: ../chapter040/132.html
+              - listitem [ref=e540]:
+                - link "80 『粗糙的舌头』" [ref=e541] [cursor=pointer]:
+                  - /url: ../chapter040/80.html
+              - listitem [ref=e542]:
+                - link "81 『光明』" [ref=e543] [cursor=pointer]:
+                  - /url: ../chapter040/81.html
+              - listitem [ref=e544]:
+                - link "82 『尔虞我诈』" [ref=e545] [cursor=pointer]:
+                  - /url: ../chapter040/82.html
+              - listitem [ref=e546]:
+                - link "83 『相互坦白』" [ref=e547] [cursor=pointer]:
+                  - /url: ../chapter040/83.html
+              - listitem [ref=e548]:
+                - link "84 『否定×否定×否定』" [ref=e549] [cursor=pointer]:
+                  - /url: ../chapter040/84.html
+              - listitem [ref=e550]:
+                - link "85 『用话语、用心意、用拳头』" [ref=e551] [cursor=pointer]:
+                  - /url: ../chapter040/85.html
+              - listitem [ref=e552]:
+                - link "86 『毫无胜算』" [ref=e553] [cursor=pointer]:
+                  - /url: ../chapter040/86.html
+              - listitem [ref=e554]:
+                - link "87 『鬼在外，两个小丑在内』" [ref=e555] [cursor=pointer]:
+                  - /url: ../chapter040/87.html
+              - listitem [ref=e556]:
+                - link "88 『卡菲尔的思绪』" [ref=e557] [cursor=pointer]:
+                  - /url: ../chapter040/88.html
+              - listitem [ref=e558]:
+                - link "89 『雪之记忆』" [ref=e559] [cursor=pointer]:
+                  - /url: ../chapter040/89.html
+              - listitem [ref=e560]:
+                - link "90 『——对不起』" [ref=e561] [cursor=pointer]:
+                  - /url: ../chapter040/90.html
+              - listitem [ref=e562]:
+                - link "91 『虚假的长眠』" [ref=e563] [cursor=pointer]:
+                  - /url: ../chapter040/91.html
+              - listitem [ref=e564]:
+                - link "92 『谎言』" [ref=e565] [cursor=pointer]:
+                  - /url: ../chapter040/92.html
+              - listitem [ref=e566]:
+                - link "93 『相互的提案』" [ref=e567] [cursor=pointer]:
+                  - /url: ../chapter040/93.html
+              - listitem [ref=e568]:
+                - link "94 『遗弃』" [ref=e569] [cursor=pointer]:
+                  - /url: ../chapter040/94.html
+              - listitem [ref=e570]:
+                - link "95 『西格玛（∑）』" [ref=e571] [cursor=pointer]:
+                  - /url: ../chapter040/95.html
+              - listitem [ref=e572]:
+                - link "96 『双唇红染』" [ref=e573] [cursor=pointer]:
+                  - /url: ../chapter040/96.html
+              - listitem [ref=e574]:
+                - link "97 『黎明之前』" [ref=e575] [cursor=pointer]:
+                  - /url: ../chapter040/97.html
+              - listitem [ref=e576]:
+                - link "98 『余温渐消的床铺』" [ref=e577] [cursor=pointer]:
+                  - /url: ../chapter040/98.html
+              - listitem [ref=e578]:
+                - link "99 『封闭之所，孤身一人』" [ref=e579] [cursor=pointer]:
+                  - /url: ../chapter040/99.html
+              - listitem [ref=e580]:
+                - link "100 『埋藏于尘埃中的回忆』" [ref=e581] [cursor=pointer]:
+                  - /url: ../chapter040/100.html
+              - listitem [ref=e582]:
+                - link "101 『θ其一』" [ref=e583] [cursor=pointer]:
+                  - /url: ../chapter040/101.html
+              - listitem [ref=e584]:
+                - link "102 『记忆中没有的回忆』" [ref=e585] [cursor=pointer]:
+                  - /url: ../chapter040/102.html
+              - listitem [ref=e586]:
+                - link "103 『圣域的起始与崩坏的开端』" [ref=e587] [cursor=pointer]:
+                  - /url: ../chapter040/103.html
+              - listitem [ref=e588]:
+                - link "104 『θ其二』" [ref=e589] [cursor=pointer]:
+                  - /url: ../chapter040/104.html
+              - listitem [ref=e590]:
+                - link "105 『旅行商人的陷阱』" [ref=e591] [cursor=pointer]:
+                  - /url: ../chapter040/105.html
+              - listitem [ref=e592]:
+                - link "106 『奥托・斯温』" [ref=e593] [cursor=pointer]:
+                  - /url: ../chapter040/106.html
+              - listitem [ref=e594]:
+                - link "107 『最后的陷阱』" [ref=e595] [cursor=pointer]:
+                  - /url: ../chapter040/107.html
+              - listitem [ref=e596]:
+                - link "108 『只有时机好的男人』" [ref=e597] [cursor=pointer]:
+                  - /url: ../chapter040/108.html
+              - listitem [ref=e598]:
+                - link "109 『错误的选择』" [ref=e599] [cursor=pointer]:
+                  - /url: ../chapter040/109.html
+              - listitem [ref=e600]:
+                - link "110 『相信的理由』" [ref=e601] [cursor=pointer]:
+                  - /url: ../chapter040/110.html
+              - listitem [ref=e602]:
+                - link "111 『卡菲尔的结界』" [ref=e603] [cursor=pointer]:
+                  - /url: ../chapter040/111.html
+              - listitem [ref=e604]:
+                - link "112 『拒绝软弱的本能』" [ref=e605] [cursor=pointer]:
+                  - /url: ../chapter040/112.html
+              - listitem [ref=e606]:
+                - link "113 『奎因之石靠一个人是没法搬动的』" [ref=e607] [cursor=pointer]:
+                  - /url: ../chapter040/113.html
+              - listitem [ref=e608]:
+                - link "114 『将谎言化为祈愿』" [ref=e609] [cursor=pointer]:
+                  - /url: ../chapter040/114.html
+              - listitem [ref=e610]:
+                - link "115 『青梅竹马的女人面前抬不起头』" [ref=e611] [cursor=pointer]:
+                  - /url: ../chapter040/115.html
+              - listitem [ref=e612]:
+                - link "116 『祖母、母亲、姐姐、孙子、儿子、弟弟』" [ref=e613] [cursor=pointer]:
+                  - /url: ../chapter040/116.html
+              - listitem [ref=e614]:
+                - link "117 『情信』" [ref=e615] [cursor=pointer]:
+                  - /url: ../chapter040/117.html
+              - listitem [ref=e616]:
+                - link "118 『平家星笑的日子』" [ref=e617] [cursor=pointer]:
+                  - /url: ../chapter040/118.html
+              - listitem [ref=e618]:
+                - link "119 『现在也，过去也，不变的爱』" [ref=e619] [cursor=pointer]:
+                  - /url: ../chapter040/119.html
+              - listitem [ref=e620]:
+                - link "120 『艾利奥尔大森林的永久冻土』" [ref=e621] [cursor=pointer]:
+                  - /url: ../chapter040/120.html
+              - listitem [ref=e622]:
+                - link "121 『请帮帮他』" [ref=e623] [cursor=pointer]:
+                  - /url: ../chapter040/121.html
+              - listitem [ref=e624]:
+                - link "122 『咆哮的再会』" [ref=e625] [cursor=pointer]:
+                  - /url: ../chapter040/122.html
+              - listitem [ref=e626]:
+                - link "123-A 『猎肠者VS圣域之盾』" [ref=e627] [cursor=pointer]:
+                  - /url: ../chapter040/123-A.html
+              - listitem [ref=e628]:
+                - link "123-B 『反映在水面上的幸福』" [ref=e629] [cursor=pointer]:
+                  - /url: ../chapter040/123-B.html
+              - listitem [ref=e630]:
+                - link "124-A 『给我听好，笨蛋』" [ref=e631] [cursor=pointer]:
+                  - /url: ../chapter040/124-A.html
+              - listitem [ref=e632]:
+                - link "125-A 『罗兹沃尔宅邸攻防战』" [ref=e633] [cursor=pointer]:
+                  - /url: ../chapter040/125-A.html
+              - listitem [ref=e634]:
+                - link "126-A 『漆黑森林之王，基尔提拉乌的袭击！』" [ref=e635] [cursor=pointer]:
+                  - /url: ../chapter040/126-A.html
+              - listitem [ref=e636]:
+                - link "127-A 『罗兹瓦尔府的最后一日』" [ref=e637] [cursor=pointer]:
+                  - /url: ../chapter040/127-A.html
+              - listitem [ref=e638]:
+                - link "128 『最喜欢血肉和内脏』" [ref=e639] [cursor=pointer]:
+                  - /url: ../chapter040/128.html
+              - listitem [ref=e640]:
+                - link "129 『――选择我』" [ref=e641] [cursor=pointer]:
+                  - /url: ../chapter040/129.html
+              - listitem [ref=e642]:
+                - link "124-B 『映于镜中的你』" [ref=e643] [cursor=pointer]:
+                  - /url: ../chapter040/124-B.html
+              - listitem [ref=e644]:
+                - link "125-B 『从复仇开始』" [ref=e645] [cursor=pointer]:
+                  - /url: ../chapter040/125-B.html
+              - listitem [ref=e646]:
+                - link "126-B 『下次一定要开茶会』" [ref=e647] [cursor=pointer]:
+                  - /url: ../chapter040/126-B.html
+              - listitem [ref=e648]:
+                - link "127-B 『已经够了什么的』" [ref=e649] [cursor=pointer]:
+                  - /url: ../chapter040/127-B.html
+              - listitem [ref=e650]:
+                - link "130 『雪的颜貌』" [ref=e651] [cursor=pointer]:
+                  - /url: ../chapter040/130.html
+              - listitem [ref=e652]:
+                - link "幕間 『各自的妥协』" [ref=e653] [cursor=pointer]:
+                  - /url: ../chapter040/133.html
+              - listitem [ref=e654]:
+                - link "幕間 『爱蜜莉娅阵营・魔人・精灵・精灵使』" [ref=e655] [cursor=pointer]:
+                  - /url: ../chapter040/134.html
+              - listitem [ref=e656]:
+                - link "蛇足 『再临』" [ref=e657] [cursor=pointer]:
+                  - /url: ../chapter040/135.html
+              - listitem [ref=e658]:
+                - link "后记 『篇章插图』" [ref=e659] [cursor=pointer]:
+                  - /url: ../chapter040/199.html
+          - listitem [ref=e660]:
+            - link "番外編 『OnedayⅡ』 " [ref=e661] [cursor=pointer]:
+              - /url: ../chapter041/
+              - text: 番外編 『OnedayⅡ』
+              - generic [ref=e662]: 
+            - list:
+              - listitem [ref=e663]:
+                - link "01 『姐妹的关系』" [ref=e664] [cursor=pointer]:
+                  - /url: ../chapter041/01.html
+              - listitem [ref=e665]:
+                - link "02 『年轻的灵魂和守护者』" [ref=e666] [cursor=pointer]:
+                  - /url: ../chapter041/02.html
+              - listitem [ref=e667]:
+                - link "03 『美少女x美幼女x美老女』" [ref=e668] [cursor=pointer]:
+                  - /url: ../chapter041/03.html
+              - listitem [ref=e669]:
+                - link "04 『诞生、爱蜜莉娅阵营内政官殿下』" [ref=e670] [cursor=pointer]:
+                  - /url: ../chapter041/04.html
+              - listitem [ref=e671]:
+                - link "05 『安妮罗洁的陷阱与姐弟关系』" [ref=e672] [cursor=pointer]:
+                  - /url: ../chapter041/05.html
+              - listitem [ref=e673]:
+                - link "06 『另一件未竟之事』" [ref=e674] [cursor=pointer]:
+                  - /url: ../chapter041/06.html
+              - listitem [ref=e675]:
+                - link "07 『月下，乱舞』" [ref=e676] [cursor=pointer]:
+                  - /url: ../chapter041/07.html
+              - listitem [ref=e677]:
+                - link "08 『交错的宿愿』" [ref=e678] [cursor=pointer]:
+                  - /url: ../chapter041/08.html
+              - listitem [ref=e679]:
+                - link "09 『王选前日谈』" [ref=e680] [cursor=pointer]:
+                  - /url: ../chapter041/09.html
+          - listitem [ref=e681]:
+            - link "第五章 『刻画历史的群星』（水门都市篇） " [ref=e682] [cursor=pointer]:
+              - /url: ../chapter050/
+              - text: 第五章 『刻画历史的群星』（水门都市篇）
+              - generic [ref=e683]: 
+            - list:
+              - listitem [ref=e684]:
+                - link "01 『事情的起头总是由到访者开始』" [ref=e685] [cursor=pointer]:
+                  - /url: ../chapter050/01.html
+              - listitem [ref=e686]:
+                - link "02 『虚伪的血统』" [ref=e687] [cursor=pointer]:
+                  - /url: ../chapter050/02.html
+              - listitem [ref=e688]:
+                - link "03 『各自的见解』" [ref=e689] [cursor=pointer]:
+                  - /url: ../chapter050/03.html
+              - listitem [ref=e690]:
+                - link "04 『旅行途中』" [ref=e691] [cursor=pointer]:
+                  - /url: ../chapter050/04.html
+              - listitem [ref=e692]:
+                - link "05 『水门都市』" [ref=e693] [cursor=pointer]:
+                  - /url: ../chapter050/05.html
+              - listitem [ref=e694]:
+                - link "06 『两位精灵骑士，强欲商人和无欲天使』" [ref=e695] [cursor=pointer]:
+                  - /url: ../chapter050/06.html
+              - listitem [ref=e696]:
+                - link "07 『向那罪孽深重的男人起航』" [ref=e697] [cursor=pointer]:
+                  - /url: ../chapter050/07.html
+              - listitem [ref=e698]:
+                - link "08 『晕船的同伴』" [ref=e699] [cursor=pointer]:
+                  - /url: ../chapter050/08.html
+              - listitem [ref=e700]:
+                - link "09 『歌姬的价值』" [ref=e701] [cursor=pointer]:
+                  - /url: ../chapter050/09.html
+              - listitem [ref=e702]:
+                - link "10 『水之都市的归途』" [ref=e703] [cursor=pointer]:
+                  - /url: ../chapter050/10.html
+              - listitem [ref=e704]:
+                - link "11 『意外的再会，本该到来的再会，意想不到的再会』" [ref=e705] [cursor=pointer]:
+                  - /url: ../chapter050/11.html
+              - listitem [ref=e706]:
+                - link "12 『拜垫客厅里非常的气氛』" [ref=e707] [cursor=pointer]:
+                  - /url: ../chapter050/12.html
+              - listitem [ref=e708]:
+                - link "13 『祥和的晚餐』" [ref=e709] [cursor=pointer]:
+                  - /url: ../chapter050/13.html
+              - listitem [ref=e710]:
+                - link "14 『月下的剑鬼』" [ref=e711] [cursor=pointer]:
+                  - /url: ../chapter050/14.html
+              - listitem [ref=e712]:
+                - link "15 『吵闹的寂静』" [ref=e713] [cursor=pointer]:
+                  - /url: ../chapter050/15.html
+              - listitem [ref=e714]:
+                - link "16 『不速之客』" [ref=e715] [cursor=pointer]:
+                  - /url: ../chapter050/16.html
+              - listitem [ref=e716]:
+                - link "17 『穿惯了的铠甲』" [ref=e717] [cursor=pointer]:
+                  - /url: ../chapter050/17.html
+              - listitem [ref=e718]:
+                - link "18 『歌舞的间歇之时』" [ref=e719] [cursor=pointer]:
+                  - /url: ../chapter050/18.html
+              - listitem [ref=e720]:
+                - link "19 『剧场型恶意』" [ref=e721] [cursor=pointer]:
+                  - /url: ../chapter050/19.html
+              - listitem [ref=e722]:
+                - link "20 『共相高涨的情绪』" [ref=e723] [cursor=pointer]:
+                  - /url: ../chapter050/20.html
+              - listitem [ref=e724]:
+                - link "21 『最佳的解法』" [ref=e725] [cursor=pointer]:
+                  - /url: ../chapter050/21.html
+              - listitem [ref=e726]:
+                - link "22 『草率的解法』" [ref=e727] [cursor=pointer]:
+                  - /url: ../chapter050/22.html
+              - listitem [ref=e728]:
+                - link "23 『被扰乱的事态』" [ref=e729] [cursor=pointer]:
+                  - /url: ../chapter050/23.html
+              - listitem [ref=e730]:
+                - link "24 『冰炎的结局』" [ref=e731] [cursor=pointer]:
+                  - /url: ../chapter050/24.html
+              - listitem [ref=e732]:
+                - link "25 『狮子座剧场』" [ref=e733] [cursor=pointer]:
+                  - /url: ../chapter050/25.html
+              - listitem [ref=e734]:
+                - link "26 『爱的矛头』" [ref=e735] [cursor=pointer]:
+                  - /url: ../chapter050/26.html
+              - listitem [ref=e736]:
+                - link "27 『噪音』" [ref=e737] [cursor=pointer]:
+                  - /url: ../chapter050/27.html
+              - listitem [ref=e738]:
+                - link "28 『满身疮痍的作战会议』" [ref=e739] [cursor=pointer]:
+                  - /url: ../chapter050/28.html
+              - listitem [ref=e740]:
+                - link "29 『华丽之虎』" [ref=e741] [cursor=pointer]:
+                  - /url: ../chapter050/29.html
+              - listitem [ref=e742]:
+                - link "30 『月下的虎与猫』" [ref=e743] [cursor=pointer]:
+                  - /url: ../chapter050/30.html
+              - listitem [ref=e744]:
+                - link "31 『犯错的代价』" [ref=e745] [cursor=pointer]:
+                  - /url: ../chapter050/31.html
+              - listitem [ref=e746]:
+                - link "32 『都市厅舍攻略会议』" [ref=e747] [cursor=pointer]:
+                  - /url: ../chapter050/32.html
+              - listitem [ref=e748]:
+                - link "33 『都市厅舍攻略战』" [ref=e749] [cursor=pointer]:
+                  - /url: ../chapter050/33.html
+              - listitem [ref=e750]:
+                - link "34 『剑斗与乱战』" [ref=e751] [cursor=pointer]:
+                  - /url: ../chapter050/34.html
+              - listitem [ref=e752]:
+                - link "35 『埋伏与奇袭』" [ref=e753] [cursor=pointer]:
+                  - /url: ../chapter050/35.html
+              - listitem [ref=e754]:
+                - link "36 『爱的起点与终点』" [ref=e755] [cursor=pointer]:
+                  - /url: ../chapter050/36.html
+              - listitem [ref=e756]:
+                - link "37 『重整旗鼓』" [ref=e757] [cursor=pointer]:
+                  - /url: ../chapter050/37.html
+              - listitem [ref=e758]:
+                - link "38 『魔女教的要求』" [ref=e759] [cursor=pointer]:
+                  - /url: ../chapter050/38.html
+              - listitem [ref=e760]:
+                - link "39 『骑士作风与迟来的男子』" [ref=e761] [cursor=pointer]:
+                  - /url: ../chapter050/39.html
+              - listitem [ref=e762]:
+                - link "40 『愤怒的侵蚀』" [ref=e763] [cursor=pointer]:
+                  - /url: ../chapter050/40.html
+              - listitem [ref=e764]:
+                - link "41 『英雄幻想』" [ref=e765] [cursor=pointer]:
+                  - /url: ../chapter050/41.html
+              - listitem [ref=e766]:
+                - link "42 『最为新生的英雄与最为古老的英雄』" [ref=e767] [cursor=pointer]:
+                  - /url: ../chapter050/42.html
+              - listitem [ref=e768]:
+                - link "43 『汇合前的情况』" [ref=e769] [cursor=pointer]:
+                  - /url: ../chapter050/43.html
+              - listitem [ref=e770]:
+                - link "44 『开诚布公吧』" [ref=e771] [cursor=pointer]:
+                  - /url: ../chapter050/44.html
+              - listitem [ref=e772]:
+                - link "45 『无法逃离的束缚』" [ref=e773] [cursor=pointer]:
+                  - /url: ../chapter050/45.html
+              - listitem [ref=e774]:
+                - link "46 『心境』" [ref=e775] [cursor=pointer]:
+                  - /url: ../chapter050/46.html
+              - listitem [ref=e776]:
+                - link "47 『都市夺还攻略前哨』" [ref=e777] [cursor=pointer]:
+                  - /url: ../chapter050/47.html
+              - listitem [ref=e778]:
+                - link "48 『真正喜欢的人』" [ref=e779] [cursor=pointer]:
+                  - /url: ../chapter050/48.html
+              - listitem [ref=e780]:
+                - link "49 『强欲攻略战开幕』" [ref=e781] [cursor=pointer]:
+                  - /url: ../chapter050/49.html
+              - listitem [ref=e782]:
+                - link "50 『爱之枷锁』" [ref=e783] [cursor=pointer]:
+                  - /url: ../chapter050/50.html
+              - listitem [ref=e784]:
+                - link "51 『愚弄着的恶意』" [ref=e785] [cursor=pointer]:
+                  - /url: ../chapter050/51.html
+              - listitem [ref=e786]:
+                - link "52 『星与大罪司教』" [ref=e787] [cursor=pointer]:
+                  - /url: ../chapter050/52.html
+              - listitem [ref=e788]:
+                - link "53 『混战都市』" [ref=e789] [cursor=pointer]:
+                  - /url: ../chapter050/53.html
+              - listitem [ref=e790]:
+                - link "54 『非战斗人员的战斗力』" [ref=e791] [cursor=pointer]:
+                  - /url: ../chapter050/54.html
+              - listitem [ref=e792]:
+                - link "55 『斗神的挑战者』" [ref=e793] [cursor=pointer]:
+                  - /url: ../chapter050/55.html
+              - listitem [ref=e794]:
+                - link "56 『签署断绝关系声明』" [ref=e795] [cursor=pointer]:
+                  - /url: ../chapter050/56.html
+              - listitem [ref=e796]:
+                - link "57 『心脏的所在』" [ref=e797] [cursor=pointer]:
+                  - /url: ../chapter050/57.html
+              - listitem [ref=e798]:
+                - link "58 『——我相信』" [ref=e799] [cursor=pointer]:
+                  - /url: ../chapter050/58.html
+              - listitem [ref=e800]:
+                - link "59 『雷格鲁斯・柯尼亚斯』" [ref=e801] [cursor=pointer]:
+                  - /url: ../chapter050/59.html
+              - listitem [ref=e802]:
+                - link "60 『一波方平，一波又起』" [ref=e803] [cursor=pointer]:
+                  - /url: ../chapter050/60.html
+              - listitem [ref=e804]:
+                - link "61 『领域的被害者』" [ref=e805] [cursor=pointer]:
+                  - /url: ../chapter050/61.html
+              - listitem [ref=e806]:
+                - link "62 『战士的称赞』" [ref=e807] [cursor=pointer]:
+                  - /url: ../chapter050/62.html
+              - listitem [ref=e808]:
+                - link "63 『莉莉安娜・马斯可芮德的情热』" [ref=e809] [cursor=pointer]:
+                  - /url: ../chapter050/63.html
+              - listitem [ref=e810]:
+                - link "64 『莉莉安娜・马斯可芮德的忧郁』" [ref=e811] [cursor=pointer]:
+                  - /url: ../chapter050/64.html
+              - listitem [ref=e812]:
+                - link "65 『莉莉安娜・马斯可芮德的后悔』" [ref=e813] [cursor=pointer]:
+                  - /url: ../chapter050/65.html
+              - listitem [ref=e814]:
+                - link "66 『莉莉安娜・马斯可芮德的舞台』" [ref=e815] [cursor=pointer]:
+                  - /url: ../chapter050/66.html
+              - listitem [ref=e816]:
+                - link "67 『莉莉安娜・马斯可芮德』" [ref=e817] [cursor=pointer]:
+                  - /url: ../chapter050/67.html
+              - listitem [ref=e818]:
+                - link "68 『吞食名字的美食家』" [ref=e819] [cursor=pointer]:
+                  - /url: ../chapter050/68.html
+              - listitem [ref=e820]:
+                - link "69 『丑恶的晚餐会』" [ref=e821] [cursor=pointer]:
+                  - /url: ../chapter050/69.html
+              - listitem [ref=e822]:
+                - link "70 『喰』" [ref=e823] [cursor=pointer]:
+                  - /url: ../chapter050/70.html
+              - listitem [ref=e824]:
+                - link "71 『剑鬼VS先代剑圣』" [ref=e825] [cursor=pointer]:
+                  - /url: ../chapter050/71.html
+              - listitem [ref=e826]:
+                - link "72 『剑圣VS前代剑圣』" [ref=e827] [cursor=pointer]:
+                  - /url: ../chapter050/72.html
+              - listitem [ref=e828]:
+                - link "73 『特蕾西亚・范・阿斯特雷亚』" [ref=e829] [cursor=pointer]:
+                  - /url: ../chapter050/73.html
+              - listitem [ref=e830]:
+                - link "74 『普利斯提拉保卫战战果1』" [ref=e831] [cursor=pointer]:
+                  - /url: ../chapter050/74.html
+              - listitem [ref=e832]:
+                - link "75 『普利斯提拉保卫战战果2』" [ref=e833] [cursor=pointer]:
+                  - /url: ../chapter050/75.html
+              - listitem [ref=e834]:
+                - link "76 『普利斯提拉攻防战成果3』" [ref=e835] [cursor=pointer]:
+                  - /url: ../chapter050/76.html
+              - listitem [ref=e836]:
+                - link "77 『无名的骑士』" [ref=e837] [cursor=pointer]:
+                  - /url: ../chapter050/77.html
+              - listitem [ref=e838]:
+                - link "78 『水门都市的余波』" [ref=e839] [cursor=pointer]:
+                  - /url: ../chapter050/78.html
+              - listitem [ref=e840]:
+                - link "79 『贤者的监视塔』" [ref=e841] [cursor=pointer]:
+                  - /url: ../chapter050/79.html
+              - listitem [ref=e842]:
+                - link "80 『水面上留下波纹』" [ref=e843] [cursor=pointer]:
+                  - /url: ../chapter050/80.html
+              - listitem [ref=e844]:
+                - link "81 『充满贪婪的那些人』" [ref=e845] [cursor=pointer]:
+                  - /url: ../chapter050/81.html
+              - listitem [ref=e846]:
+                - link "幕間 『结对的条件』" [ref=e847] [cursor=pointer]:
+                  - /url: ../chapter050/82.html
+              - listitem [ref=e848]:
+                - link "幕間 『未完成的大器』" [ref=e849] [cursor=pointer]:
+                  - /url: ../chapter050/83.html
+              - listitem [ref=e850]:
+                - link "幕間 『温暖的名字』" [ref=e851] [cursor=pointer]:
+                  - /url: ../chapter050/84.html
+              - listitem [ref=e852]:
+                - link "后记 『篇章插图』" [ref=e853] [cursor=pointer]:
+                  - /url: ../chapter050/99.html
+          - listitem [ref=e854]:
+            - link "第六章 『记忆的回廊』（贤者之塔篇） " [ref=e855] [cursor=pointer]:
+              - /url: ../chapter060/
+              - text: 第六章 『记忆的回廊』（贤者之塔篇）
+              - generic [ref=e856]: 
+            - list:
+              - listitem [ref=e857]:
+                - link "序章 『贤者监视塔』" [ref=e858] [cursor=pointer]:
+                  - /url: ../chapter060/00.html
+              - listitem [ref=e859]:
+                - link "01 『龙车归途路』" [ref=e860] [cursor=pointer]:
+                  - /url: ../chapter060/01.html
+              - listitem [ref=e861]:
+                - link "02 『他相应的款待』" [ref=e862] [cursor=pointer]:
+                  - /url: ../chapter060/02.html
+              - listitem [ref=e863]:
+                - link "03 『少女的牢笼』" [ref=e864] [cursor=pointer]:
+                  - /url: ../chapter060/03.html
+              - listitem [ref=e865]:
+                - link "04 『把你带出的理由』" [ref=e866] [cursor=pointer]:
+                  - /url: ../chapter060/04.html
+              - listitem [ref=e867]:
+                - link "05 『各自的不安』" [ref=e868] [cursor=pointer]:
+                  - /url: ../chapter060/05.html
+              - listitem [ref=e869]:
+                - link "06 『尤里乌斯的身世』" [ref=e870] [cursor=pointer]:
+                  - /url: ../chapter060/06.html
+              - listitem [ref=e871]:
+                - link "07 『以沙海为目标』" [ref=e872] [cursor=pointer]:
+                  - /url: ../chapter060/07.html
+              - listitem [ref=e873]:
+                - link "08 『沙丘的洗礼』" [ref=e874] [cursor=pointer]:
+                  - /url: ../chapter060/08.html
+              - listitem [ref=e875]:
+                - link "09 『沙时间中的跋涉』" [ref=e876] [cursor=pointer]:
+                  - /url: ../chapter060/09.html
+              - listitem [ref=e877]:
+                - link "10 『宛如闪光』" [ref=e878] [cursor=pointer]:
+                  - /url: ../chapter060/10.html
+              - listitem [ref=e879]:
+                - link "11 『听见眼泪的声音』" [ref=e880] [cursor=pointer]:
+                  - /url: ../chapter060/11.html
+              - listitem [ref=e881]:
+                - link "12 『监视塔的洗礼』" [ref=e882] [cursor=pointer]:
+                  - /url: ../chapter060/12.html
+              - listitem [ref=e883]:
+                - link "13 『沙海的嘲笑』" [ref=e884] [cursor=pointer]:
+                  - /url: ../chapter060/13.html
+              - listitem [ref=e885]:
+                - link "14 『沙海之上的信赖』" [ref=e886] [cursor=pointer]:
+                  - /url: ../chapter060/14.html
+              - listitem [ref=e887]:
+                - link "15 『沙子上凋零着』" [ref=e888] [cursor=pointer]:
+                  - /url: ../chapter060/15.html
+              - listitem [ref=e889]:
+                - link "16 『咀嚼的味道』" [ref=e890] [cursor=pointer]:
+                  - /url: ../chapter060/16.html
+              - listitem [ref=e891]:
+                - link "17 『沙海之王』" [ref=e892] [cursor=pointer]:
+                  - /url: ../chapter060/17.html
+              - listitem [ref=e893]:
+                - link "18 『砂塔的看守者』" [ref=e894] [cursor=pointer]:
+                  - /url: ../chapter060/18.html
+              - listitem [ref=e895]:
+                - link "19 『贤者的行踪』" [ref=e896] [cursor=pointer]:
+                  - /url: ../chapter060/19.html
+              - listitem [ref=e897]:
+                - link "20 『夏乌拉≠贤者=弗琉盖尔』" [ref=e898] [cursor=pointer]:
+                  - /url: ../chapter060/20.html
+              - listitem [ref=e899]:
+                - link "21 『巨石板的挑战书』" [ref=e900] [cursor=pointer]:
+                  - /url: ../chapter060/21.html
+              - listitem [ref=e901]:
+                - link "22 『白色星空的群星』" [ref=e902] [cursor=pointer]:
+                  - /url: ../chapter060/22.html
+              - listitem [ref=e903]:
+                - link "23 『三层塔基忒大图书馆』" [ref=e904] [cursor=pointer]:
+                  - /url: ../chapter060/23.html
+              - listitem [ref=e905]:
+                - link "24 『性格扭曲的考官』" [ref=e906] [cursor=pointer]:
+                  - /url: ../chapter060/24.html
+              - listitem [ref=e907]:
+                - link "25 『二层厄勒克特拉盼望之人』" [ref=e908] [cursor=pointer]:
+                  - /url: ../chapter060/25.html
+              - listitem [ref=e909]:
+                - link "26 『挥棒的男人』" [ref=e910] [cursor=pointer]:
+                  - /url: ../chapter060/26.html
+              - listitem [ref=e911]:
+                - link "27 『厄勒克特拉的高墙』" [ref=e912] [cursor=pointer]:
+                  - /url: ../chapter060/27.html
+              - listitem [ref=e913]:
+                - link "28 『由里乌斯・尤克历乌斯』" [ref=e914] [cursor=pointer]:
+                  - /url: ../chapter060/28.html
+              - listitem [ref=e915]:
+                - link "29 『失败者』" [ref=e916] [cursor=pointer]:
+                  - /url: ../chapter060/29.html
+              - listitem [ref=e917]:
+                - link "30 『二层攻略反省会』" [ref=e918] [cursor=pointer]:
+                  - /url: ../chapter060/30.html
+              - listitem [ref=e919]:
+                - link "31 『塔内的共同生活』" [ref=e920] [cursor=pointer]:
+                  - /url: ../chapter060/31.html
+              - listitem [ref=e921]:
+                - link "32 『何者』" [ref=e922] [cursor=pointer]:
+                  - /url: ../chapter060/32.html
+              - listitem [ref=e923]:
+                - link "33 『■■■・■■■』" [ref=e924] [cursor=pointer]:
+                  - /url: ../chapter060/33.html
+              - listitem [ref=e925]:
+                - link "34 『出了便利店后，那是一个不可思议的世界』" [ref=e926] [cursor=pointer]:
+                  - /url: ../chapter060/34.html
+              - listitem [ref=e927]:
+                - link "35 『如履薄冰的关系』" [ref=e928] [cursor=pointer]:
+                  - /url: ../chapter060/35.html
+              - listitem [ref=e929]:
+                - link "36 『安心感的安置处』" [ref=e930] [cursor=pointer]:
+                  - /url: ../chapter060/36.html
+              - listitem [ref=e931]:
+                - link "37 『纸老虎所见之梦』" [ref=e932] [cursor=pointer]:
+                  - /url: ../chapter060/37.html
+              - listitem [ref=e933]:
+                - link "38 『NISHISHEI』" [ref=e934] [cursor=pointer]:
+                  - /url: ../chapter060/38.html
+              - listitem [ref=e935]:
+                - link "39 『残骸』" [ref=e936] [cursor=pointer]:
+                  - /url: ../chapter060/39.html
+              - listitem [ref=e937]:
+                - link "40 『被星空抛弃』" [ref=e938] [cursor=pointer]:
+                  - /url: ../chapter060/40.html
+              - listitem [ref=e939]:
+                - link "41 『安心的臭味』" [ref=e940] [cursor=pointer]:
+                  - /url: ../chapter060/41.html
+              - listitem [ref=e941]:
+                - link "42 『死者们的塔』" [ref=e942] [cursor=pointer]:
+                  - /url: ../chapter060/42.html
+              - listitem [ref=e943]:
+                - link "43 『生者们的塔』" [ref=e944] [cursor=pointer]:
+                  - /url: ../chapter060/43.html
+              - listitem [ref=e945]:
+                - link "44 『血之勋章』" [ref=e946] [cursor=pointer]:
+                  - /url: ../chapter060/44.html
+              - listitem [ref=e947]:
+                - link "45 『罪人的拥抱』" [ref=e948] [cursor=pointer]:
+                  - /url: ../chapter060/45.html
+              - listitem [ref=e949]:
+                - link "46 『梅丽・波特鲁特』" [ref=e950] [cursor=pointer]:
+                  - /url: ../chapter060/46.html
+              - listitem [ref=e951]:
+                - link "47 『我不会原谅你』" [ref=e952] [cursor=pointer]:
+                  - /url: ../chapter060/47.html
+              - listitem [ref=e953]:
+                - link "48 『——杀人，会成为习惯』" [ref=e954] [cursor=pointer]:
+                  - /url: ../chapter060/48.html
+              - listitem [ref=e955]:
+                - link "49 『致给废柴的你』" [ref=e956] [cursor=pointer]:
+                  - /url: ../chapter060/49.html
+              - listitem [ref=e957]:
+                - link "50 『——正因废柴才恰恰是你』" [ref=e958] [cursor=pointer]:
+                  - /url: ../chapter060/50.html
+              - listitem [ref=e959]:
+                - link "51 『生者们的塔 PART2』" [ref=e960] [cursor=pointer]:
+                  - /url: ../chapter060/51.html
+              - listitem [ref=e961]:
+                - link "52 『神啊，请宽恕我吧』" [ref=e962] [cursor=pointer]:
+                  - /url: ../chapter060/52.html
+              - listitem [ref=e963]:
+                - link "53 『——传来了、声音』" [ref=e964] [cursor=pointer]:
+                  - /url: ../chapter060/53.html
+              - listitem [ref=e965]:
+                - link "54 『Re：从零开始的异世界生活』" [ref=e966] [cursor=pointer]:
+                  - /url: ../chapter060/54.html
+              - listitem [ref=e967]:
+                - link "55 『等待雪融的你』" [ref=e968] [cursor=pointer]:
+                  - /url: ../chapter060/55.html
+              - listitem [ref=e969]:
+                - link "56 『今后之事』" [ref=e970] [cursor=pointer]:
+                  - /url: ../chapter060/56.html
+              - listitem [ref=e971]:
+                - link "57 『暂且放下吧』" [ref=e972] [cursor=pointer]:
+                  - /url: ../chapter060/57.html
+              - listitem [ref=e973]:
+                - link "58 『彼归彼，此归此』" [ref=e974] [cursor=pointer]:
+                  - /url: ../chapter060/58.html
+              - listitem [ref=e975]:
+                - link "59 『在白色的世界里被嘲笑』" [ref=e976] [cursor=pointer]:
+                  - /url: ../chapter060/59.html
+              - listitem [ref=e977]:
+                - link "60 『一人份的陽光』" [ref=e978] [cursor=pointer]:
+                  - /url: ../chapter060/60.html
+              - listitem [ref=e979]:
+                - link "61 『——给我站起来』" [ref=e980] [cursor=pointer]:
+                  - /url: ../chapter060/61.html
+              - listitem [ref=e981]:
+                - link "62 『崩坏的地响』" [ref=e982] [cursor=pointer]:
+                  - /url: ../chapter060/62.html
+              - listitem [ref=e983]:
+                - link "63 『五重障碍』" [ref=e984] [cursor=pointer]:
+                  - /url: ../chapter060/63.html
+              - listitem [ref=e985]:
+                - link "64 『第二个障碍』" [ref=e986] [cursor=pointer]:
+                  - /url: ../chapter060/64.html
+              - listitem [ref=e987]:
+                - link "65 『第二个、第五个、然后——』" [ref=e988] [cursor=pointer]:
+                  - /url: ../chapter060/65.html
+              - listitem [ref=e989]:
+                - link "66 『迈向终焉的第二次机会』" [ref=e990] [cursor=pointer]:
+                  - /url: ../chapter060/66.html
+              - listitem [ref=e991]:
+                - link "67 『小小的王』" [ref=e992] [cursor=pointer]:
+                  - /url: ../chapter060/67.html
+              - listitem [ref=e993]:
+                - link "68 『天蝎座的女子』" [ref=e994] [cursor=pointer]:
+                  - /url: ../chapter060/68.html
+              - listitem [ref=e995]:
+                - link "69 『蛮不讲理的剑之铁锤』" [ref=e996] [cursor=pointer]:
+                  - /url: ../chapter060/69.html
+              - listitem [ref=e997]:
+                - link "70 『专情的星星』" [ref=e998] [cursor=pointer]:
+                  - /url: ../chapter060/70.html
+              - listitem [ref=e999]:
+                - link "71 『Count・One』" [ref=e1000] [cursor=pointer]:
+                  - /url: ../chapter060/71.html
+              - listitem [ref=e1001]:
+                - link "72 『■■・■』" [ref=e1002] [cursor=pointer]:
+                  - /url: ../chapter060/72.html
+              - listitem [ref=e1003]:
+                - link "73 『 『ナツキ・スバル』 』" [ref=e1004] [cursor=pointer]:
+                  - /url: ../chapter060/73.html
+              - listitem [ref=e1005]:
+                - link "74 『ナツキ・スバル』" [ref=e1006] [cursor=pointer]:
+                  - /url: ../chapter060/74.html
+              - listitem [ref=e1007]:
+                - link "75 『路伊・阿尔尼普』" [ref=e1008] [cursor=pointer]:
+                  - /url: ../chapter060/75.html
+              - listitem [ref=e1009]:
+                - link "76 『名为自己的地狱』" [ref=e1010] [cursor=pointer]:
+                  - /url: ../chapter060/76.html
+              - listitem [ref=e1011]:
+                - link "77 『反击的狼烟』" [ref=e1012] [cursor=pointer]:
+                  - /url: ../chapter060/77.html
+              - listitem [ref=e1013]:
+                - link "78 『四角』" [ref=e1014] [cursor=pointer]:
+                  - /url: ../chapter060/78.html
+              - listitem [ref=e1015]:
+                - link "79 『READY STEADY GO』" [ref=e1016] [cursor=pointer]:
+                  - /url: ../chapter060/79.html
+              - listitem [ref=e1017]:
+                - link "80 『精神之死』" [ref=e1018] [cursor=pointer]:
+                  - /url: ../chapter060/80.html
+              - listitem [ref=e1019]:
+                - link "81 『――我第一次遇见你』" [ref=e1020] [cursor=pointer]:
+                  - /url: ../chapter060/81.html
+              - listitem [ref=e1021]:
+                - link "82 『带枷锁的战斗』" [ref=e1022] [cursor=pointer]:
+                  - /url: ../chapter060/82.html
+              - listitem [ref=e1023]:
+                - link "83 『拉姆』" [ref=e1024] [cursor=pointer]:
+                  - /url: ../chapter060/83.html
+              - listitem [ref=e1025]:
+                - link "84 『嘿咻！ 哎呀！』" [ref=e1026] [cursor=pointer]:
+                  - /url: ../chapter060/84.html
+              - listitem [ref=e1027]:
+                - link "85 『GOOD LOSER』" [ref=e1028] [cursor=pointer]:
+                  - /url: ../chapter060/85.html
+              - listitem [ref=e1029]:
+                - link "86 『昨日之谈』" [ref=e1030] [cursor=pointer]:
+                  - /url: ../chapter060/86.html
+              - listitem [ref=e1031]:
+                - link "87 『遥远的目光』" [ref=e1032] [cursor=pointer]:
+                  - /url: ../chapter060/87.html
+              - listitem [ref=e1033]:
+                - link "88 『――询志』" [ref=e1034] [cursor=pointer]:
+                  - /url: ../chapter060/88.html
+              - listitem [ref=e1035]:
+                - link "89 『夏乌拉』" [ref=e1036] [cursor=pointer]:
+                  - /url: ../chapter060/89.html
+              - listitem [ref=e1037]:
+                - link "90 『英雄』" [ref=e1038] [cursor=pointer]:
+                  - /url: ../chapter060/90.html
+              - listitem [ref=e1039]:
+                - link "后记 『篇章插图』" [ref=e1040] [cursor=pointer]:
+                  - /url: ../chapter060/99.html
+          - listitem [ref=e1041]:
+            - link "第七章 『狼之国』（帝国篇） " [ref=e1042] [cursor=pointer]:
+              - /url: ../chapter070/
+              - text: 第七章 『狼之国』（帝国篇）
+              - generic [ref=e1043]: 
+            - list:
+              - listitem [ref=e1044]:
+                - link "01 『洗礼』" [ref=e1045] [cursor=pointer]:
+                  - /url: ../chapter070/01.html
+              - listitem [ref=e1046]:
+                - link "02 『Animal Tracking』" [ref=e1047] [cursor=pointer]:
+                  - /url: ../chapter070/02.html
+              - listitem [ref=e1048]:
+                - link "03 『VS 雷姆』" [ref=e1049] [cursor=pointer]:
+                  - /url: ../chapter070/03.html
+              - listitem [ref=e1050]:
+                - link "04 『有勇气的抉择』" [ref=e1051] [cursor=pointer]:
+                  - /url: ../chapter070/04.html
+              - listitem [ref=e1052]:
+                - link "05 『男人很艰苦』" [ref=e1053] [cursor=pointer]:
+                  - /url: ../chapter070/05.html
+              - listitem [ref=e1054]:
+                - link "06 『遥远的南方之地』" [ref=e1055] [cursor=pointer]:
+                  - /url: ../chapter070/06.html
+              - listitem [ref=e1056]:
+                - link "07 『男人确实辛苦』" [ref=e1057] [cursor=pointer]:
+                  - /url: ../chapter070/07.html
+              - listitem [ref=e1058]:
+                - link "08 『名字』" [ref=e1059] [cursor=pointer]:
+                  - /url: ../chapter070/08.html
+              - listitem [ref=e1060]:
+                - link "09 『帝国的作风』" [ref=e1061] [cursor=pointer]:
+                  - /url: ../chapter070/09.html
+              - listitem [ref=e1062]:
+                - link "10 『修德拉克之民』" [ref=e1063] [cursor=pointer]:
+                  - /url: ../chapter070/10.html
+              - listitem [ref=e1064]:
+                - link "11 『血命之仪』" [ref=e1065] [cursor=pointer]:
+                  - /url: ../chapter070/11.html
+              - listitem [ref=e1066]:
+                - link "12 『佛拉基亚帝国』" [ref=e1067] [cursor=pointer]:
+                  - /url: ../chapter070/12.html
+              - listitem [ref=e1068]:
+                - link "13 『以非神之躯』" [ref=e1069] [cursor=pointer]:
+                  - /url: ../chapter070/13.html
+              - listitem [ref=e1070]:
+                - link "14 『无法弥合的价值观』" [ref=e1071] [cursor=pointer]:
+                  - /url: ../chapter070/14.html
+              - listitem [ref=e1072]:
+                - link "15 『想要守护之物』" [ref=e1073] [cursor=pointer]:
+                  - /url: ../chapter070/15.html
+              - listitem [ref=e1074]:
+                - link "16 『帝国事况』" [ref=e1075] [cursor=pointer]:
+                  - /url: ../chapter070/16.html
+              - listitem [ref=e1076]:
+                - link "17 『悄然接近的凶气』" [ref=e1077] [cursor=pointer]:
+                  - /url: ../chapter070/17.html
+              - listitem [ref=e1078]:
+                - link "18 『城塞都市格瓦拉尔攻防战』" [ref=e1079] [cursor=pointer]:
+                  - /url: ../chapter070/18.html
+              - listitem [ref=e1080]:
+                - link "19 『恼人的重逢』" [ref=e1081] [cursor=pointer]:
+                  - /url: ../chapter070/19.html
+              - listitem [ref=e1082]:
+                - link "20 『皇帝／商人／菜月・昴』" [ref=e1083] [cursor=pointer]:
+                  - /url: ../chapter070/20.html
+              - listitem [ref=e1084]:
+                - link "21 『兹克尔・奥斯曼』" [ref=e1085] [cursor=pointer]:
+                  - /url: ../chapter070/21.html
+              - listitem [ref=e1086]:
+                - link "22 『无血开城计划』" [ref=e1087] [cursor=pointer]:
+                  - /url: ../chapter070/22.html
+              - listitem [ref=e1088]:
+                - link "23 『乐士夏美・施瓦茨』" [ref=e1089] [cursor=pointer]:
+                  - /url: ../chapter070/23.html
+              - listitem [ref=e1090]:
+                - link "24 『傲岸不逊』" [ref=e1091] [cursor=pointer]:
+                  - /url: ../chapter070/24.html
+              - listitem [ref=e1092]:
+                - link "25 『热血澎湃般的再会』" [ref=e1093] [cursor=pointer]:
+                  - /url: ../chapter070/25.html
+              - listitem [ref=e1094]:
+                - link "26 『潮涌的圆桌会议』" [ref=e1095] [cursor=pointer]:
+                  - /url: ../chapter070/26.html
+              - listitem [ref=e1096]:
+                - link "27 『英才与庸才』" [ref=e1097] [cursor=pointer]:
+                  - /url: ../chapter070/27.html
+              - listitem [ref=e1098]:
+                - link "28 『胜利条件』" [ref=e1099] [cursor=pointer]:
+                  - /url: ../chapter070/28.html
+              - listitem [ref=e1100]:
+                - link "29 『各自的处世法』" [ref=e1101] [cursor=pointer]:
+                  - /url: ../chapter070/29.html
+              - listitem [ref=e1102]:
+                - link "30 『自称英雄的菜月・昴』" [ref=e1103] [cursor=pointer]:
+                  - /url: ../chapter070/30.html
+              - listitem [ref=e1104]:
+                - link "31 『与老乡的谈心』" [ref=e1105] [cursor=pointer]:
+                  - /url: ../chapter070/31.html
+              - listitem [ref=e1106]:
+                - link "32 『该前进的道路』" [ref=e1107] [cursor=pointer]:
+                  - /url: ../chapter070/32.html
+              - listitem [ref=e1108]:
+                - link "33 『出发，踏上魔都之路』" [ref=e1109] [cursor=pointer]:
+                  - /url: ../chapter070/33.html
+              - listitem [ref=e1110]:
+                - link "34 『马车上的纠纷』" [ref=e1111] [cursor=pointer]:
+                  - /url: ../chapter070/34.html
+              - listitem [ref=e1112]:
+                - link "35 『彻夜详谈』" [ref=e1113] [cursor=pointer]:
+                  - /url: ../chapter070/35.html
+              - listitem [ref=e1114]:
+                - link "36 『混沌的魔都』" [ref=e1115] [cursor=pointer]:
+                  - /url: ../chapter070/36.html
+              - listitem [ref=e1116]:
+                - link "37 『红琉璃城之主』" [ref=e1117] [cursor=pointer]:
+                  - /url: ../chapter070/37.html
+              - listitem [ref=e1118]:
+                - link "38 『八年后的奖励』" [ref=e1119] [cursor=pointer]:
+                  - /url: ../chapter070/38.html
+              - listitem [ref=e1120]:
+                - link "39 『恶毒』" [ref=e1121] [cursor=pointer]:
+                  - /url: ../chapter070/39.html
+              - listitem [ref=e1122]:
+                - link "40 『纳奇基・施瓦茨』" [ref=e1123] [cursor=pointer]:
+                  - /url: ../chapter070/40.html
+              - listitem [ref=e1124]:
+                - link "41 『茶歇谈话』" [ref=e1125] [cursor=pointer]:
+                  - /url: ../chapter070/41.html
+              - listitem [ref=e1126]:
+                - link "42 『野心之兽』" [ref=e1127] [cursor=pointer]:
+                  - /url: ../chapter070/42.html
+              - listitem [ref=e1128]:
+                - link "43 『眼皮子底下』" [ref=e1129] [cursor=pointer]:
+                  - /url: ../chapter070/43.html
+              - listitem [ref=e1130]:
+                - link "44 『收缩的视野』" [ref=e1131] [cursor=pointer]:
+                  - /url: ../chapter070/44.html
+              - listitem [ref=e1132]:
+                - link "45 『狐娘』" [ref=e1133] [cursor=pointer]:
+                  - /url: ../chapter070/45.html
+              - listitem [ref=e1134]:
+                - link "46 『幼稚的匹夫之勇』" [ref=e1135] [cursor=pointer]:
+                  - /url: ../chapter070/46.html
+              - listitem [ref=e1136]:
+                - link "47 『不会消失的■■』" [ref=e1137] [cursor=pointer]:
+                  - /url: ../chapter070/47.html
+              - listitem [ref=e1138]:
+                - link "48 『思绪交错的魔都』" [ref=e1139] [cursor=pointer]:
+                  - /url: ../chapter070/48.html
+              - listitem [ref=e1140]:
+                - link "49 『星之邂逅』" [ref=e1141] [cursor=pointer]:
+                  - /url: ../chapter070/49.html
+              - listitem [ref=e1142]:
+                - link "50 『视野绝佳的「深渊」』" [ref=e1143] [cursor=pointer]:
+                  - /url: ../chapter070/50.html
+              - listitem [ref=e1144]:
+                - link "51 『魔都的女主人』" [ref=e1145] [cursor=pointer]:
+                  - /url: ../chapter070/51.html
+              - listitem [ref=e1146]:
+                - link "52 『恋慕之心绝不让步』" [ref=e1147] [cursor=pointer]:
+                  - /url: ../chapter070/52.html
+              - listitem [ref=e1148]:
+                - link "53 『在那十一秒的前方』" [ref=e1149] [cursor=pointer]:
+                  - /url: ../chapter070/53.html
+              - listitem [ref=e1150]:
+                - link "54-A 『理想乡卡欧斯弗莱姆』" [ref=e1151] [cursor=pointer]:
+                  - /url: ../chapter070/54-A.html
+              - listitem [ref=e1152]:
+                - link "55-A 『魔都狂躁曲』" [ref=e1153] [cursor=pointer]:
+                  - /url: ../chapter070/55-A.html
+              - listitem [ref=e1154]:
+                - link "56-A 『大灾』" [ref=e1155] [cursor=pointer]:
+                  - /url: ../chapter070/56-A.html
+              - listitem [ref=e1156]:
+                - link "57-A 『聪明是活不下去的』" [ref=e1157] [cursor=pointer]:
+                  - /url: ../chapter070/57-A.html
+              - listitem [ref=e1158]:
+                - link "58-A 『无家可归的人们』" [ref=e1159] [cursor=pointer]:
+                  - /url: ../chapter070/58-A.html
+              - listitem [ref=e1160]:
+                - link "59-A 『塔莉塔・修德拉克』" [ref=e1161] [cursor=pointer]:
+                  - /url: ../chapter070/59-A.html
+              - listitem [ref=e1162]:
+                - link "60 『乱世的私生子』" [ref=e1163] [cursor=pointer]:
+                  - /url: ../chapter070/60.html
+              - listitem [ref=e1164]:
+                - link "54-B 『遮天蔽日』" [ref=e1165] [cursor=pointer]:
+                  - /url: ../chapter070/54-B.html
+              - listitem [ref=e1166]:
+                - link "55-B 『城郭都市狂躁曲』" [ref=e1167] [cursor=pointer]:
+                  - /url: ../chapter070/55-B.html
+              - listitem [ref=e1168]:
+                - link "56-B 『飞龙灾害』" [ref=e1169] [cursor=pointer]:
+                  - /url: ../chapter070/56-B.html
+              - listitem [ref=e1170]:
+                - link "57-B 『你可以称我为大傻瓜』" [ref=e1171] [cursor=pointer]:
+                  - /url: ../chapter070/57-B.html
+              - listitem [ref=e1172]:
+                - link "58-B 『无依无靠的人们』" [ref=e1173] [cursor=pointer]:
+                  - /url: ../chapter070/58-B.html
+              - listitem [ref=e1174]:
+                - link "59-B 『弗洛普・奥克尼尔』" [ref=e1175] [cursor=pointer]:
+                  - /url: ../chapter070/59-B.html
+              - listitem [ref=e1176]:
+                - link "61 『欢迎来到剑奴孤岛！』" [ref=e1177] [cursor=pointer]:
+                  - /url: ../chapter070/61.html
+              - listitem [ref=e1178]:
+                - link "62 『孤岛的秩序』" [ref=e1179] [cursor=pointer]:
+                  - /url: ../chapter070/62.html
+              - listitem [ref=e1180]:
+                - link "63 『斯帕鲁卡』" [ref=e1181] [cursor=pointer]:
+                  - /url: ../chapter070/63.html
+              - listitem [ref=e1182]:
+                - link "64 『魔法的语言』" [ref=e1183] [cursor=pointer]:
+                  - /url: ../chapter070/64.html
+              - listitem [ref=e1184]:
+                - link "65 『学园美食斗士』" [ref=e1185] [cursor=pointer]:
+                  - /url: ../chapter070/65.html
+              - listitem [ref=e1186]:
+                - link "66 『赫莱茵・伊特』" [ref=e1187] [cursor=pointer]:
+                  - /url: ../chapter070/66.html
+              - listitem [ref=e1188]:
+                - link "67 『深牙的背面』" [ref=e1189] [cursor=pointer]:
+                  - /url: ../chapter070/67.html
+              - listitem [ref=e1190]:
+                - link "68 『剑狼的指引』" [ref=e1191] [cursor=pointer]:
+                  - /url: ../chapter070/68.html
+              - listitem [ref=e1192]:
+                - link "69 『帝都来的使者』" [ref=e1193] [cursor=pointer]:
+                  - /url: ../chapter070/69.html
+              - listitem [ref=e1194]:
+                - link "70 『一个』" [ref=e1195] [cursor=pointer]:
+                  - /url: ../chapter070/70.html
+              - listitem [ref=e1196]:
+                - link "71 『水』" [ref=e1197] [cursor=pointer]:
+                  - /url: ../chapter070/71.html
+              - listitem [ref=e1198]:
+                - link "72 『荒谬的传闻』" [ref=e1199] [cursor=pointer]:
+                  - /url: ../chapter070/72.html
+              - listitem [ref=e1200]:
+                - link "73 『维茨・罗根』" [ref=e1201] [cursor=pointer]:
+                  - /url: ../chapter070/73.html
+              - listitem [ref=e1202]:
+                - link "74 『伊德拉・米桑加』" [ref=e1203] [cursor=pointer]:
+                  - /url: ../chapter070/74.html
+              - listitem [ref=e1204]:
+                - link "75 『I know』" [ref=e1205] [cursor=pointer]:
+                  - /url: ../chapter070/75.html
+              - listitem [ref=e1206]:
+                - link "76 『帝都的邂逅』" [ref=e1207] [cursor=pointer]:
+                  - /url: ../chapter070/76.html
+              - listitem [ref=e1208]:
+                - link "77 『命运的恶作剧』" [ref=e1209] [cursor=pointer]:
+                  - /url: ../chapter070/77.html
+              - listitem [ref=e1210]:
+                - link "78 『一触即发的重逢』" [ref=e1211] [cursor=pointer]:
+                  - /url: ../chapter070/78.html
+              - listitem [ref=e1212]:
+                - link "79 『绯色的大笑』" [ref=e1213] [cursor=pointer]:
+                  - /url: ../chapter070/79.html
+              - listitem [ref=e1214]:
+                - link "80 『伊丽丝和荆棘之王』" [ref=e1215] [cursor=pointer]:
+                  - /url: ../chapter070/80.html
+              - listitem [ref=e1216]:
+                - link "81 『女豪杰和小丑』" [ref=e1217] [cursor=pointer]:
+                  - /url: ../chapter070/81.html
+              - listitem [ref=e1218]:
+                - link "82 『对叛乱者的猜测』" [ref=e1219] [cursor=pointer]:
+                  - /url: ../chapter070/82.html
+              - listitem [ref=e1220]:
+                - link "83 『战乱与战场』" [ref=e1221] [cursor=pointer]:
+                  - /url: ../chapter070/83.html
+              - listitem [ref=e1222]:
+                - link "84 『茶室』" [ref=e1223] [cursor=pointer]:
+                  - /url: ../chapter070/84.html
+              - listitem [ref=e1224]:
+                - link "85 『尤金』" [ref=e1225] [cursor=pointer]:
+                  - /url: ../chapter070/85.html
+              - listitem [ref=e1226]:
+                - link "86 『五个顶点』" [ref=e1227] [cursor=pointer]:
+                  - /url: ../chapter070/86.html
+              - listitem [ref=e1228]:
+                - link "87 『巅峰之战』" [ref=e1229] [cursor=pointer]:
+                  - /url: ../chapter070/87.html
+              - listitem [ref=e1230]:
+                - link "88 『突破口』" [ref=e1231] [cursor=pointer]:
+                  - /url: ../chapter070/88.html
+              - listitem [ref=e1232]:
+                - link "89 『卡夫马・伊鲁克斯』" [ref=e1233] [cursor=pointer]:
+                  - /url: ../chapter070/89.html
+              - listitem [ref=e1234]:
+                - link "90 『地狱的摇篮』" [ref=e1235] [cursor=pointer]:
+                  - /url: ../chapter070/90.html
+              - listitem [ref=e1236]:
+                - link "91 『在战场上奔走』" [ref=e1237] [cursor=pointer]:
+                  - /url: ../chapter070/91.html
+              - listitem [ref=e1238]:
+                - link "92 『因缘的再燃』" [ref=e1239] [cursor=pointer]:
+                  - /url: ../chapter070/92.html
+              - listitem [ref=e1240]:
+                - link "93 『石偶军团』" [ref=e1241] [cursor=pointer]:
+                  - /url: ../chapter070/93.html
+              - listitem [ref=e1242]:
+                - link "94 『为谁而下的决心』" [ref=e1243] [cursor=pointer]:
+                  - /url: ../chapter070/94.html
+              - listitem [ref=e1244]:
+                - link "95 『顶点楚歌』" [ref=e1245] [cursor=pointer]:
+                  - /url: ../chapter070/95.html
+              - listitem [ref=e1246]:
+                - link "96 『用深爱描绘』" [ref=e1247] [cursor=pointer]:
+                  - /url: ../chapter070/96.html
+              - listitem [ref=e1248]:
+                - link "97 『从西边的彼方而来』" [ref=e1249] [cursor=pointer]:
+                  - /url: ../chapter070/97.html
+              - listitem [ref=e1250]:
+                - link "98 『普雷阿迪斯战团』" [ref=e1251] [cursor=pointer]:
+                  - /url: ../chapter070/98.html
+              - listitem [ref=e1252]:
+                - link "99 『天空的统治者』" [ref=e1253] [cursor=pointer]:
+                  - /url: ../chapter070/99.html
+              - listitem [ref=e1254]:
+                - link "100 『顶点万化』" [ref=e1255] [cursor=pointer]:
+                  - /url: ../chapter070/100.html
+              - listitem [ref=e1256]:
+                - link "101 『爱之炎』" [ref=e1257] [cursor=pointer]:
+                  - /url: ../chapter070/101.html
+              - listitem [ref=e1258]:
+                - link "102 『觉悟之壁』" [ref=e1259] [cursor=pointer]:
+                  - /url: ../chapter070/102.html
+              - listitem [ref=e1260]:
+                - link "103 『星星的倒计时』" [ref=e1261] [cursor=pointer]:
+                  - /url: ../chapter070/103.html
+              - listitem [ref=e1262]:
+                - link "104 『顶点乱麻（上）』" [ref=e1263] [cursor=pointer]:
+                  - /url: ../chapter070/104.html
+              - listitem [ref=e1264]:
+                - link "105 『顶点乱麻（中）』" [ref=e1265] [cursor=pointer]:
+                  - /url: ../chapter070/105.html
+              - listitem [ref=e1266]:
+                - link "106 『顶点乱麻（下）』" [ref=e1267] [cursor=pointer]:
+                  - /url: ../chapter070/106.html
+              - listitem [ref=e1268]:
+                - link "107 『奇夏・戈尔德』" [ref=e1269] [cursor=pointer]:
+                  - /url: ../chapter070/107.html
+              - listitem [ref=e1270]:
+                - link "108 『即将降临的大灾』" [ref=e1271] [cursor=pointer]:
+                  - /url: ../chapter070/108.html
+              - listitem [ref=e1272]:
+                - link "109 『帝国之剑狼』" [ref=e1273] [cursor=pointer]:
+                  - /url: ../chapter070/109.html
+              - listitem [ref=e1274]:
+                - link "110 『庆典』" [ref=e1275] [cursor=pointer]:
+                  - /url: ../chapter070/110.html
+          - listitem [ref=e1276]:
+            - link "第八章 『文森特・佛拉基亚』（帝皇篇） " [ref=e1277] [cursor=pointer]:
+              - /url: ../chapter080/
+              - text: 第八章 『文森特・佛拉基亚』（帝皇篇）
+              - generic [ref=e1278]: 
+            - list:
+              - listitem [ref=e1279]:
+                - link "01 『勝利条件変更』" [ref=e1280] [cursor=pointer]:
+                  - /url: ../chapter080/01.html
+              - listitem [ref=e1281]:
+                - link "02 『遗恨』" [ref=e1282] [cursor=pointer]:
+                  - /url: ../chapter080/02.html
+              - listitem [ref=e1283]:
+                - link "03 『三个理由』" [ref=e1284] [cursor=pointer]:
+                  - /url: ../chapter080/03.html
+              - listitem [ref=e1285]:
+                - link "04 『战士的本能』" [ref=e1286] [cursor=pointer]:
+                  - /url: ../chapter080/04.html
+              - listitem [ref=e1287]:
+                - link "05 『宽恕』" [ref=e1288] [cursor=pointer]:
+                  - /url: ../chapter080/05.html
+              - listitem [ref=e1289]:
+                - link "06 『我不乞求宽恕』" [ref=e1290] [cursor=pointer]:
+                  - /url: ../chapter080/06.html
+              - listitem [ref=e1291]:
+                - link "07 『托德・芬格』" [ref=e1292] [cursor=pointer]:
+                  - /url: ../chapter080/07.html
+              - listitem [ref=e1293]:
+                - link "08 『未来的展望』" [ref=e1294] [cursor=pointer]:
+                  - /url: ../chapter080/08.html
+              - listitem [ref=e1295]:
+                - link "09 『我决定爱你』" [ref=e1296] [cursor=pointer]:
+                  - /url: ../chapter080/09.html
+              - listitem [ref=e1297]:
+                - link "10 『没有谁能独自一人』" [ref=e1298] [cursor=pointer]:
+                  - /url: ../chapter080/10.html
+              - listitem [ref=e1299]:
+                - link "11 『吵死了』" [ref=e1300] [cursor=pointer]:
+                  - /url: ../chapter080/11.html
+              - listitem [ref=e1301]:
+                - link "12 『菜月・昂和文森特・埃布尔克斯』" [ref=e1302] [cursor=pointer]:
+                  - /url: ../chapter080/12.html
+              - listitem [ref=e1303]:
+                - link "13 『各自的伤痕』" [ref=e1304] [cursor=pointer]:
+                  - /url: ../chapter080/13.html
+              - listitem [ref=e1305]:
+                - link "14 『王国和帝国』" [ref=e1306] [cursor=pointer]:
+                  - /url: ../chapter080/14.html
+              - listitem [ref=e1307]:
+                - link "15 『礼赞』" [ref=e1308] [cursor=pointer]:
+                  - /url: ../chapter080/15.html
+              - listitem [ref=e1309]:
+                - link "16 『殭尸灾害』" [ref=e1310] [cursor=pointer]:
+                  - /url: ../chapter080/16.html
+              - listitem [ref=e1311]:
+                - link "17 『魔法的接触』" [ref=e1312] [cursor=pointer]:
+                  - /url: ../chapter080/17.html
+              - listitem [ref=e1313]:
+                - link "18 『短暂的重逢』" [ref=e1314] [cursor=pointer]:
+                  - /url: ../chapter080/18.html
+              - listitem [ref=e1315]:
+                - link "19 『巴尔加・克罗姆威尔的计策』" [ref=e1316] [cursor=pointer]:
+                  - /url: ../chapter080/19.html
+              - listitem [ref=e1317]:
+                - link "20 『两束光』" [ref=e1318] [cursor=pointer]:
+                  - /url: ../chapter080/20.html
+              - listitem [ref=e1319]:
+                - link "21 『无可避免的天命』" [ref=e1320] [cursor=pointer]:
+                  - /url: ../chapter080/21.html
+              - listitem [ref=e1321]:
+                - link "22 『我想相信。不会原谅』" [ref=e1322] [cursor=pointer]:
+                  - /url: ../chapter080/22.html
+              - listitem [ref=e1323]:
+                - link "23 『路伊』" [ref=e1324] [cursor=pointer]:
+                  - /url: ../chapter080/23.html
+              - listitem [ref=e1325]:
+                - link "24 『光的行动准则』" [ref=e1326] [cursor=pointer]:
+                  - /url: ../chapter080/24.html
+              - listitem [ref=e1327]:
+                - link "25 『将死之人的愿望』" [ref=e1328] [cursor=pointer]:
+                  - /url: ../chapter080/25.html
+              - listitem [ref=e1329]:
+                - link "26 『毒姬』" [ref=e1330] [cursor=pointer]:
+                  - /url: ../chapter080/26.html
+              - listitem [ref=e1331]:
+                - link "27 『贝尔斯提兹・冯达尔福』" [ref=e1332] [cursor=pointer]:
+                  - /url: ../chapter080/27.html
+              - listitem [ref=e1333]:
+                - link "28 『帝国的兄妹』" [ref=e1334] [cursor=pointer]:
+                  - /url: ../chapter080/28.html
+              - listitem [ref=e1335]:
+                - link "29 『我不想爱你』" [ref=e1336] [cursor=pointer]:
+                  - /url: ../chapter080/29.html
+              - listitem [ref=e1337]:
+                - link "30 『凶报』" [ref=e1338] [cursor=pointer]:
+                  - /url: ../chapter080/30.html
+              - listitem [ref=e1339]:
+                - link "31 『石塊』" [ref=e1340] [cursor=pointer]:
+                  - /url: ../chapter080/31.html
+              - listitem [ref=e1341]:
+                - link "32 『选拔成员』" [ref=e1342] [cursor=pointer]:
+                  - /url: ../chapter080/32.html
+              - listitem [ref=e1343]:
+                - link "33 『爱情裁决』" [ref=e1344] [cursor=pointer]:
+                  - /url: ../chapter080/33.html
+              - listitem [ref=e1345]:
+                - link "34 『在你告诉我答案之前、我是不会放过你的』" [ref=e1346] [cursor=pointer]:
+                  - /url: ../chapter080/34.html
+              - listitem [ref=e1347]:
+                - link "35 『命悬一线的工作』" [ref=e1348] [cursor=pointer]:
+                  - /url: ../chapter080/35.html
+              - listitem [ref=e1349]:
+                - link "36 『尸都鲁普加纳』" [ref=e1350] [cursor=pointer]:
+                  - /url: ../chapter080/36.html
+              - listitem [ref=e1351]:
+                - link "37 『伏线时间』" [ref=e1352] [cursor=pointer]:
+                  - /url: ../chapter080/37.html
+              - listitem [ref=e1353]:
+                - link "38 『罗恩・赛格蒙特』" [ref=e1354] [cursor=pointer]:
+                  - /url: ../chapter080/38.html
+              - listitem [ref=e1355]:
+                - link "39 『域外的笑声』" [ref=e1356] [cursor=pointer]:
+                  - /url: ../chapter080/39.html
+              - listitem [ref=e1357]:
+                - link "40 『微不足道的威胁』" [ref=e1358] [cursor=pointer]:
+                  - /url: ../chapter080/40.html
+              - listitem [ref=e1359]:
+                - link "41 『地狱之所在』" [ref=e1360] [cursor=pointer]:
+                  - /url: ../chapter080/41.html
+              - listitem [ref=e1361]:
+                - link "42 『伟大存在的奴隶』" [ref=e1362] [cursor=pointer]:
+                  - /url: ../chapter080/42.html
+              - listitem [ref=e1363]:
+                - link "43 『各自的体验』" [ref=e1364] [cursor=pointer]:
+                  - /url: ../chapter080/43.html
+              - listitem [ref=e1365]:
+                - link "幕間 『乌比尔克』" [ref=e1366] [cursor=pointer]:
+                  - /url: ../chapter080/43_5.html
+              - listitem [ref=e1367]:
+                - link "44 『信任的回应方式』" [ref=e1368] [cursor=pointer]:
+                  - /url: ../chapter080/44.html
+              - listitem [ref=e1369]:
+                - link "45 『星星的坠落方式』" [ref=e1370] [cursor=pointer]:
+                  - /url: ../chapter080/45.html
+              - listitem [ref=e1371]:
+                - link "46 『风的味道』" [ref=e1372] [cursor=pointer]:
+                  - /url: ../chapter080/46.html
+              - listitem [ref=e1373]:
+                - link "47 『坦萨』" [ref=e1374] [cursor=pointer]:
+                  - /url: ../chapter080/47.html
+              - listitem [ref=e1375]:
+                - link "48 『荆棘的血咒』" [ref=e1376] [cursor=pointer]:
+                  - /url: ../chapter080/48.html
+              - listitem [ref=e1377]:
+                - link "49 『荆棘之王』" [ref=e1378] [cursor=pointer]:
+                  - /url: ../chapter080/49.html
+              - listitem [ref=e1379]:
+                - link "50 『尤加尔多・佛拉基亚』" [ref=e1380] [cursor=pointer]:
+                  - /url: ../chapter080/50.html
+              - listitem [ref=e1381]:
+                - link "51 『王者之坎』" [ref=e1382] [cursor=pointer]:
+                  - /url: ../chapter080/51.html
+              - listitem [ref=e1383]:
+                - link "52 『米迪亚姆・奥克尼尔』" [ref=e1384] [cursor=pointer]:
+                  - /url: ../chapter080/52.html
+              - listitem [ref=e1385]:
+                - link "53 『魔弹射手』" [ref=e1386] [cursor=pointer]:
+                  - /url: ../chapter080/53.html
+              - listitem [ref=e1387]:
+                - link "54 『走马灯』" [ref=e1388] [cursor=pointer]:
+                  - /url: ../chapter080/54.html
+              - listitem [ref=e1389]:
+                - link "55 『玛德琳・艾沙尔』" [ref=e1390] [cursor=pointer]:
+                  - /url: ../chapter080/55.html
+              - listitem [ref=e1391]:
+                - link "56 『亚拉基亚』" [ref=e1392] [cursor=pointer]:
+                  - /url: ../chapter080/56.html
+              - listitem [ref=e1393]:
+                - link "57 『塞西尔斯・赛格蒙特』" [ref=e1394] [cursor=pointer]:
+                  - /url: ../chapter080/57.html
+              - listitem [ref=e1395]:
+                - link "58 『存在的证明』" [ref=e1396] [cursor=pointer]:
+                  - /url: ../chapter080/58.html
+              - listitem [ref=e1397]:
+                - link "59 『斯芬克斯』" [ref=e1398] [cursor=pointer]:
+                  - /url: ../chapter080/59.html
+              - listitem [ref=e1399]:
+                - link "60 『魔女』" [ref=e1400] [cursor=pointer]:
+                  - /url: ../chapter080/60.html
+              - listitem [ref=e1401]:
+                - link "61 『帕拉迪奥・马内斯克』" [ref=e1402] [cursor=pointer]:
+                  - /url: ../chapter080/61.html
+              - listitem [ref=e1403]:
+                - link "62 『爱的力量』" [ref=e1404] [cursor=pointer]:
+                  - /url: ../chapter080/62.html
+              - listitem [ref=e1405]:
+                - link "63 『唇上奇迹』" [ref=e1406] [cursor=pointer]:
+                  - /url: ../chapter080/63.html
+              - listitem [ref=e1407]:
+                - link "64 『帝国的亲子』" [ref=e1408] [cursor=pointer]:
+                  - /url: ../chapter080/64.html
+              - listitem [ref=e1409]:
+                - link "65 『星星下的帝都』" [ref=e1410] [cursor=pointer]:
+                  - /url: ../chapter080/65.html
+              - listitem [ref=e1411]:
+                - link "66 『魔晶炮』" [ref=e1412] [cursor=pointer]:
+                  - /url: ../chapter080/66.html
+              - listitem [ref=e1413]:
+                - link "67 『持有的手牌』" [ref=e1414] [cursor=pointer]:
+                  - /url: ../chapter080/67.html
+              - listitem [ref=e1415]:
+                - link "68 『恋爱中的男人』" [ref=e1416] [cursor=pointer]:
+                  - /url: ../chapter080/68.html
+              - listitem [ref=e1417]:
+                - link "69 『我原谅你了』" [ref=e1418] [cursor=pointer]:
+                  - /url: ../chapter080/69.html
+              - listitem [ref=e1419]:
+                - link "70 『最后的策略』" [ref=e1420] [cursor=pointer]:
+                  - /url: ../chapter080/70.html
+              - listitem [ref=e1421]:
+                - link "71 『英雄幻想』" [ref=e1422] [cursor=pointer]:
+                  - /url: ../chapter080/71.html
+              - listitem [ref=e1423]:
+                - link "72 『太阳公主』" [ref=e1424] [cursor=pointer]:
+                  - /url: ../chapter080/72.html
+              - listitem [ref=e1425]:
+                - link "73 『宿敌』" [ref=e1426] [cursor=pointer]:
+                  - /url: ../chapter080/73.html
+              - listitem [ref=e1427]:
+                - link "74 『爱』" [ref=e1428] [cursor=pointer]:
+                  - /url: ../chapter080/74.html
+              - listitem [ref=e1429]:
+                - link "终幕 『普莉希拉・跋利耶尔』" [ref=e1430] [cursor=pointer]:
+                  - /url: ../chapter080/75.html
+          - listitem [ref=e1431]:
+            - link "第九章 『无名的星光』（尾随星篇） " [ref=e1432] [cursor=pointer]:
+              - /url: ../chapter090/
+              - text: 第九章 『无名的星光』（尾随星篇）
+              - generic [ref=e1433]: 
+            - list:
+              - listitem [ref=e1434]:
+                - link "01 『像云一样祈祷吧』" [ref=e1435] [cursor=pointer]:
+                  - /url: ../chapter090/01.html
+              - listitem [ref=e1436]:
+                - link "02 『反派却毫不张扬』" [ref=e1437] [cursor=pointer]:
+                  - /url: ../chapter090/02.html
+              - listitem [ref=e1438]:
+                - link "03 『每个人都为你哀悼』" [ref=e1439] [cursor=pointer]:
+                  - /url: ../chapter090/03.html
+              - listitem [ref=e1440]:
+                - link "04 『笨蛋』" [ref=e1441] [cursor=pointer]:
+                  - /url: ../chapter090/04.html
+              - listitem [ref=e1442]:
+                - link "05 『九百三十一发』" [ref=e1443] [cursor=pointer]:
+                  - /url: ../chapter090/05.html
+              - listitem [ref=e1444]:
+                - link "06 『新的开始』" [ref=e1445] [cursor=pointer]:
+                  - /url: ../chapter090/06.html
+              - listitem [ref=e1446]:
+                - link "幕间 『卡秋娅・奥雷利』" [ref=e1447] [cursor=pointer]:
+                  - /url: ../chapter090/06_5.html
+              - listitem [ref=e1448]:
+                - link "07 『沙风的再会』" [ref=e1449] [cursor=pointer]:
+                  - /url: ../chapter090/07.html
+              - listitem [ref=e1450]:
+                - link "08 『后悔的方式』" [ref=e1451] [cursor=pointer]:
+                  - /url: ../chapter090/08.html
+              - listitem [ref=e1452]:
+                - link "09 『高效率魔导式诱导门』" [ref=e1453] [cursor=pointer]:
+                  - /url: ../chapter090/09.html
+              - listitem [ref=e1454]:
+                - link "10 『期限是三天』" [ref=e1455] [cursor=pointer]:
+                  - /url: ../chapter090/10.html
+              - listitem [ref=e1456]:
+                - link "11 『你已经不在任何地方了』" [ref=e1457] [cursor=pointer]:
+                  - /url: ../chapter090/11.html
+              - listitem [ref=e1458]:
+                - link "12 『遥远彼方的星光』" [ref=e1459] [cursor=pointer]:
+                  - /url: ../chapter090/12.html
+              - listitem [ref=e1460]:
+                - link "13 『最受宠爱之物与最不受宠之物』" [ref=e1461] [cursor=pointer]:
+                  - /url: ../chapter090/13.html
+              - listitem [ref=e1462]:
+                - link "14 『最强』" [ref=e1463] [cursor=pointer]:
+                  - /url: ../chapter090/14.html
+              - listitem [ref=e1464]:
+                - link "15 『失败者』" [ref=e1465] [cursor=pointer]:
+                  - /url: ../chapter090/15.html
+              - listitem [ref=e1466]:
+                - link "16 『共犯者』" [ref=e1467] [cursor=pointer]:
+                  - /url: ../chapter090/16.html
+              - listitem [ref=e1468]:
+                - link "17 『请不要原谅』" [ref=e1469] [cursor=pointer]:
+                  - /url: ../chapter090/17.html
+              - listitem [ref=e1470]:
+                - link "18 『百倍麻烦』" [ref=e1471] [cursor=pointer]:
+                  - /url: ../chapter090/18.html
+              - listitem [ref=e1472]:
+                - link "19 『背后的争斗』" [ref=e1473] [cursor=pointer]:
+                  - /url: ../chapter090/19.html
+              - listitem [ref=e1474]:
+                - link "20 『生命的使用方式』" [ref=e1475] [cursor=pointer]:
+                  - /url: ../chapter090/20.html
+              - listitem [ref=e1476]:
+                - link "21 『巴尔加・克罗姆威尔』" [ref=e1477] [cursor=pointer]:
+                  - /url: ../chapter090/21.html
+              - listitem [ref=e1478]:
+                - link "22 『战斗的终结之法』" [ref=e1479] [cursor=pointer]:
+                  - /url: ../chapter090/22.html
+              - listitem [ref=e1480]:
+                - link "23 『群英荟萃』" [ref=e1481] [cursor=pointer]:
+                  - /url: ../chapter090/23.html
+              - listitem [ref=e1482]:
+                - link "24 『人类的天敌』" [ref=e1483] [cursor=pointer]:
+                  - /url: ../chapter090/24.html
+              - listitem [ref=e1484]:
+                - link "25 『爱蜜莉娅的震怒』" [ref=e1485] [cursor=pointer]:
+                  - /url: ../chapter090/25.html
+              - listitem [ref=e1486]:
+                - link "26 『剑鬼对决红樱』" [ref=e1487] [cursor=pointer]:
+                  - /url: ../chapter090/26.html
+              - listitem [ref=e1488]:
+                - link "27 『幼子的言辞』" [ref=e1489] [cursor=pointer]:
+                  - /url: ../chapter090/27.html
+              - listitem [ref=e1490]:
+                - link "28 『传说的一节』" [ref=e1491] [cursor=pointer]:
+                  - /url: ../chapter090/28.html
+              - listitem [ref=e1492]:
+                - link "29 『最终席位』" [ref=e1493] [cursor=pointer]:
+                  - /url: ../chapter090/29.html
+              - listitem [ref=e1494]:
+                - link "30 『Plan B』" [ref=e1495] [cursor=pointer]:
+                  - /url: ../chapter090/30.html
+              - listitem [ref=e1496]:
+                - link "31 『百分百的工作』" [ref=e1497] [cursor=pointer]:
+                  - /url: ../chapter090/31.html
+              - listitem [ref=e1498]:
+                - link "32 『名为克林特的男人』" [ref=e1499] [cursor=pointer]:
+                  - /url: ../chapter090/32.html
+              - listitem [ref=e1500]:
+                - link "33 『名为佩特拉・雷蒂的少女』" [ref=e1501] [cursor=pointer]:
+                  - /url: ../chapter090/33.html
+              - listitem [ref=e1502]:
+                - link "34 『引力』" [ref=e1503] [cursor=pointer]:
+                  - /url: ../chapter090/34.html
+              - listitem [ref=e1504]:
+                - link "35 『觉醒之星』" [ref=e1505] [cursor=pointer]:
+                  - /url: ../chapter090/35.html
+              - listitem [ref=e1506]:
+                - link "36 『使命』" [ref=e1507] [cursor=pointer]:
+                  - /url: ../chapter090/36.html
+              - listitem [ref=e1508]:
+                - link "37 『思维模式』" [ref=e1509] [cursor=pointer]:
+                  - /url: ../chapter090/37.html
+              - listitem [ref=e1510]:
+                - link "38 『被烈日灼烧』" [ref=e1511] [cursor=pointer]:
+                  - /url: ../chapter090/38.html
+              - listitem [ref=e1512]:
+                - link "39 『最后的界限』" [ref=e1513] [cursor=pointer]:
+                  - /url: ../chapter090/39.html
+              - listitem [ref=e1514]:
+                - link "40 『雷姆闪光弹』" [ref=e1515] [cursor=pointer]:
+                  - /url: ../chapter090/40.html
+              - listitem [ref=e1516]:
+                - link "41 『告知篡夺者』" [ref=e1517] [cursor=pointer]:
+                  - /url: ../chapter090/41.html
+              - listitem [ref=e1518]:
+                - link "42 『碎心之事』" [ref=e1519] [cursor=pointer]:
+                  - /url: ../chapter090/42.html
+              - listitem [ref=e1520]:
+                - link "43 『真实之名』" [ref=e1521] [cursor=pointer]:
+                  - /url: ../chapter090/43.html
+              - listitem [ref=e1522]:
+                - link "44 『水面下的密约』" [ref=e1523] [cursor=pointer]:
+                  - /url: ../chapter090/44.html
+              - listitem [ref=e1524]:
+                - link "45 『冲突的异界者』" [ref=e1525] [cursor=pointer]:
+                  - /url: ../chapter090/45.html
+              - listitem [ref=e1526]:
+                - link "46 『忧郁魔女』" [ref=e1527] [cursor=pointer]:
+                  - /url: ../chapter090/46.html
+              - listitem [ref=e1528]:
+                - link "47 『「声音」』" [ref=e1529] [cursor=pointer]:
+                  - /url: ../chapter090/47.html
+              - listitem [ref=e1530]:
+                - link "48 『巅峰生物』" [ref=e1531] [cursor=pointer]:
+                  - /url: ../chapter090/48.html
+              - listitem [ref=e1532]:
+                - link "49 『魔法师』" [ref=e1533] [cursor=pointer]:
+                  - /url: ../chapter090/49.html
+              - listitem [ref=e1534]:
+                - link "50 『冰上决战』" [ref=e1535] [cursor=pointer]:
+                  - /url: ../chapter090/50.html
+              - listitem [ref=e1536]:
+                - link "51 『雅耶・天泽』" [ref=e1537] [cursor=pointer]:
+                  - /url: ../chapter090/51.html
+              - listitem [ref=e1538]:
+                - link "52 『阿尔德巴兰 Ⅰ』" [ref=e1539] [cursor=pointer]:
+                  - /url: ../chapter090/52.html
+              - listitem [ref=e1540]:
+                - link "53 『阿尔德巴兰 Ⅱ』" [ref=e1541] [cursor=pointer]:
+                  - /url: ../chapter090/53.html
+              - listitem [ref=e1542]:
+                - link "54 『魔人 VS 魔女』" [ref=e1543] [cursor=pointer]:
+                  - /url: ../chapter090/54.html
+              - listitem [ref=e1544]:
+                - link "55 『领域之加害者』" [ref=e1545] [cursor=pointer]:
+                  - /url: ../chapter090/55.html
+              - listitem [ref=e1546]:
+                - link "56 『佩特拉・雷蒂』" [ref=e1547] [cursor=pointer]:
+                  - /url: ../chapter090/56.html
+              - listitem [ref=e1548]:
+                - link "57 『最后的侍奉』" [ref=e1549] [cursor=pointer]:
+                  - /url: ../chapter090/57.html
+              - listitem [ref=e1550]:
+                - link "58 『锁链之音』" [ref=e1551] [cursor=pointer]:
+                  - /url: ../chapter090/58.html
+              - listitem [ref=e1552]:
+                - link "59 『——不是』" [ref=e1553] [cursor=pointer]:
+                  - /url: ../chapter090/59.html
+              - listitem [ref=e1554]:
+                - link "幕间 『声援』" [ref=e1555] [cursor=pointer]:
+                  - /url: ../chapter090/59_5.html
+              - listitem [ref=e1556]:
+                - link "终幕 『重织』" [ref=e1557] [cursor=pointer]:
+                  - /url: ../chapter090/60.html
+          - listitem [ref=e1558]:
+            - link "第十章 『獅子王之国』 " [ref=e1559] [cursor=pointer]:
+              - /url: ../chapter100/
+              - text: 第十章 『獅子王之国』
+              - generic [ref=e1560]: 
+            - list:
+              - listitem [ref=e1561]:
+                - link "01 『朋友』" [ref=e1562] [cursor=pointer]:
+                  - /url: ../chapter100/01.html
+              - listitem [ref=e1563]:
+                - link "02 『教会的秘仪』" [ref=e1564] [cursor=pointer]:
+                  - /url: ../chapter100/02.html
+              - listitem [ref=e1565]:
+                - link "03 『光之萌芽』" [ref=e1566] [cursor=pointer]:
+                  - /url: ../chapter100/03.html
+              - listitem [ref=e1567]:
+                - link "04 『不客气』" [ref=e1568] [cursor=pointer]:
+                  - /url: ../chapter100/04.html
+              - listitem [ref=e1569]:
+                - link "05 『绕道的始末』" [ref=e1570] [cursor=pointer]:
+                  - /url: ../chapter100/05.html
+              - listitem [ref=e1571]:
+                - link "06 『瞬间沸腾器』" [ref=e1572] [cursor=pointer]:
+                  - /url: ../chapter100/06.html
+              - listitem [ref=e1573]:
+                - link "07 『我的朋友』" [ref=e1574] [cursor=pointer]:
+                  - /url: ../chapter100/07.html
+              - listitem [ref=e1575]:
+                - link "幕间 『——为什么？』" [ref=e1576] [cursor=pointer]:
+                  - /url: ../chapter100/07_5.html
+              - listitem [ref=e1577]:
+                - link "08 『抉择的结果』" [ref=e1578] [cursor=pointer]:
+                  - /url: ../chapter100/08.html
+              - listitem [ref=e1579]:
+                - link "09 『爱哭鬼』" [ref=e1580] [cursor=pointer]:
+                  - /url: ../chapter100/09.html
+              - listitem [ref=e1581]:
+                - link "10 『信赖的沉淀』" [ref=e1582] [cursor=pointer]:
+                  - /url: ../chapter100/10.html
+              - listitem [ref=e1583]:
+                - link "11 『龙珠闪耀的理由』" [ref=e1584] [cursor=pointer]:
+                  - /url: ../chapter100/11.html
+              - listitem [ref=e1585]:
+                - link "12 『呻吟』" [ref=e1586] [cursor=pointer]:
+                  - /url: ../chapter100/12.html
+              - listitem [ref=e1587]:
+                - link "13 『鲜血染不尽』" [ref=e1588] [cursor=pointer]:
+                  - /url: ../chapter100/13.html
+              - listitem [ref=e1589]:
+                - link "14 『逆贼』" [ref=e1590] [cursor=pointer]:
+                  - /url: ../chapter100/14.html
+              - listitem [ref=e1591]:
+                - link "15 『与你共赴地狱』" [ref=e1592] [cursor=pointer]:
+                  - /url: ../chapter100/15.html
+              - listitem [ref=e1593]:
+                - link "16 『欺骗性的袭击』" [ref=e1594] [cursor=pointer]:
+                  - /url: ../chapter100/16.html
+              - listitem [ref=e1595]:
+                - link "17 『化为灰烬』" [ref=e1596] [cursor=pointer]:
+                  - /url: ../chapter100/17.html
+              - listitem [ref=e1597]:
+                - link "18 『梦中的邂逅』" [ref=e1598] [cursor=pointer]:
+                  - /url: ../chapter100/18.html
+              - listitem [ref=e1599]:
+                - link "19 『过于庞大的敌人』" [ref=e1600] [cursor=pointer]:
+                  - /url: ../chapter100/19.html
+              - listitem [ref=e1601]:
+                - link "20 『羊镜犬面』" [ref=e1602] [cursor=pointer]:
+                  - /url: ../chapter100/20.html
+              - listitem [ref=e1603]:
+                - link "21 『六枚之舌』" [ref=e1604] [cursor=pointer]:
+                  - /url: ../chapter100/21.html
+              - listitem [ref=e1605]:
+                - link "22 『布局与抗拒』" [ref=e1606] [cursor=pointer]:
+                  - /url: ../chapter100/22.html
+          - listitem [ref=e1607]:
+            - link "ReZeroEX （外传合辑） " [ref=e1608] [cursor=pointer]:
+              - /url: ../chapter999/
+              - text: ReZeroEX （外传合辑）
+              - generic [ref=e1609]: 
+            - list:
+              - listitem [ref=e1610]:
+                - link "IF 线合集 " [ref=e1611] [cursor=pointer]:
+                  - /url: ../chapter999/if/
+                  - text: IF 线合集
+                  - generic [ref=e1612]: 
+                - list:
+                  - listitem [ref=e1613]:
+                    - link "01 『胡蝶之夢』（色欲 IF 线）" [ref=e1614] [cursor=pointer]:
+                      - /url: ../chapter999/if/01.html
+                  - listitem [ref=e1615]:
+                    - link "02 『从零开始的 Sane Louis』（强欲 IF 线）" [ref=e1616] [cursor=pointer]:
+                      - /url: ../chapter999/if/02.html
+                  - listitem [ref=e1617]:
+                    - link "03 『从零开始过错的异世界生活』（傲慢 IF 线）" [ref=e1618] [cursor=pointer]:
+                      - /url: ../chapter999/if/03.html
+                  - listitem [ref=e1619]:
+                    - link "04 『从零开始溺水的异世界生活』（拉姆 IF 线）" [ref=e1620] [cursor=pointer]:
+                      - /url: ../chapter999/if/04.html
+                  - listitem [ref=e1621]:
+                    - link "05 『从零开始的拼凑生活』（暴食 IF 线）" [ref=e1622] [cursor=pointer]:
+                      - /url: ../chapter999/if/05.html
+                  - listitem [ref=e1623]:
+                    - link "06 『从 IF 开始的异世界生活』（雷姆 IF 线） " [ref=e1624] [cursor=pointer]:
+                      - /url: ../chapter999/if/06/
+                      - text: 06 『从 IF 开始的异世界生活』（雷姆 IF 线）
+                      - generic [ref=e1625]: 
+                    - list:
+                      - listitem [ref=e1626]:
+                        - link "序章 『启程』" [ref=e1627] [cursor=pointer]:
+                          - /url: ../chapter999/if/06/00.html
+                      - listitem [ref=e1628]:
+                        - link "『两个月』" [ref=e1629] [cursor=pointer]:
+                          - /url: ../chapter999/if/06/01.html
+                      - listitem [ref=e1630]:
+                        - link "『三个月』 上篇" [ref=e1631] [cursor=pointer]:
+                          - /url: ../chapter999/if/06/02.html
+                      - listitem [ref=e1632]:
+                        - link "『三个月』 下篇" [ref=e1633] [cursor=pointer]:
+                          - /url: ../chapter999/if/06/03.html
+                      - listitem [ref=e1634]:
+                        - link "『六个月』" [ref=e1635] [cursor=pointer]:
+                          - /url: ../chapter999/if/06/04.html
+                      - listitem [ref=e1636]:
+                        - link "幕间 『忌日』" [ref=e1637] [cursor=pointer]:
+                          - /url: ../chapter999/if/06/05.html
+                      - listitem [ref=e1638]:
+                        - link "『十个月』" [ref=e1639] [cursor=pointer]:
+                          - /url: ../chapter999/if/06/06.html
+                      - listitem [ref=e1640]:
+                        - link "『产月』" [ref=e1641] [cursor=pointer]:
+                          - /url: ../chapter999/if/06/07.html
+                      - listitem [ref=e1642]:
+                        - link "终章 『纪念日』" [ref=e1643] [cursor=pointer]:
+                          - /url: ../chapter999/if/06/08.html
+                  - listitem [ref=e1644]:
+                    - link "07 『鬼的幸福』" [ref=e1645] [cursor=pointer]:
+                      - /url: ../chapter999/if/07.html
+                  - listitem [ref=e1646]:
+                    - link "08 『梦想的起始』" [ref=e1647] [cursor=pointer]:
+                      - /url: ../chapter999/if/08.html
+                  - listitem [ref=e1648]:
+                    - link "09 『菜月・利格鲁』" [ref=e1649] [cursor=pointer]:
+                      - /url: ../chapter999/if/09.html
+                  - listitem [ref=e1650]:
+                    - link "10 『fortune・fish head tree』" [ref=e1651] [cursor=pointer]:
+                      - /url: ../chapter999/if/10.html
+                  - listitem [ref=e1652]:
+                    - link "11 『Fate・节分霍洛』" [ref=e1653] [cursor=pointer]:
+                      - /url: ../chapter999/if/11.html
+                  - listitem [ref=e1654]:
+                    - link "12 『学院 Re：0！第一堂课！』" [ref=e1655] [cursor=pointer]:
+                      - /url: ../chapter999/if/12.html
+                  - listitem [ref=e1656]:
+                    - link "13 『学院 Re：0！第二堂课！』" [ref=e1657] [cursor=pointer]:
+                      - /url: ../chapter999/if/13.html
+                  - listitem [ref=e1658]:
+                    - link "14 『学院 Re：0！第三堂课！』" [ref=e1659] [cursor=pointer]:
+                      - /url: ../chapter999/if/14.html
+                  - listitem [ref=e1660]:
+                    - link "15 『学院 Re：0！第四堂课！』" [ref=e1661] [cursor=pointer]:
+                      - /url: ../chapter999/if/15.html
+                  - listitem [ref=e1662]:
+                    - link "16 『从零开始的异世界生活』" [ref=e1663] [cursor=pointer]:
+                      - /url: ../chapter999/if/16.html
+                  - listitem [ref=e1664]:
+                    - link "17 『从零开始的异世界生活Ⅱ』" [ref=e1665] [cursor=pointer]:
+                      - /url: ../chapter999/if/17.html
+              - listitem [ref=e1666]:
+                - link "Ex 合集 " [ref=e1667] [cursor=pointer]:
+                  - /url: ../chapter999/ex/
+                  - text: Ex 合集
+                  - generic [ref=e1668]: 
+                - list:
+                  - listitem [ref=e1669]:
+                    - link "01 『爱丽丝与荆棘之王』（前編）" [ref=e1670] [cursor=pointer]:
+                      - /url: ../chapter999/ex/01.html
+                  - listitem [ref=e1671]:
+                    - link "02 『爱丽丝与荆棘之王』（後編）" [ref=e1672] [cursor=pointer]:
+                      - /url: ../chapter999/ex/02.html
+              - listitem [ref=e1673]:
+                - link "特典合集 " [ref=e1674] [cursor=pointer]:
+                  - /url: ../chapter999/special/
+                  - text: 特典合集
+                  - generic [ref=e1675]: 
+                - list:
+                  - listitem [ref=e1676]:
+                    - link "『爱蜜莉娅的博客练习用日记』" [ref=e1677] [cursor=pointer]:
+                      - /url: ../chapter999/special/01.html
+                  - listitem [ref=e1678]:
+                    - link "『祝福日 Ex：雷姆的生日派对』" [ref=e1679] [cursor=pointer]:
+                      - /url: ../chapter999/special/02.html
+                  - listitem [ref=e1680]:
+                    - link "『爱蜜莉娅的、Very生日快乐』" [ref=e1681] [cursor=pointer]:
+                      - /url: ../chapter999/special/03.html
+                  - listitem [ref=e1682]:
+                    - link "『为交错的异世界献上联动生活 雷姆篇』" [ref=e1683] [cursor=pointer]:
+                      - /url: ../chapter999/special/04.html
+                  - listitem [ref=e1684]:
+                    - link "『为交错的异世界献上联动生活 莉娅篇』" [ref=e1685] [cursor=pointer]:
+                      - /url: ../chapter999/special/05.html
+                  - listitem [ref=e1686]:
+                    - link "『祭典的喧嚣依稀可闻』" [ref=e1687] [cursor=pointer]:
+                      - /url: ../chapter999/special/06.html
+                  - listitem [ref=e1688]:
+                    - link "『从零开始的常夏生活』" [ref=e1689] [cursor=pointer]:
+                      - /url: ../chapter999/special/07.html
+                  - listitem [ref=e1690]:
+                    - link "『隐之乡的鬼姐妹，欢迎来到晚会』" [ref=e1691] [cursor=pointer]:
+                      - /url: ../chapter999/special/08.html
+                  - listitem [ref=e1692]:
+                    - link "『爱蜜莉娅的女仆道』" [ref=e1693] [cursor=pointer]:
+                      - /url: ../chapter999/special/09.html
+                  - listitem [ref=e1694]:
+                    - link "『法兰黛莉卡和佩特拉的、女仆小姐日子』" [ref=e1695] [cursor=pointer]:
+                      - /url: ../chapter999/special/10.html
+                  - listitem [ref=e1696]:
+                    - link "『法兰黛莉卡和佩特拉的、女仆小姐日子Ⅱ』" [ref=e1697] [cursor=pointer]:
+                      - /url: ../chapter999/special/11.html
+                  - listitem [ref=e1698]:
+                    - link "『加菲尔和拉姆、乖僻别扭的恋爱』" [ref=e1699] [cursor=pointer]:
+                      - /url: ../chapter999/special/12.html
+                  - listitem [ref=e1700]:
+                    - link "『加菲尔和拉姆、乖僻别扭执拗的恋爱故事』" [ref=e1701] [cursor=pointer]:
+                      - /url: ../chapter999/special/13.html
+                  - listitem [ref=e1702]:
+                    - link "『艾尔莎和梅丽、裏稼業姐妹暗中活动的日报』" [ref=e1703] [cursor=pointer]:
+                      - /url: ../chapter999/special/14.html
+                  - listitem [ref=e1704]:
+                    - link "『艾力欧尔大森林组，等待雪融的季节』" [ref=e1705] [cursor=pointer]:
+                      - /url: ../chapter999/special/15.html
+                  - listitem [ref=e1706]:
+                    - link "『克雷马尔蒂森林组，一去不复返的每一天』" [ref=e1707] [cursor=pointer]:
+                      - /url: ../chapter999/special/16.html
+                  - listitem [ref=e1708]:
+                    - link "『魔女的茶会之余』" [ref=e1709] [cursor=pointer]:
+                      - /url: ../chapter999/special/17.html
+                  - listitem [ref=e1710]:
+                    - link "『爱蜜莉娅的王都观光记』" [ref=e1711] [cursor=pointer]:
+                      - /url: ../chapter999/special/18.html
+                  - listitem [ref=e1712]:
+                    - link "『拉姆谢绝诸位垃圾的搭讪』" [ref=e1713] [cursor=pointer]:
+                      - /url: ../chapter999/special/19.html
+                  - listitem [ref=e1714]:
+                    - link "『爱蜜莉娅的星空教室』" [ref=e1715] [cursor=pointer]:
+                      - /url: ../chapter999/special/20.html
+                  - listitem [ref=e1716]:
+                    - link "『爱蜜莉娅的初次约会』" [ref=e1717] [cursor=pointer]:
+                      - /url: ../chapter999/special/21.html
+                  - listitem [ref=e1718]:
+                    - link "『雷姆人生最美好的日子』" [ref=e1719] [cursor=pointer]:
+                      - /url: ../chapter999/special/22.html
+                  - listitem [ref=e1720]:
+                    - link "『安娜塔西娅的卡拉拉基商人道』" [ref=e1721] [cursor=pointer]:
+                      - /url: ../chapter999/special/23.html
+                  - listitem [ref=e1722]:
+                    - link "『爱蜜莉娅和拉姆的主从凸凹』" [ref=e1723] [cursor=pointer]:
+                      - /url: ../chapter999/special/24.html
+                  - listitem [ref=e1724]:
+                    - link "『爱蜜莉娅和拉姆的主从凸凸凹凹』" [ref=e1725] [cursor=pointer]:
+                      - /url: ../chapter999/special/25.html
+                  - listitem [ref=e1726]:
+                    - link "『碧翠丝和雷姆的侍奉很头疼』" [ref=e1727] [cursor=pointer]:
+                      - /url: ../chapter999/special/26.html
+                  - listitem [ref=e1728]:
+                    - link "『大精灵帕克的喵喵喵晴天』" [ref=e1729] [cursor=pointer]:
+                      - /url: ../chapter999/special/27.html
+                  - listitem [ref=e1730]:
+                    - link "『Memory Snow 前日谈莉雅 Days』" [ref=e1731] [cursor=pointer]:
+                      - /url: ../chapter999/special/28.html
+                  - listitem [ref=e1732]:
+                    - link "『冰结之绊 前日谈冰结的日常』" [ref=e1733] [cursor=pointer]:
+                      - /url: ../chapter999/special/29.html
+                  - listitem [ref=e1734]:
+                    - link "BD特典 『Re：从零开始的前日传 冰洁的羁绊』 " [ref=e1735] [cursor=pointer]:
+                      - /url: ../chapter999/special/bd/
+                      - text: BD特典 『Re：从零开始的前日传 冰洁的羁绊』
+                      - generic [ref=e1736]: 
+                    - list:
+                      - listitem [ref=e1737]:
+                        - link "序章 『四大与异物』" [ref=e1738] [cursor=pointer]:
+                          - /url: ../chapter999/special/bd/00.html
+                      - listitem [ref=e1739]:
+                        - link "第一章 『被你呼唤』" [ref=e1740] [cursor=pointer]:
+                          - /url: ../chapter999/special/bd/01.html
+                      - listitem [ref=e1741]:
+                        - link "第二章 『我在这里』" [ref=e1742] [cursor=pointer]:
+                          - /url: ../chapter999/special/bd/02.html
+                      - listitem [ref=e1743]:
+                        - link "第三章 『只要是为了你』" [ref=e1744] [cursor=pointer]:
+                          - /url: ../chapter999/special/bd/03.html
+                      - listitem [ref=e1745]:
+                        - link "第四章 『什么都能成』" [ref=e1746] [cursor=pointer]:
+                          - /url: ../chapter999/special/bd/04.html
+                      - listitem [ref=e1747]:
+                        - link "结尾 『幸福的意思』" [ref=e1748] [cursor=pointer]:
+                          - /url: ../chapter999/special/bd/05.html
+              - listitem [ref=e1749]:
+                - link "短篇集 01 " [ref=e1750] [cursor=pointer]:
+                  - /url: ../chapter999/short01/
+                  - text: 短篇集 01
+                  - generic [ref=e1751]: 
+                - list:
+                  - listitem [ref=e1752]:
+                    - link "『从零开始的英雄史诗』" [ref=e1753] [cursor=pointer]:
+                      - /url: ../chapter999/short01/01.html
+                  - listitem [ref=e1754]:
+                    - link "『女仆长无法放松休息的假日』" [ref=e1755] [cursor=pointer]:
+                      - /url: ../chapter999/short01/02.html
+                  - listitem [ref=e1756]:
+                    - link "『放弃尾随的日子』" [ref=e1757] [cursor=pointer]:
+                      - /url: ../chapter999/short01/03.html
+                  - listitem [ref=e1758]:
+                    - link "『爱蜜莉雅梦游仙境』" [ref=e1759] [cursor=pointer]:
+                      - /url: ../chapter999/short01/04.html
+              - listitem [ref=e1760]:
+                - link "短篇集 02 " [ref=e1761] [cursor=pointer]:
+                  - /url: ../chapter999/short02/
+                  - text: 短篇集 02
+                  - generic [ref=e1762]: 
+                - list:
+                  - listitem [ref=e1763]:
+                    - link "『对 E・M・T 献上情歌』" [ref=e1764] [cursor=pointer]:
+                      - /url: ../chapter999/short02/01.html
+                  - listitem [ref=e1765]:
+                    - link "『RAM IS ORDER』" [ref=e1766] [cursor=pointer]:
+                      - /url: ../chapter999/short02/02.html
+                  - listitem [ref=e1767]:
+                    - link "『OPERATION・KOKKURI』" [ref=e1768] [cursor=pointer]:
+                      - /url: ../chapter999/short02/03.html
+                  - listitem [ref=e1769]:
+                    - link "『图书馆员碧翠丝不甘愿的约定』" [ref=e1770] [cursor=pointer]:
+                      - /url: ../chapter999/short02/04.html
+                  - listitem [ref=e1771]:
+                    - link "『喜欢冷天气』" [ref=e1772] [cursor=pointer]:
+                      - /url: ../chapter999/short02/05.html
+                  - listitem [ref=e1773]:
+                    - link "『酒精之乱』" [ref=e1774] [cursor=pointer]:
+                      - /url: ../chapter999/short02/06.html
+              - listitem [ref=e1775]:
+                - link "短篇集 03 " [ref=e1776] [cursor=pointer]:
+                  - /url: ../chapter999/short03/
+                  - text: 短篇集 03
+                  - generic [ref=e1777]: 
+                - list:
+                  - listitem [ref=e1778]:
+                    - link "『梦想的起始』" [ref=e1779] [cursor=pointer]:
+                      - /url: ../chapter999/short03/01.html
+                  - listitem [ref=e1780]:
+                    - link "『菲利克斯・阿盖尔是男儿身女儿心』" [ref=e1781] [cursor=pointer]:
+                      - /url: ../chapter999/short03/02.html
+                  - listitem [ref=e1782]:
+                    - link "『卡尔斯腾公爵领地的战乙女』" [ref=e1783] [cursor=pointer]:
+                      - /url: ../chapter999/short03/03.html
+                  - listitem [ref=e1784]:
+                    - link "『菲利克斯・阿盖尔的束缚』" [ref=e1785] [cursor=pointer]:
+                      - /url: ../chapter999/short03/04.html
+                  - listitem [ref=e1786]:
+                    - link "『狮子王所见之梦』" [ref=e1787] [cursor=pointer]:
+                      - /url: ../chapter999/short03/05.html
+              - listitem [ref=e1788]:
+                - link "短篇集 04 " [ref=e1789] [cursor=pointer]:
+                  - /url: ../chapter999/short04/
+                  - text: 短篇集 04
+                  - generic [ref=e1790]: 
+                - list:
+                  - listitem [ref=e1791]:
+                    - link "『剑鬼恋歌 一幕』" [ref=e1792] [cursor=pointer]:
+                      - /url: ../chapter999/short04/01.html
+                  - listitem [ref=e1793]:
+                    - link "『剑鬼恋歌 二幕』" [ref=e1794] [cursor=pointer]:
+                      - /url: ../chapter999/short04/02.html
+                  - listitem [ref=e1795]:
+                    - link "『剑鬼恋歌 三幕』" [ref=e1796] [cursor=pointer]:
+                      - /url: ../chapter999/short04/03.html
+                  - listitem [ref=e1797]:
+                    - link "『剑鬼恋歌 四幕』" [ref=e1798] [cursor=pointer]:
+                      - /url: ../chapter999/short04/04.html
+                  - listitem [ref=e1799]:
+                    - link "『剑鬼恋歌 五幕』" [ref=e1800] [cursor=pointer]:
+                      - /url: ../chapter999/short04/05.html
+                  - listitem [ref=e1801]:
+                    - link "『剑鬼恋歌 六幕』" [ref=e1802] [cursor=pointer]:
+                      - /url: ../chapter999/short04/06.html
+                  - listitem [ref=e1803]:
+                    - link "『剑鬼恋歌 七幕』" [ref=e1804] [cursor=pointer]:
+                      - /url: ../chapter999/short04/07.html
+                  - listitem [ref=e1805]:
+                    - link "『剑鬼恋歌 幕间』" [ref=e1806] [cursor=pointer]:
+                      - /url: ../chapter999/short04/08.html
+                  - listitem [ref=e1807]:
+                    - link "『剑鬼恋歌 落幕』" [ref=e1808] [cursor=pointer]:
+                      - /url: ../chapter999/short04/09.html
+              - listitem [ref=e1809]:
+                - link "短篇集 05 " [ref=e1810] [cursor=pointer]:
+                  - /url: ../chapter999/short05/
+                  - text: 短篇集 05
+                  - generic [ref=e1811]: 
+                - list:
+                  - listitem [ref=e1812]:
+                    - link "『my fair bad lady』" [ref=e1813] [cursor=pointer]:
+                      - /url: ../chapter999/short05/01.html
+                  - listitem [ref=e1814]:
+                    - link "『——佩特拉所见的世界』" [ref=e1815] [cursor=pointer]:
+                      - /url: ../chapter999/short05/02.html
+                  - listitem [ref=e1816]:
+                    - link "『雷姆极为平凡而幸福的一天』" [ref=e1817] [cursor=pointer]:
+                      - /url: ../chapter999/short05/03.html
+                  - listitem [ref=e1818]:
+                    - link "『剑鬼恋谭 那之后的两人』" [ref=e1819] [cursor=pointer]:
+                      - /url: ../chapter999/short05/04.html
+                  - listitem [ref=e1820]:
+                    - link "『剑鬼恋谭 婚礼之日』" [ref=e1821] [cursor=pointer]:
+                      - /url: ../chapter999/short05/05.html
+                  - listitem [ref=e1822]:
+                    - link "『剣聖と雷光の銀華乱舞』" [ref=e1823] [cursor=pointer]:
+                      - /url: ../chapter999/short05/06.html
+                  - listitem [ref=e1824]:
+                    - link "『奥尔科斯领的赤雪』" [ref=e1825] [cursor=pointer]:
+                      - /url: ../chapter999/short05/07.html
+                  - listitem [ref=e1826]:
+                    - link "『从零开始的前日谭 隐世村的鬼姐妹Ex-祝福之日』" [ref=e1827] [cursor=pointer]:
+                      - /url: ../chapter999/short05/08.html
+                  - listitem [ref=e1828]:
+                    - link "『从零开始的王选生活 金狮子与剑圣』" [ref=e1829] [cursor=pointer]:
+                      - /url: ../chapter999/short05/09.html
+          - listitem [ref=e1830]: 文库版
+          - listitem [ref=e1831]:
+            - link "Epub 资源" [ref=e1832] [cursor=pointer]:
+              - /url: ../../epub.html
+          - listitem [ref=e1833]:
+            - link "动画资源（无圣光）" [ref=e1834] [cursor=pointer]:
+              - /url: https://exp-res.github.io/film-tv/sections/section-09.html
+          - listitem [ref=e1835]: MF文库J - 原版连载
+          - listitem [ref=e1836]:
+            - link "Ｒｅ：ゼロから始める異世界生活" [ref=e1837] [cursor=pointer]:
+              - /url: http://ncode.syosetu.com/n2267be/
+          - listitem [ref=e1838]:
+            - link "Copyright @ 鼠色猫/長月達平" [ref=e1839] [cursor=pointer]:
+              - /url: https://mypage.syosetu.com/235132/
+          - listitem [ref=e1840]: 赞助
+          - listitem [ref=e1841]:
+            - link "关于赞助" [ref=e1842] [cursor=pointer]:
+              - /url: ../../sponsor.html
+          - listitem [ref=e1843]:
+            - link "国内通道 " [ref=e1844] [cursor=pointer]:
+              - /url: https://lyy289065406.github.io/sponsor/
+              - text: 国内通道
+              - generic [ref=e1845]: 
+            - list:
+              - listitem [ref=e1846]:
+                - link "主链" [ref=e1847] [cursor=pointer]:
+                  - /url: https://lyy289065406.github.io/sponsor/
+              - listitem [ref=e1848]:
+                - link "备链" [ref=e1849] [cursor=pointer]:
+                  - /url: https://lyy289065406.github.io/sponsor/
+          - listitem [ref=e1850]:
+            - link "海外通道 " [ref=e1851] [cursor=pointer]:
+              - /url: https://opencollective.com/re0-web
+              - text: 海外通道
+              - generic [ref=e1852]: 
+            - list:
+              - listitem [ref=e1853]:
+                - link "Open Collective" [ref=e1854] [cursor=pointer]:
+                  - /url: https://opencollective.com/re0-web
+              - listitem [ref=e1855]:
+                - link "KO-FI" [ref=e1856] [cursor=pointer]:
+                  - /url: https://ko-fi.com/exppoc
+          - listitem [ref=e1857]
+          - listitem
+      - generic [ref=e1860]: 
+    - generic [ref=e1861]:
+      - generic [ref=e1862]:
+        - navigation [ref=e1863]:
+          - link "" [ref=e1864] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e1865]: 
+          - link "Share" [ref=e1867] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e1868]: 
+          - link "" [ref=e1869] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e1870]: 
+          - link "" [ref=e1871] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e1872]: 
+          - link "" [ref=e1873] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e1874]: 
+          - link "" [ref=e1875] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e1876]: 
+          - link " EDIT THIS PAGE" [ref=e1877] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e1878]: 
+            - text: EDIT THIS PAGE
+          - link "RSS" [ref=e1879] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e1880]: 
+          - link "Font Settings" [ref=e1882] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e1883]: 
+          - generic [ref=e1884]:
+            - img [ref=e1886] [cursor=pointer]
+            - generic "阅读数" [ref=e1888]: "0"
+          - heading "序章 『开始的余温』" [level=1] [ref=e1889]:
+            - text: 
+            - link "序章 『开始的余温』" [ref=e1890] [cursor=pointer]:
+              - /url: ../../..
+        - main [active] [ref=e1891]:
+          - generic [ref=e1896]:
+            - generic [ref=e1897]:
+              - generic [ref=e1898] [cursor=pointer]:
+                - generic [ref=e1899]: 
+                - text: 
+              - heading "序章 『开始的余温』" [level=1] [ref=e1900]:  序章 『开始的余温』
+              - separator [ref=e1901]
+              - paragraph [ref=e1902]: ——这下真的糟了。
+              - paragraph [ref=e1903]: 脸部品尝到坚硬地面的触感，这才知道自己是趴倒在地。
+              - paragraph [ref=e1904]: 全身使不上力，连手指都失去知觉，只有「热度」支配全身。
+              - paragraph [ref=e1905]: ——好热、好热、好热、好热、好烫、好烫、好烫！
+              - paragraph [ref=e1906]: 不停咳嗽，咳到视为生命之源的东西都快从喉咙涌出。咳着咳着开始咳血，嘴角漾着血泡。朦胧的视野里，只看到被染成鲜红的地面。
+              - paragraph [ref=e1907]: ——啊啊，这些全都是我的血吗？
+              - paragraph [ref=e1908]: 陷入体内血液流光的错觉，同时伸着颤抖的手找寻快将身体燃烧殆尽的「热度」源头。手指碰到腹部的撕裂伤时，他这才明了了。
+              - paragraph [ref=e1909]: 难怪会觉得烫，原来是把「痛楚」错认为「热度」了。强烈的撕裂伤几乎把身体分为两半，只剩下一层皮勉强连在一起。
+              - paragraph [ref=e1910]: 换言之，现在面临了人生的「死局」。
+              - paragraph [ref=e1911]: 理解到这点的瞬间，意识急速远离。
+              - paragraph [ref=e1912]: 眼前铺着鲜血地毯的地面，被黑色皮靴踩出波纹。
+              - paragraph [ref=e1913]: 有人在这，而且这个人八成就是杀了自己的凶手。
+              - paragraph [ref=e1914]: 然而，他却没想要拜见这个人的尊容。那种事根本就无所谓。
+              - paragraph [ref=e1915]: ——唯一的期望，就是她能平安无事。
+              - paragraph [ref=e1916]: 「——昴？」
+              - paragraph [ref=e1917]: 宛如银铃的声音传来。听到那个嗓音，能听见那个嗓音，可说是他最大的救赎。所以——
+              - paragraph [ref=e1918]: 「——呃！」
+              - paragraph [ref=e1919]: 一声简短的哀嚎，鲜血地毯又迎接了某人。
+              - paragraph [ref=e1920]: 倒卧的身躯就在旁边，那儿还有自己丢人现眼伸长的手臂。
+              - paragraph [ref=e1921]: 无力落下的雪白之手，和自己染血的手微微交握。
+              - paragraph [ref=e1922]: 微动的指头，似乎想要回握他的手。
+              - paragraph [ref=e1923]: 「……你等着。」
+              - paragraph [ref=e1924]: 抓住即将远去的意识尾端，硬是转头争取时间。
+              - paragraph [ref=e1925]: 「我一定——」
+              - paragraph [ref=e1926]: ——会救你的！
+              - paragraph [ref=e1927]: 下一秒，菜月・昴死亡。
+              - table [ref=e1929]:
+                - rowgroup [ref=e1930]:
+                  - row [ref=e1931]:
+                    - columnheader [ref=e1932]:
+                      - img [ref=e1933] [cursor=pointer]
+                    - columnheader [ref=e1934]:
+                      - img [ref=e1935] [cursor=pointer]
+                - rowgroup [ref=e1936]:
+                  - row [ref=e1937]:
+                    - cell [ref=e1938]:
+                      - img [ref=e1939] [cursor=pointer]
+                    - cell [ref=e1940]:
+                      - img [ref=e1941] [cursor=pointer]
+              - generic [ref=e1942]:
+                - text: Copyright © EXP 2023 all right reserved，powered by Gitbook
+                - generic [ref=e1943]: 最后修改时间 ： 2026-05-23 18:02:22
+              - insertion
+            - generic [ref=e1944]:
+              - generic [ref=e1945]: 校对不易 (^_^) 谢予支持
+              - button "打赏" [ref=e1946] [cursor=pointer]:
+                - generic [ref=e1947]: 打赏
+      - 'link "Previous page: 第一章 『怒涛般的第一天』（初见篇）" [ref=e1948] [cursor=pointer]':
+        - /url: ./
+        - generic [ref=e1949]: 
+      - 'link "Next page: 01 『无法使用的十元硬币』" [ref=e1950] [cursor=pointer]':
+        - /url: 01.html
+        - generic [ref=e1951]: 
+    - text: 
+  - textbox [ref=e1952]

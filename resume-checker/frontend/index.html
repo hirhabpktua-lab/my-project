@@ -236,6 +236,94 @@
     color: var(--muted);
     font-size: 0.8rem;
   }
+
+  /* Mode toggle */
+  .mode-toggle {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  .mode-btn {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--card);
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+  }
+  .mode-btn.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  /* Photo upload */
+  .photo-area {
+    display: none;
+  }
+  .photo-area.show {
+    display: contents;
+  }
+  .text-area.hide {
+    display: none;
+  }
+  .upload-box {
+    width: 100%;
+    aspect-ratio: 3/4;
+    max-height: 300px;
+    border: 2px dashed var(--border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    background: var(--input-bg);
+    position: relative;
+    overflow: hidden;
+  }
+  .upload-box:hover { border-color: var(--accent); background: #1e2230; }
+  .upload-box .icon { font-size: 2rem; margin-bottom: 0.3rem; }
+  .upload-box .hint { color: var(--muted); font-size: 0.82rem; }
+  .upload-box img.preview {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+  }
+  .upload-box .clear-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+  }
+  .upload-box.has-image .clear-btn { display: flex; align-items: center; justify-content: center; }
+  .upload-box.has-image .icon,
+  .upload-box.has-image .hint { display: none; }
+  .extracted-text {
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--muted);
+    max-height: 100px;
+    overflow-y: auto;
+    display: none;
+  }
+  .extracted-text.show { display: block; }
 </style>
 </head>
 <body>
@@ -257,18 +345,55 @@
 
   <!-- Main tool area -->
   <div id="toolArea" class="locked-overlay">
-    <div class="input-row">
-      <div class="input-group">
-        <label>📋 岗位描述 (JD)</label>
-        <textarea id="jdInput" placeholder="粘贴岗位描述...&#10;&#10;例如：&#10;职位：高级前端工程师&#10;要求：精通 React/TypeScript，熟悉 Node.js，3年以上经验，有大型项目架构经验..."></textarea>
-      </div>
-      <div class="input-group">
-        <label>📝 你的简历</label>
-        <textarea id="resumeInput" placeholder="粘贴你的简历...&#10;&#10;例如：&#10;张三，5年前端开发经验，熟练掌握 React、Vue.js、JavaScript，参与过多个中大型项目开发..."></textarea>
-      </div>
+    <!-- Mode toggle -->
+    <div class="mode-toggle">
+      <button class="mode-btn active" id="btnTextMode" onclick="switchMode('text')">✏️ 粘贴文字</button>
+      <button class="mode-btn" id="btnPhotoMode" onclick="switchMode('photo')">📷 拍照上传</button>
     </div>
 
-    <button class="check-btn" id="checkBtn" onclick="checkResume()">🔍 开始检查</button>
+    <!-- Text mode -->
+    <div class="text-area" id="textArea">
+      <div class="input-row">
+        <div class="input-group">
+          <label>📋 岗位描述 (JD)</label>
+          <textarea id="jdInput" placeholder="粘贴岗位描述...&#10;&#10;例如：&#10;职位：高级前端工程师&#10;要求：精通 React/TypeScript，熟悉 Node.js，3年以上经验，有大型项目架构经验..."></textarea>
+        </div>
+        <div class="input-group">
+          <label>📝 你的简历</label>
+          <textarea id="resumeInput" placeholder="粘贴你的简历...&#10;&#10;例如：&#10;张三，5年前端开发经验，熟练掌握 React、Vue.js、JavaScript，参与过多个中大型项目开发..."></textarea>
+        </div>
+      </div>
+      <button class="check-btn" id="checkBtn" onclick="checkResume()">🔍 开始检查</button>
+    </div>
+
+    <!-- Photo mode -->
+    <div class="photo-area" id="photoArea">
+      <div class="input-row">
+        <div class="input-group">
+          <label>📷 拍岗位描述</label>
+          <div class="upload-box" id="jdUploadBox" onclick="document.getElementById('jdFileInput').click()">
+            <span class="icon">📋</span>
+            <span class="hint">点击拍照或选择图片</span>
+            <img class="preview" id="jdPreview" src="" alt="">
+            <button class="clear-btn" onclick="event.stopPropagation(); clearPhoto('jd')">✕</button>
+          </div>
+          <input type="file" id="jdFileInput" accept="image/*" capture="environment" style="display:none" onchange="handlePhoto('jd', this)">
+          <div class="extracted-text" id="jdExtracted"></div>
+        </div>
+        <div class="input-group">
+          <label>📷 拍简历</label>
+          <div class="upload-box" id="resumeUploadBox" onclick="document.getElementById('resumeFileInput').click()">
+            <span class="icon">📄</span>
+            <span class="hint">点击拍照或选择图片</span>
+            <img class="preview" id="resumePreview" src="" alt="">
+            <button class="clear-btn" onclick="event.stopPropagation(); clearPhoto('resume')">✕</button>
+          </div>
+          <input type="file" id="resumeFileInput" accept="image/*" capture="environment" style="display:none" onchange="handlePhoto('resume', this)">
+          <div class="extracted-text" id="resumeExtracted"></div>
+        </div>
+      </div>
+      <button class="check-btn" id="photoCheckBtn" onclick="checkPhoto()">📷 拍照分析</button>
+    </div>
 
     <!-- Loading -->
     <div class="loading" id="loading">
@@ -450,6 +575,103 @@ function escapeHtml(str) {
   const div = document.createElement('div');
   div.textContent = str;
   return div.innerHTML;
+}
+
+// ── Photo mode ──
+let currentMode = 'text';
+let photoData = { jd: null, resume: null };  // base64 strings
+
+function switchMode(mode) {
+  currentMode = mode;
+  document.getElementById('btnTextMode').className = mode === 'text' ? 'mode-btn active' : 'mode-btn';
+  document.getElementById('btnPhotoMode').className = mode === 'photo' ? 'mode-btn active' : 'mode-btn';
+  document.getElementById('textArea').className = mode === 'photo' ? 'text-area hide' : 'text-area';
+  document.getElementById('photoArea').className = mode === 'photo' ? 'photo-area show' : 'photo-area';
+  document.getElementById('result').classList.remove('show');
+  hideError();
+}
+
+function handlePhoto(type, input) {
+  const file = input.files[0];
+  if (!file) return;
+
+  if (file.size > 10 * 1024 * 1024) {
+    showError('图片不能超过 10MB');
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const base64 = e.target.result.split(',')[1];  // strip data: prefix
+    photoData[type] = base64;
+
+    const preview = document.getElementById(type === 'jd' ? 'jdPreview' : 'resumePreview');
+    preview.src = e.target.result;
+
+    const box = document.getElementById(type === 'jd' ? 'jdUploadBox' : 'resumeUploadBox');
+    box.classList.add('has-image');
+
+    document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted').classList.remove('show');
+  };
+  reader.readAsDataURL(file);
+}
+
+function clearPhoto(type) {
+  photoData[type] = null;
+  const preview = document.getElementById(type === 'jd' ? 'jdPreview' : 'resumePreview');
+  preview.src = '';
+  const box = document.getElementById(type === 'jd' ? 'jdUploadBox' : 'resumeUploadBox');
+  box.classList.remove('has-image');
+  document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted').classList.remove('show');
+  // Reset file input
+  const fileInput = document.getElementById(type === 'jd' ? 'jdFileInput' : 'resumeFileInput');
+  fileInput.value = '';
+}
+
+async function checkPhoto() {
+  if (!activated) { alert('请先输入使用码激活工具'); return; }
+  if (!photoData.jd || !photoData.resume) {
+    showError('请先拍摄岗位描述和简历两张照片');
+    return;
+  }
+
+  hideError();
+  document.getElementById('result').classList.remove('show');
+  document.getElementById('loading').classList.add('show');
+  document.getElementById('photoCheckBtn').disabled = true;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/check-photo`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ jd_image: photoData.jd, resume_image: photoData.resume })
+    });
+    const data = await res.json();
+
+    if (data.error) {
+      showError(data.error);
+      return;
+    }
+
+    // Show extracted text
+    if (data.jd_text) {
+      const el = document.getElementById('jdExtracted');
+      el.textContent = '识别文字：' + data.jd_text.substring(0, 200) + '...';
+      el.classList.add('show');
+    }
+    if (data.resume_text) {
+      const el = document.getElementById('resumeExtracted');
+      el.textContent = '识别文字：' + data.resume_text.substring(0, 200) + '...';
+      el.classList.add('show');
+    }
+
+    renderResult(data);
+  } catch (e) {
+    showError('网络错误或服务暂不可用，请稍后重试');
+  } finally {
+    document.getElementById('loading').classList.remove('show');
+    document.getElementById('photoCheckBtn').disabled = false;
+  }
 }
 
 // Enter key triggers check
