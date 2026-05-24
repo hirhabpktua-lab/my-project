@@ -5,10 +5,10 @@ import json
 import os
 import re
 
-app = Flask(__name__, static_folder="../frontend", static_url_path="")
-CORS(app)
+FRONTEND_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend"))
 
-FRONTEND_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend")
+app = Flask(__name__, static_folder=FRONTEND_DIR, static_url_path="")
+CORS(app)
 
 
 @app.route("/")
@@ -100,4 +100,4 @@ def check_resume():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run(host="0.0.0.0", port=port, debug=False)
