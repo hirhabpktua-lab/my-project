@@ -4,8 +4,22 @@ from openai import OpenAI
 import json
 import os
 import re
+import base64
+import io
+from PIL import Image
+import numpy as np
 
 FRONTEND_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend"))
+
+# Lazy-load easyocr (first call takes a few seconds to load model)
+_ocr_reader = None
+
+def get_ocr_reader():
+    global _ocr_reader
+    if _ocr_reader is None:
+        import easyocr
+        _ocr_reader = easyocr.Reader(['ch_sim', 'en'], gpu=False, verbose=False)
+    return _ocr_reader
 
 app = Flask(__name__, static_folder=FRONTEND_DIR, static_url_path="")
 CORS(app)
@@ -84,7 +98,7 @@ def check_resume():
 
     try:
         response = client.chat.completions.create(
-            model="deepseek-chat",
+            model="deepseek-v4-pro",
             max_tokens=1024,
             temperature=0.3,
             messages=[{"role": "user", "content": prompt}],
@@ -117,27 +131,29 @@ def check_photo():
     base_url = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
     client = OpenAI(api_key=api_key, base_url=base_url)
 
-    def extract_text(image_b64, label):
+    def extract_text_ocr(image_b64, label):
         try:
-            resp = client.chat.completions.create(
-                model="deepseek-chat",
-                max_tokens=2048,
-                temperature=0.1,
-                messages=[{
-                    "role": "user",
-                    "content": [
-                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image_b64}"}},
-                        {"type": "text", "text": f"请提取这张{label}图片中的所有文字内容，保持原有格式和排版，直接输出文字不要加任何说明。"}
-                    ]
-                }]
-            )
-            return (resp.choices[0].message.content or "").strip()
+            img_data = base64.b64decode(image_b64)
+            img = Image.open(io.BytesIO(img_data))
+            # Resize large images for faster OCR
+            if max(img.size) > 2000:
+                ratio = 2000 / max(img.size)
+                img = img.resize((int(img.size[0]*ratio), int(img.size[1]*ratio)))
+            img_array = np.array(img)
+            reader = get_ocr_reader()
+            results = reader.readtext(img_array, detail=0)
+            text = "\n".join(results).strip()
+            if not text:
+                raise Exception(f"未能从{label}中识别到文字，请确保图片清晰")
+            return text
         except Exception as e:
+            if "未能" in str(e):
+                raise
             raise Exception(f"{label}文字提取失败: {str(e)}")
 
     try:
-        jd_text = extract_text(jd_image, "岗位描述")
-        resume_text = extract_text(resume_image, "简历")
+        jd_text = extract_text_ocr(jd_image, "岗位描述")
+        resume_text = extract_text_ocr(resume_image, "简历")
 
         if not jd_text or not resume_text:
             return jsonify({"error": "图片中未识别到文字，请确保图片清晰"}), 400
@@ -167,7 +183,7 @@ def check_photo():
 - 请用中文输出，关键词保留中英文混合"""
 
         resp = client.chat.completions.create(
-            model="deepseek-chat",
+            model="deepseek-v4-pro",
             max_tokens=1024,
             temperature=0.3,
             messages=[{"role": "user", "content": analysis_prompt}],
