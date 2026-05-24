@@ -50,7 +50,9 @@ def check_resume():
     if not api_key:
         return jsonify({"error": "服务端未配置 API Key，请联系管理员"}), 500
 
-    client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
+    # Try Singapore node first (works globally), fall back to default
+    base_url = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
+    client = OpenAI(api_key=api_key, base_url=base_url)
 
     prompt = f"""你是一个专业的ATS简历筛选系统。请分析以下岗位描述和简历的匹配度。
 
@@ -82,7 +84,7 @@ def check_resume():
             temperature=0.3,
             messages=[{"role": "user", "content": prompt}],
         )
-        content = response.choices[0].message.content
+        content = response.choices[0].message.content or ""
 
         json_match = re.search(r'\{[\s\S]*\}', content)
         if json_match:
