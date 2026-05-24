@@ -597,10 +597,19 @@ let photoData = { jd: null, resume: null };  // base64 strings
 let ocrTexts = { jd: '', resume: '' };       // extracted text
 let ocrRunning = { jd: false, resume: false };
 
-// Load Tesseract.js from CDN
-const tesseractScript = document.createElement('script');
-tesseractScript.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js';
-document.head.appendChild(tesseractScript);
+// Tesseract.js loaded on-demand when switching to photo mode
+let tesseractLoaded = false;
+let tesseractLoading = false;
+
+function loadTesseract() {
+  if (tesseractLoaded || tesseractLoading) return;
+  tesseractLoading = true;
+  const s = document.createElement('script');
+  s.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js';
+  s.onload = () => { tesseractLoaded = true; };
+  s.onerror = () => { tesseractLoading = false; };
+  document.head.appendChild(s);
+}
 
 async function runOCR(type) {
   const img = document.getElementById(type === 'jd' ? 'jdPreview' : 'resumePreview');
@@ -614,9 +623,12 @@ async function runOCR(type) {
   el.classList.add('show');
 
   try {
-    // Wait for Tesseract to be available
-    while (typeof Tesseract === 'undefined') {
-      await new Promise(r => setTimeout(r, 500));
+    // Check if Tesseract loaded (CDN may fail in China)
+    if (typeof Tesseract === 'undefined') {
+      el.textContent = '⚠️ OCR库加载失败（CDN不可用）。请切换到✏️文字模式，手动粘贴内容。';
+      el.classList.add('show');
+      ocrRunning[type] = false;
+      return;
     }
 
     const { data } = await Tesseract.recognize(img, 'chi_sim+eng', {
@@ -646,6 +658,7 @@ function switchMode(mode) {
   document.getElementById('photoArea').className = mode === 'photo' ? 'photo-area show' : 'photo-area';
   document.getElementById('result').classList.remove('show');
   hideError();
+  if (mode === 'photo') loadTesseract();
 }
 
 function handlePhoto(type, input) {
@@ -668,11 +681,8 @@ function handlePhoto(type, input) {
     const box = document.getElementById(type === 'jd' ? 'jdUploadBox' : 'resumeUploadBox');
     box.classList.add('has-image');
 
-    // Trigger OCR after image loads
-    const preview = document.getElementById(type === 'jd' ? 'jdPreview' : 'resumePreview');
-    preview.onload = () => runOCR(type);
-    // If image already cached, trigger immediately
-    if (preview.complete) runOCR(type);
+    // Wait for image to render, then run OCR
+    setTimeout(() => { if (photoData[type]) runOCR(type); }, 300);
   };
   reader.readAsDataURL(file);
 }
