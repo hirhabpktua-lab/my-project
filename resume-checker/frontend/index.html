@@ -373,22 +373,22 @@
           <label>📷 拍岗位描述</label>
           <div class="upload-box" id="jdUploadBox" onclick="document.getElementById('jdFileInput').click()">
             <span class="icon">📋</span>
-            <span class="hint">点击拍照或选择图片</span>
+            <span class="hint">拍照或从相册选择</span>
             <img class="preview" id="jdPreview" src="" alt="">
             <button class="clear-btn" onclick="event.stopPropagation(); clearPhoto('jd')">✕</button>
           </div>
-          <input type="file" id="jdFileInput" accept="image/*" capture="environment" style="display:none" onchange="handlePhoto('jd', this)">
+          <input type="file" id="jdFileInput" accept="image/*" style="display:none" onchange="handlePhoto('jd', this)">
           <div class="extracted-text" id="jdExtracted"></div>
         </div>
         <div class="input-group">
           <label>📷 拍简历</label>
           <div class="upload-box" id="resumeUploadBox" onclick="document.getElementById('resumeFileInput').click()">
             <span class="icon">📄</span>
-            <span class="hint">点击拍照或选择图片</span>
+            <span class="hint">拍照或从相册选择</span>
             <img class="preview" id="resumePreview" src="" alt="">
             <button class="clear-btn" onclick="event.stopPropagation(); clearPhoto('resume')">✕</button>
           </div>
-          <input type="file" id="resumeFileInput" accept="image/*" capture="environment" style="display:none" onchange="handlePhoto('resume', this)">
+          <input type="file" id="resumeFileInput" accept="image/*" style="display:none" onchange="handlePhoto('resume', this)">
           <div class="extracted-text" id="resumeExtracted"></div>
         </div>
       </div>
