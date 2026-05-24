@@ -22,3 +22,24 @@
 ## 语言
 - 用简体中文回复。
 - 用户用中文你就用中文，用户用英文你就用英文。
+
+## 项目信息
+- 项目名: my-project
+- GitHub: github.com/hirhabpktua-lab/my-project
+- 远程已配好，推送直接用 git push
+
+## 可用工具
+- Node.js v24 + npm/pnpm/yarn
+- Python 3.12 + pip (pytest, black, ruff, requests, httpx)
+- TypeScript (tsx, typescript)
+- Git (已配 token，免密推送)
+- Playwright 浏览器自动化
+- Context7 实时文档查询
+
+## 插件武装
+- code-review: 代码审查
+- security-guidance: 安全检查
+- frontend-design: 前端设计
+- pr-review-toolkit: PR 审查
+- feature-dev: 功能开发
+- hookify: 自动化钩子

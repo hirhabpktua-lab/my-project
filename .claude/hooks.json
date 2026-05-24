@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "command": "git status --short 2>/dev/null || true",
+        "description": "Show working tree on session start"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "command": "if git rev-parse --git-dir > /dev/null 2>&1 && [ -n \"$(git status --porcelain 2>/dev/null)\" ]; then echo '📌 有未提交的更改'; fi",
+        "description": "Warn about uncommitted changes after Bash commands"
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "command": "git status --short 2>/dev/null; echo '---'; git diff --stat 2>/dev/null; echo 'Session ended'",
+        "description": "Show changes at session end"
+      }
+    ]
+  }
+}
