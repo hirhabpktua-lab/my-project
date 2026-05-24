@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简历ATS关键词检查器 — 看看你的简历能不能过AI筛</title>
+<style>
+  :root {
+    --bg: #0a0c12;
+    --card: #141720;
+    --text: #e4e6ec;
+    --muted: #7c818c;
+    --accent: #5b8df5;
+    --green: #34c759;
+    --red: #ff4757;
+    --orange: #ff9f43;
+    --border: #242836;
+    --input-bg: #1a1e2a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+  .container { width: 100%; max-width: 900px; }
+
+  /* Header */
+  .header { text-align: center; margin-bottom: 1.5rem; }
+  .header h1 {
+    font-size: 1.6rem;
+    background: linear-gradient(135deg, var(--accent), #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.3rem;
+  }
+  .header p { color: var(--muted); font-size: 0.9rem; }
+
+  /* Activation */
+  .activation-bar {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .activation-bar input {
+    flex: 1;
+    min-width: 180px;
+    padding: 0.55rem 0.8rem;
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .activation-bar input:focus { border-color: var(--accent); }
+  .activation-bar button {
+    padding: 0.55rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .activation-bar button:hover { opacity: 0.85; }
+  .activation-bar .status {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .activation-bar .status.active { color: var(--green); }
+  .activation-bar .status.inactive { color: var(--muted); }
+  .buy-link { color: var(--orange); font-size: 0.85rem; margin-left: auto; text-decoration: none; font-weight: 600; }
+  .buy-link:hover { text-decoration: underline; }
+
+  /* Main content (locked state) */
+  .locked-overlay {
+    position: relative;
+    opacity: 0.4;
+    pointer-events: none;
+    filter: blur(3px);
+    transition: all 0.3s;
+  }
+  .unlocked { opacity: 1; pointer-events: auto; filter: none; }
+
+  /* Input area */
+  .input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 640px) {
+    .input-row { grid-template-columns: 1fr; }
+    .activation-bar { justify-content: center; }
+    .buy-link { margin-left: 0; width: 100%; text-align: center; }
+  }
+  .input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--text);
+  }
+  .input-group textarea {
+    width: 100%;
+    height: 220px;
+    padding: 0.9rem;
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 0.88rem;
+    line-height: 1.5;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: inherit;
+  }
+  .input-group textarea:focus { border-color: var(--accent); }
+  .input-group textarea::placeholder { color: #4a4f5c; }
+
+  /* Button */
+  .check-btn {
+    display: block;
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--accent), #7c5cf5);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+    margin-bottom: 1.5rem;
+  }
+  .check-btn:hover { opacity: 0.9; }
+  .check-btn:active { transform: scale(0.98); }
+  .check-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  /* Results */
+  .result { display: none; }
+  .result.show { display: block; }
+
+  .score-circle {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1.2rem;
+    font-size: 1.6rem; font-weight: 800;
+    border: 3px solid var(--border);
+  }
+  .score-high { color: var(--green); border-color: var(--green); }
+  .score-mid { color: var(--orange); border-color: var(--orange); }
+  .score-low { color: var(--red); border-color: var(--red); }
+
+  .result-section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  .result-section h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .result-section h3 .icon { font-size: 1.1rem; }
+  .keyword-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 500;
+  }
+  .tag.hit { background: #1a3328; color: var(--green); border: 1px solid #23633c; }
+  .tag.miss { background: #331a1f; color: var(--red); border: 1px solid #63233c; }
+
+  .suggestion-list { list-style: none; }
+  .suggestion-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+  .suggestion-list li:last-child { border-bottom: none; }
+  .suggestion-list li::before { content: "💡 "; }
+
+  .error-msg {
+    background: #331a1f;
+    border: 1px solid var(--red);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--red);
+    font-size: 0.9rem;
+    display: none;
+  }
+  .error-msg.show { display: block; }
+
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    display: none;
+  }
+  .loading.show { display: block; }
+  .loading .spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 0.8rem;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>简历ATS关键词检查器</h1>
+    <p>把岗位描述和你的简历粘贴进来，看看能不能过 AI 初筛</p>
+  </div>
+
+  <!-- Activation -->
+  <div class="activation-bar">
+    <span style="font-size:0.85rem;color:var(--muted);white-space:nowrap;">🔑 使用码</span>
+    <input type="text" id="codeInput" placeholder="输入使用码激活工具" maxlength="30">
+    <button onclick="verifyCode()">激活</button>
+    <span class="status inactive" id="codeStatus">未激活</span>
+    <a class="buy-link" href="https://mbd.pub" target="_blank" id="buyLink">💰 获取使用码 ¥9.9</a>
+  </div>
+
+  <!-- Main tool area -->
+  <div id="toolArea" class="locked-overlay">
+    <div class="input-row">
+      <div class="input-group">
+        <label>📋 岗位描述 (JD)</label>
+        <textarea id="jdInput" placeholder="粘贴岗位描述...&#10;&#10;例如：&#10;职位：高级前端工程师&#10;要求：精通 React/TypeScript，熟悉 Node.js，3年以上经验，有大型项目架构经验..."></textarea>
+      </div>
+      <div class="input-group">
+        <label>📝 你的简历</label>
+        <textarea id="resumeInput" placeholder="粘贴你的简历...&#10;&#10;例如：&#10;张三，5年前端开发经验，熟练掌握 React、Vue.js、JavaScript，参与过多个中大型项目开发..."></textarea>
+      </div>
+    </div>
+
+    <button class="check-btn" id="checkBtn" onclick="checkResume()">🔍 开始检查</button>
+
+    <!-- Loading -->
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p style="color:var(--muted)">AI 正在分析中...</p>
+    </div>
+
+    <!-- Error -->
+    <div class="error-msg" id="errorMsg"></div>
+
+    <!-- Results -->
+    <div class="result" id="result">
+      <div class="score-circle" id="scoreCircle">--</div>
+
+      <div class="result-section">
+        <h3><span class="icon">✅</span>命中的关键词</h3>
+        <div class="keyword-tags" id="matchedTags"></div>
+      </div>
+
+      <div class="result-section">
+        <h3><span class="icon">❌</span>缺失的关键词</h3>
+        <div class="keyword-tags" id="missingTags"></div>
+      </div>
+
+      <div class="result-section">
+        <h3><span class="icon">📝</span>修改建议</h3>
+        <ul class="suggestion-list" id="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    数据不会上传服务器 · 仅用于本次分析 · 用完即焚
+  </div>
+</div>
+
+<script>
+const API_BASE = window.location.hostname === 'localhost'
+  ? 'http://localhost:5000'
+  : 'https://resume-checker-api.onrender.com';
+
+let activated = false;
+
+// Try saved code from localStorage
+const savedCode = localStorage.getItem('resume_check_code');
+if (savedCode) {
+  document.getElementById('codeInput').value = savedCode;
+  verifyCode();
+}
+
+async function verifyCode() {
+  const code = document.getElementById('codeInput').value.trim();
+  const status = document.getElementById('codeStatus');
+  const toolArea = document.getElementById('toolArea');
+
+  if (!code) {
+    status.textContent = '请输入使用码';
+    status.className = 'status inactive';
+    return;
+  }
+
+  try {
+    const res = await fetch(`${API_BASE}/api/verify-code`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ code: code })
+    });
+    const data = await res.json();
+
+    if (data.valid) {
+      activated = true;
+      status.textContent = '✅ 已激活';
+      status.className = 'status active';
+      toolArea.className = 'unlocked';
+      localStorage.setItem('resume_check_code', code);
+    } else {
+      activated = false;
+      status.textContent = '❌ ' + (data.error || '无效使用码');
+      status.className = 'status inactive';
+      toolArea.className = 'locked-overlay';
+    }
+  } catch (e) {
+    status.textContent = '⚠️ 网络错误，请重试';
+    status.className = 'status inactive';
+  }
+}
+
+async function checkResume() {
+  if (!activated) {
+    alert('请先输入使用码激活工具');
+    return;
+  }
+
+  const jd = document.getElementById('jdInput').value.trim();
+  const resume = document.getElementById('resumeInput').value.trim();
+
+  if (!jd || !resume) {
+    showError('请同时填写岗位描述和简历内容');
+    return;
+  }
+  if (jd.length < 20) {
+    showError('岗位描述太短，请至少输入20个字');
+    return;
+  }
+  if (resume.length < 30) {
+    showError('简历内容太短，请至少输入30个字');
+    return;
+  }
+
+  hideError();
+  document.getElementById('result').classList.remove('show');
+  document.getElementById('loading').classList.add('show');
+  document.getElementById('checkBtn').disabled = true;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/check`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ jd, resume })
+    });
+    const data = await res.json();
+
+    if (data.error) {
+      showError(data.error);
+      return;
+    }
+
+    renderResult(data);
+  } catch (e) {
+    showError('网络错误或服务暂不可用，请稍后重试');
+  } finally {
+    document.getElementById('loading').classList.remove('show');
+    document.getElementById('checkBtn').disabled = false;
+  }
+}
+
+function renderResult(data) {
+  // Score
+  const score = data.score || 0;
+  const circle = document.getElementById('scoreCircle');
+  circle.textContent = score;
+  circle.className = 'score-circle';
+  if (score >= 70) circle.className += ' score-high';
+  else if (score >= 40) circle.className += ' score-mid';
+  else circle.className += ' score-low';
+
+  // Matched
+  const matchedDiv = document.getElementById('matchedTags');
+  matchedDiv.innerHTML = (data.matched || []).map(k =>
+    `<span class="tag hit">${escapeHtml(k)}</span>`
+  ).join('') || '<span style="color:var(--muted)">未检测到匹配关键词</span>';
+
+  // Missing
+  const missingDiv = document.getElementById('missingTags');
+  missingDiv.innerHTML = (data.missing || []).map(k =>
+    `<span class="tag miss">${escapeHtml(k)}</span>`
+  ).join('') || '<span style="color:var(--muted)">未检测到缺失关键词</span>';
+
+  // Suggestions
+  const sugList = document.getElementById('suggestions');
+  sugList.innerHTML = (data.suggestions || []).map(s =>
+    `<li>${escapeHtml(s)}</li>`
+  ).join('') || '<li style="color:var(--muted)">暂无建议</li>';
+
+  document.getElementById('result').classList.add('show');
+  document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+}
+
+function showError(msg) {
+  const el = document.getElementById('errorMsg');
+  el.textContent = msg;
+  el.classList.add('show');
+}
+function hideError() {
+  document.getElementById('errorMsg').classList.remove('show');
+}
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// Enter key triggers check
+document.getElementById('codeInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') verifyCode();
+});
+</script>
+</body>
+</html>
