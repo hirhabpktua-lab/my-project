@@ -104,9 +104,11 @@
     margin-bottom: 1rem;
   }
   @media (max-width: 640px) {
+    body { padding: 1rem; }
     .input-row { grid-template-columns: 1fr; }
     .activation-bar { justify-content: center; }
     .buy-link { margin-left: 0; width: 100%; text-align: center; }
+    .upload-box { max-height: 240px; }
   }
   .input-group label {
     display: block;
@@ -324,6 +326,230 @@
     display: none;
   }
   .extracted-text.show { display: block; }
+
+  /* Polished tool surface */
+  body {
+    background:
+      linear-gradient(180deg, #0b0f14 0%, #101318 48%, #0b0f14 100%);
+  }
+  .container { max-width: 980px; }
+  .header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  .header h1 {
+    font-size: 1.45rem;
+    background: none;
+    -webkit-text-fill-color: var(--text);
+  }
+  .header p { color: #9aa3af; }
+  .activation-bar,
+  .result-section {
+    border-radius: 8px;
+    background: #14181f;
+    box-shadow: 0 12px 34px rgba(0,0,0,0.24);
+  }
+  .mode-toggle {
+    background: #151a21;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.25rem;
+  }
+  .mode-btn {
+    flex: 1;
+    border-radius: 6px;
+    border: none;
+  }
+  .mode-btn.active {
+    background: #2f7d7b;
+    box-shadow: 0 8px 18px rgba(47,125,123,0.26);
+  }
+  .check-btn {
+    border-radius: 8px;
+    background: #2f7d7b;
+    box-shadow: 0 10px 24px rgba(47,125,123,0.22);
+  }
+  .secondary-btn {
+    background: #202630;
+    border: 1px solid var(--border);
+    color: var(--text);
+    box-shadow: none;
+  }
+  .button-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.2rem;
+  }
+  .step-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .step-item {
+    border: 1px solid var(--border);
+    background: #14181f;
+    border-radius: 8px;
+    padding: 0.75rem;
+  }
+  .step-item strong {
+    display: block;
+    font-size: 0.86rem;
+    margin-bottom: 0.2rem;
+  }
+  .step-item span {
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+  .upload-box {
+    border-radius: 8px;
+    border-color: #303846;
+    background: #171d25;
+  }
+  .upload-box img.preview {
+    background: #11161c;
+    padding: 0.35rem;
+  }
+  .extracted-text {
+    color: #9aa3af;
+    background: #121820;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.55rem 0.7rem;
+  }
+  .ocr-panel {
+    display: none;
+    margin-bottom: 1rem;
+  }
+  .ocr-panel.show { display: block; }
+  .ocr-panel textarea {
+    min-height: 180px;
+    height: 180px;
+  }
+  .section-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 0.7rem;
+  }
+  .section-title h3 { margin: 0; }
+  .tiny-btn {
+    border: 1px solid var(--border);
+    background: #202630;
+    color: var(--text);
+    border-radius: 6px;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.78rem;
+    cursor: pointer;
+  }
+  .score-circle {
+    width: 96px;
+    height: 96px;
+    background: #14181f;
+  }
+  .multi-upload .upload-box {
+    aspect-ratio: 16/10;
+    max-height: 220px;
+  }
+  .photo-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+    gap: 0.55rem;
+    margin-top: 0.65rem;
+  }
+  .photo-card {
+    position: relative;
+    min-height: 110px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #11161c;
+  }
+  .photo-card img {
+    width: 100%;
+    height: 86px;
+    object-fit: cover;
+    display: block;
+  }
+  .photo-card small {
+    display: block;
+    padding: 0.35rem 0.45rem;
+    color: var(--muted);
+    font-size: 0.72rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .photo-card button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: rgba(0,0,0,0.72);
+    color: #fff;
+    cursor: pointer;
+  }
+  .quality-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #14181f;
+    margin-bottom: 1rem;
+  }
+  .quality-row.hidden { display: none; }
+  .quality-row span {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .quality-row label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .score-note {
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-align: center;
+    margin: -0.75rem 0 1rem;
+  }
+  .clean-note {
+    display: none;
+    color: #9aa3af;
+    background: #121820;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 0.9rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+  }
+  .clean-note.show { display: block; }
+  @media (max-width: 640px) {
+    .header { display: block; text-align: center; }
+    .mode-toggle, .button-row, .step-strip { grid-template-columns: 1fr; }
+    .button-row { gap: 0.6rem; }
+    .photo-area.show { display: block; }
+    .check-btn { margin-bottom: 0; }
+    .activation-bar input,
+    .activation-bar button { width: 100%; }
+    .quality-row { display: block; }
+    .quality-row label { margin-top: 0.5rem; }
+  }
 </style>
 </head>
 <body>
@@ -364,35 +590,68 @@
         </div>
       </div>
       <button class="check-btn" id="checkBtn" onclick="checkResume()">📊 开始评分</button>
+      <p class="score-note">评分前会自动忽略小说、聊天、广告等无关文字</p>
     </div>
 
     <!-- Photo mode -->
     <div class="photo-area" id="photoArea">
+      <div class="step-strip">
+        <div class="step-item">
+          <strong>1. 上传图片</strong>
+          <span>拍照或选择清晰截图</span>
+        </div>
+        <div class="step-item">
+          <strong>2. OCR识别文字</strong>
+          <span>保留换行和关键词</span>
+        </div>
+        <div class="step-item">
+          <strong>3. 确认并评分</strong>
+          <span>可先手动修正识别结果</span>
+        </div>
+      </div>
       <div class="input-row">
-        <div class="input-group">
+        <div class="input-group multi-upload">
           <label>📷 拍岗位描述</label>
-          <label class="upload-box" id="jdUploadBox" for="jdFileInput">
+          <label class="upload-box" for="jdFileInput">
             <span class="icon">📋</span>
-            <span class="hint">拍照或从相册选择</span>
-            <img class="preview" id="jdPreview" src="" alt="">
-            <button class="clear-btn" onclick="event.stopPropagation(); clearPhoto('jd')">✕</button>
+            <span class="hint">可选择多张，优先上传关键页</span>
           </label>
-          <input type="file" id="jdFileInput" accept="image/*" style="display:none" onchange="handlePhoto('jd', this)">
+          <input type="file" id="jdFileInput" accept="image/*" multiple style="display:none" onchange="handlePhoto('jd', this)">
+          <div class="photo-list" id="jdPhotoList"></div>
           <div class="extracted-text" id="jdExtracted"></div>
         </div>
-        <div class="input-group">
+        <div class="input-group multi-upload">
           <label>📷 拍简历</label>
-          <label class="upload-box" id="resumeUploadBox" for="resumeFileInput">
+          <label class="upload-box" for="resumeFileInput">
             <span class="icon">📄</span>
-            <span class="hint">拍照或从相册选择</span>
-            <img class="preview" id="resumePreview" src="" alt="">
-            <button class="clear-btn" onclick="event.stopPropagation(); clearPhoto('resume')">✕</button>
+            <span class="hint">长简历可分多页上传</span>
           </label>
-          <input type="file" id="resumeFileInput" accept="image/*" style="display:none" onchange="handlePhoto('resume', this)">
+          <input type="file" id="resumeFileInput" accept="image/*" multiple style="display:none" onchange="handlePhoto('resume', this)">
+          <div class="photo-list" id="resumePhotoList"></div>
           <div class="extracted-text" id="resumeExtracted"></div>
         </div>
       </div>
-      <button class="check-btn" id="photoCheckBtn" onclick="checkPhoto()">📊 拍照评分</button>
+      <div class="quality-row hidden">
+        <span>默认使用开源 OCR，不消耗图片识别 token。</span>
+        <label><input type="checkbox" id="qualityToggle"> 增强识别</label>
+      </div>
+      <div class="ocr-panel" id="ocrPanel">
+        <div class="input-row">
+          <div class="input-group">
+            <label>识别出的岗位描述（可修改）</label>
+            <textarea id="jdOcrText" placeholder="点击 OCR识别文字 后自动填入..."></textarea>
+          </div>
+          <div class="input-group">
+            <label>识别出的简历内容（可修改）</label>
+            <textarea id="resumeOcrText" placeholder="点击 OCR识别文字 后自动填入..."></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="button-row">
+        <button class="check-btn secondary-btn" id="ocrBtn" onclick="ocrPhoto()">🔍 OCR识别文字</button>
+        <button class="check-btn" id="photoCheckBtn" onclick="checkPhoto()">📊 确认并评分</button>
+      </div>
+      <p class="score-note">评分前会自动忽略小说、聊天、广告等无关文字</p>
     </div>
 
     <!-- Loading -->
@@ -406,6 +665,7 @@
 
     <!-- Results -->
     <div class="result" id="result">
+      <div class="clean-note" id="cleanNote"></div>
       <div class="score-circle" id="scoreCircle">--</div>
 
       <div class="result-section">
@@ -419,7 +679,10 @@
       </div>
 
       <div class="result-section">
-        <h3><span class="icon">✨</span>优化后简历</h3>
+        <div class="section-title">
+          <h3><span class="icon">✨</span>优化后简历</h3>
+          <button class="tiny-btn" onclick="copyOptimized()">复制</button>
+        </div>
         <div id="optimizedResume" style="background:var(--input-bg);padding:1rem;border-radius:8px;font-size:0.88rem;line-height:1.7;white-space:pre-wrap;"></div>
       </div>
 
@@ -537,6 +800,14 @@ async function checkResume() {
 }
 
 function renderResult(data) {
+  const cleanNote = document.getElementById('cleanNote');
+  if (data.resume_original_length && data.resume_cleaned_length && data.resume_cleaned_length < data.resume_original_length) {
+    cleanNote.textContent = `已自动过滤无关文字：${data.resume_original_length} → ${data.resume_cleaned_length} 字`;
+    cleanNote.classList.add('show');
+  } else {
+    cleanNote.classList.remove('show');
+  }
+
   // Score
   const score = data.score || 0;
   const circle = document.getElementById('scoreCircle');
@@ -577,6 +848,18 @@ function renderResult(data) {
   document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
 }
 
+async function copyOptimized() {
+  const text = document.getElementById('optimizedResume').textContent.trim();
+  if (!text) return;
+  try {
+    await navigator.clipboard.writeText(text);
+    showError('优化后简历已复制');
+    setTimeout(hideError, 1200);
+  } catch (e) {
+    showError('复制失败，请手动选择文本复制');
+  }
+}
+
 function showError(msg) {
   const el = document.getElementById('errorMsg');
   el.textContent = msg;
@@ -591,81 +874,11 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-// ── Photo mode with client-side OCR ──
-let currentMode = 'text';
-let photoData = { jd: null, resume: null };  // base64 strings
-let ocrTexts = { jd: '', resume: '' };       // extracted text
-let ocrRunning = { jd: false, resume: false };
-
-// Tesseract.js loaded on-demand when switching to photo mode
-let tesseractLoaded = false;
-let tesseractLoading = false;
-const TESSERACT_CDNS = [
-  'https://registry.npmmirror.com/tesseract.js/5.1.5/files/dist/tesseract.min.js',
-  'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js',
-];
-
-function loadTesseract(retryIdx = 0) {
-  if (tesseractLoaded || tesseractLoading) return;
-  if (retryIdx >= TESSERACT_CDNS.length) return;
-  tesseractLoading = true;
-  const s = document.createElement('script');
-  s.src = TESSERACT_CDNS[retryIdx];
-  s.onload = () => { tesseractLoaded = true; tesseractLoading = false; };
-  s.onerror = () => { tesseractLoading = false; loadTesseract(retryIdx + 1); };
-  document.head.appendChild(s);
-}
-
-async function runOCR(type) {
-  const img = document.getElementById(type === 'jd' ? 'jdPreview' : 'resumePreview');
-  if (!img.src || !img.src.startsWith('data:')) return;
-
-  const label = type === 'jd' ? '岗位描述' : '简历';
-  const el = document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted');
-
-  ocrRunning[type] = true;
-  el.textContent = '🔍 准备识别...';
-  el.classList.add('show');
-
-  try {
-    if (typeof Tesseract === 'undefined') {
-      el.textContent = '⚠️ OCR加载失败。请切换✏️文字模式手动粘贴。';
-      el.classList.add('show');
-      ocrRunning[type] = false;
-      return;
-    }
-
-    // Slightly resize large images for speed, keep quality high for accuracy
-    let src = img;
-    const maxW = 2000;
-    const w = img.naturalWidth || img.width, h = img.naturalHeight || img.height;
-    if (w > maxW) {
-      const cvs = document.createElement('canvas');
-      const ratio = maxW / w;
-      cvs.width = maxW; cvs.height = Math.round(h * ratio);
-      cvs.getContext('2d').drawImage(img, 0, 0, cvs.width, cvs.height);
-      src = cvs;
-    }
-
-    el.textContent = '🔍 正在识别文字...';
-    const { data } = await Tesseract.recognize(src, 'chi_sim+eng', {
-      logger: m => {
-        if (m.status === 'recognizing text') {
-          el.textContent = `🔍 识别中... ${Math.round(m.progress * 100)}%`;
-        }
-      }
-    });
-
-    ocrTexts[type] = data.text.trim();
-    el.textContent = '✅ ' + data.text.substring(0, 250) + (data.text.length > 250 ? '...' : '');
-    el.classList.add('show');
-  } catch (e) {
-    el.textContent = '⚠️ 识别失败，请确保图片清晰或切换到文字模式';
-    el.classList.add('show');
-    ocrTexts[type] = '';
-  }
-  ocrRunning[type] = false;
-}
+// ── Photo mode: client compresses, server reads images ──
+var currentMode = 'text';
+var photoData = { jd: [], resume: [] };
+var ocrTexts = { jd: '', resume: '' };
+var pageTexts = { jd: [], resume: [] };
 
 function switchMode(mode) {
   currentMode = mode;
@@ -675,77 +888,227 @@ function switchMode(mode) {
   document.getElementById('photoArea').className = mode === 'photo' ? 'photo-area show' : 'photo-area';
   document.getElementById('result').classList.remove('show');
   hideError();
-  if (mode === 'photo') loadTesseract();
 }
 
-function handlePhoto(type, input) {
-  const file = input.files[0];
-  if (!file) return;
+function compressImage(file, maxSide = 2200, quality = 0.92) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const reader = new FileReader();
 
-  if (file.size > 10 * 1024 * 1024) {
-    showError('图片不能超过 10MB');
+    reader.onload = e => { img.src = e.target.result; };
+    reader.onerror = reject;
+    img.onerror = reject;
+    img.onload = () => {
+      let { width, height } = img;
+      const scale = Math.min(1, maxSide / Math.max(width, height));
+      width = Math.round(width * scale);
+      height = Math.round(height * scale);
+
+      if (scale === 1 && file.size < 5 * 1024 * 1024) {
+        if (!img.src || !img.src.includes(',')) {
+          reject(new Error('empty image data'));
+          return;
+        }
+        resolve({
+          dataUrl: img.src,
+          base64: img.src.split(',')[1],
+        });
+        return;
+      }
+
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+      const dataUrl = canvas.toDataURL('image/jpeg', quality);
+      const base64 = dataUrl.split(',')[1] || '';
+      if (!base64) {
+        reject(new Error('empty canvas data'));
+        return;
+      }
+      resolve({
+        dataUrl,
+        base64,
+      });
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+async function handlePhoto(type, input) {
+  const files = Array.from(input.files || []);
+  if (!files.length) return;
+
+  if (files.some(file => file.size > 12 * 1024 * 1024)) {
+    showError('单张图片不能超过 12MB');
     return;
   }
 
-  const reader = new FileReader();
-  reader.onload = function(e) {
-    const base64 = e.target.result.split(',')[1];  // strip data: prefix
-    photoData[type] = base64;
+  const statusEl = document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted');
+  statusEl.textContent = '正在处理图片...';
+  statusEl.classList.add('show');
 
-    const preview = document.getElementById(type === 'jd' ? 'jdPreview' : 'resumePreview');
-    preview.src = e.target.result;
+  try {
+    const compressedFiles = await Promise.all(files.map(compressImage));
+    const validFiles = compressedFiles.filter(item => item.base64 && item.base64.length > 100);
+    if (!validFiles.length) {
+      throw new Error('no valid images');
+    }
+    photoData[type].push(...validFiles.map(item => ({
+      base64: item.base64,
+      dataUrl: item.dataUrl,
+      chars: null,
+    })));
+    renderPhotoList(type);
+    statusEl.textContent = `已选择 ${photoData[type].length} 张图片，下一步：点击下方“OCR识别文字”`;
+    ocrTexts[type] = '';
+    pageTexts[type] = [];
+    document.getElementById(type === 'jd' ? 'jdOcrText' : 'resumeOcrText').value = '';
+  } catch (e) {
+    statusEl.textContent = '图片处理失败，请换 JPG/PNG 截图或重新拍照';
+  }
+  input.value = '';
+}
 
-    const box = document.getElementById(type === 'jd' ? 'jdUploadBox' : 'resumeUploadBox');
-    box.classList.add('has-image');
+function renderPhotoList(type) {
+  const list = document.getElementById(type === 'jd' ? 'jdPhotoList' : 'resumePhotoList');
+  list.innerHTML = photoData[type].map((photo, idx) => {
+    const chars = photo.chars == null ? '待识别' : `${photo.chars}字`;
+    return `
+      <div class="photo-card">
+        <img src="${photo.dataUrl}" alt="">
+        <button onclick="removePhoto('${type}', ${idx})">×</button>
+        <small>第${idx + 1}张 · ${chars}</small>
+      </div>
+    `;
+  }).join('');
+  updatePhotoButtons();
+}
 
-    // Wait for image to render, then run OCR
-    setTimeout(() => { if (photoData[type]) runOCR(type); }, 300);
-  };
-  reader.readAsDataURL(file);
+function removePhoto(type, idx) {
+  photoData[type].splice(idx, 1);
+  pageTexts[type].splice(idx, 1);
+  renderPhotoList(type);
+  const statusEl = document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted');
+  statusEl.textContent = photoData[type].length
+    ? `已选择 ${photoData[type].length} 张图片`
+    : '未选择图片';
+  statusEl.classList.add('show');
+  document.getElementById(type === 'jd' ? 'jdOcrText' : 'resumeOcrText').value = pageTexts[type].join('\n\n');
+  updatePhotoButtons();
 }
 
 function clearPhoto(type) {
-  photoData[type] = null;
-  const preview = document.getElementById(type === 'jd' ? 'jdPreview' : 'resumePreview');
-  preview.src = '';
-  const box = document.getElementById(type === 'jd' ? 'jdUploadBox' : 'resumeUploadBox');
-  box.classList.remove('has-image');
-  document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted').classList.remove('show');
+  photoData[type] = [];
   ocrTexts[type] = '';
-  // Reset file input
+  pageTexts[type] = [];
+  renderPhotoList(type);
+  document.getElementById(type === 'jd' ? 'jdExtracted' : 'resumeExtracted').classList.remove('show');
+  document.getElementById(type === 'jd' ? 'jdOcrText' : 'resumeOcrText').value = '';
   const fileInput = document.getElementById(type === 'jd' ? 'jdFileInput' : 'resumeFileInput');
   fileInput.value = '';
+  updatePhotoButtons();
 }
 
-async function checkPhoto() {
+function updatePhotoButtons() {
+  const hasBoth = photoData.jd.length > 0 && photoData.resume.length > 0;
+  const ocrBtn = document.getElementById('ocrBtn');
+  const photoBtn = document.getElementById('photoCheckBtn');
+  if (ocrBtn) ocrBtn.disabled = !hasBoth;
+  if (photoBtn) photoBtn.disabled = !document.getElementById('jdOcrText').value.trim() || !document.getElementById('resumeOcrText').value.trim();
+}
+
+async function ocrPhoto() {
   if (!activated) { alert('请先输入使用码激活工具'); return; }
 
-  // Wait for OCR to finish
-  if (ocrRunning.jd || ocrRunning.resume) {
-    showError('文字识别进行中，请稍候...');
-    return;
-  }
-
-  const jd = ocrTexts.jd || '';
-  const resume = ocrTexts.resume || '';
-
-  if (!jd || !resume) {
-    showError('请先等待文字识别完成，或切换到文字模式手动输入');
-    return;
-  }
-  if (jd.length < 20) {
-    showError('岗位描述识别文字太短，请确保图片清晰或切换到文字模式');
-    return;
-  }
-  if (resume.length < 30) {
-    showError('简历识别文字太短，请确保图片清晰或切换到文字模式');
+  if (!photoData.jd.length || !photoData.resume.length) {
+    showError('图片没有正确载入。请删除空白缩略图，重新上传 JPG/PNG 岗位描述和简历照片');
     return;
   }
 
   hideError();
   document.getElementById('result').classList.remove('show');
   document.getElementById('loading').classList.add('show');
-  document.getElementById('photoCheckBtn').disabled = true;
+  document.querySelector('#loading p').textContent = 'OCR 正在识别图片文字...';
+  const ocrBtn = document.getElementById('ocrBtn');
+  const originalText = ocrBtn.textContent;
+  ocrBtn.disabled = true;
+  ocrBtn.textContent = '识别中...';
+
+  try {
+    const quality = document.getElementById('qualityToggle').checked ? 'high' : 'standard';
+    const res = await fetch(`${API_BASE}/api/ocr-photo`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        jd_images: photoData.jd.map(item => item.base64),
+        resume_images: photoData.resume.map(item => item.base64),
+        quality
+      })
+    });
+    const data = await res.json();
+
+    if (data.error) {
+      showError(data.error);
+      return;
+    }
+
+    ocrTexts.jd = data.jd_text || '';
+    ocrTexts.resume = data.resume_text || '';
+    pageTexts.jd = data.jd_pages || [];
+    pageTexts.resume = data.resume_pages || [];
+    photoData.jd.forEach((photo, idx) => { photo.chars = (pageTexts.jd[idx] || '').length; });
+    photoData.resume.forEach((photo, idx) => { photo.chars = (pageTexts.resume[idx] || '').length; });
+    renderPhotoList('jd');
+    renderPhotoList('resume');
+    document.getElementById('jdOcrText').value = ocrTexts.jd;
+    document.getElementById('resumeOcrText').value = ocrTexts.resume;
+    document.getElementById('ocrPanel').classList.add('show');
+    const lowHint = (ocrTexts.jd.length < 80 || ocrTexts.resume.length < 120)
+      ? '。识别字数偏少，可重拍或开启增强识别'
+      : '';
+    document.getElementById('jdExtracted').textContent = `共识别 ${ocrTexts.jd.length} 个字，可在下方修改${lowHint}`;
+    document.getElementById('resumeExtracted').textContent = `共识别 ${ocrTexts.resume.length} 个字，可在下方修改${lowHint}`;
+    document.getElementById('jdExtracted').classList.add('show');
+    document.getElementById('resumeExtracted').classList.add('show');
+    updatePhotoButtons();
+  } catch (e) {
+    showError('拍照识别失败，请确认图片清晰，或稍后重试');
+  } finally {
+    document.getElementById('loading').classList.remove('show');
+    document.querySelector('#loading p').textContent = 'AI 正在评估简历匹配度...';
+    ocrBtn.disabled = false;
+    ocrBtn.textContent = originalText;
+  }
+}
+
+async function checkPhoto() {
+  if (!activated) { alert('请先输入使用码激活工具'); return; }
+
+  const jd = document.getElementById('jdOcrText').value.trim();
+  const resume = document.getElementById('resumeOcrText').value.trim();
+
+  if (!jd || !resume) {
+    showError('请先点击“OCR识别文字”，或在下方手动补充识别文本');
+    return;
+  }
+  if (jd.length < 20) {
+    showError('岗位描述文字太短，请修正识别结果或换一张更清晰的图片');
+    return;
+  }
+  if (resume.length < 30) {
+    showError('简历文字太短，请修正识别结果或换一张更清晰的图片');
+    return;
+  }
+
+  hideError();
+  document.getElementById('result').classList.remove('show');
+  document.getElementById('loading').classList.add('show');
+  document.querySelector('#loading p').textContent = 'AI 正在评估简历匹配度...';
+  const photoBtn = document.getElementById('photoCheckBtn');
+  const originalText = photoBtn.textContent;
+  photoBtn.disabled = true;
+  photoBtn.textContent = '评分中...';
 
   try {
     const res = await fetch(`${API_BASE}/api/check`, {
@@ -762,12 +1125,17 @@ async function checkPhoto() {
 
     renderResult(data);
   } catch (e) {
-    showError('网络错误或服务暂不可用，请稍后重试');
+    showError('评分失败，请稍后重试');
   } finally {
     document.getElementById('loading').classList.remove('show');
-    document.getElementById('photoCheckBtn').disabled = false;
+    photoBtn.disabled = false;
+    photoBtn.textContent = originalText;
   }
 }
+
+document.getElementById('jdOcrText').addEventListener('input', updatePhotoButtons);
+document.getElementById('resumeOcrText').addEventListener('input', updatePhotoButtons);
+updatePhotoButtons();
 
 // Enter key triggers check
 document.getElementById('codeInput').addEventListener('keydown', e => {
