@@ -14,6 +14,7 @@ CORS(app)
 
 MAX_TEXT_CHARS = int(os.environ.get("MAX_TEXT_CHARS", "12000"))
 MAX_OCR_IMAGE_SIDE = int(os.environ.get("MAX_OCR_IMAGE_SIDE", "2200"))
+DEEPSEEK_MAX_OUTPUT_TOKENS = int(os.environ.get("DEEPSEEK_MAX_OUTPUT_TOKENS", "2048"))
 _rapid_ocr_engine = None
 RESUME_SIGNAL_RE = re.compile(
     r"(姓名|电话|手机|邮箱|微信|求职|意向|岗位|职位|工作|经历|项目|实习|教育|学历|本科|"
@@ -22,12 +23,19 @@ RESUME_SIGNAL_RE = re.compile(
     r"Node|SQL|Excel|PPT|AI|Photoshop|TypeScript|JavaScript|Spring|MySQL)",
     re.IGNORECASE,
 )
+WORK_DETAIL_RE = re.compile(
+    r"(负责|参与|主导|独立|完成|搭建|开发|设计|运营|销售|管理|维护|优化|提升|增长|转化|"
+    r"项目|系统|平台|产品|业务|客户|用户|数据|指标|流程|方案|需求|技术|工具|模型|"
+    r"Python|Java|React|Vue|Node|SQL|MySQL|Redis|Linux|Excel|PPT|Figma|Photoshop)",
+    re.IGNORECASE,
+)
 NOISE_RE = re.compile(
     r"(小说|章节|第[一二三四五六七八九十百千万0-9]+章|聊天记录|朋友圈|评论区|点赞|转发|"
     r"广告|立即购买|付款|支付|订单|激活码|使用码|水印|截图|浏览器|搜索|导航|首页|推荐|"
     r"登录|注册|关注|私信|弹幕|免责声明|copyright|http[s]?://|www\.)",
     re.IGNORECASE,
 )
+NAME_LIST_RE = re.compile(r"^[\u4e00-\u9fa5]{2,4}([、,\s，;；]+[\u4e00-\u9fa5]{2,4}){3,}$")
 
 
 @app.route("/")
@@ -81,7 +89,7 @@ def analyze_resume(jd, resume):
   "missing": ["缺失关键词1", "缺失关键词2", ...],
   "score": 75,
   "suggestions": ["建议1：补充XX相关经验描述", "建议2：...", "建议3：..."],
-  "optimized": "优化后的完整简历文本..."
+  "optimized": "优化后的简历核心内容..."
 }}
 
 要求：
@@ -90,13 +98,13 @@ def analyze_resume(jd, resume):
 - missing: 岗位描述中要求但简历中没有或不够突出的关键词（至少3个）
 - score: 0-100的匹配度评分
 - suggestions: 3-5条具体的修改建议
-- optimized: 在原文基础上融入缺失关键词，优化措辞使其更匹配岗位要求。直接输出改写后的完整简历，让用户可以直接使用。
+- optimized: 只输出优化后的求职相关核心简历内容，控制在1200字以内；不要输出小说、聊天、广告、无关姓名名单等内容。
 - 请用中文输出，关键词保留中英文混合"""
 
     try:
         response = client.chat.completions.create(
             model="deepseek-v4-pro",
-            max_tokens=1024,
+            max_tokens=DEEPSEEK_MAX_OUTPUT_TOKENS,
             temperature=0.3,
             messages=[{"role": "user", "content": prompt}],
         )
@@ -143,6 +151,8 @@ def is_noise_line(line):
         return True
     if re.fullmatch(r"[\W_]+", line):
         return True
+    if NAME_LIST_RE.fullmatch(line):
+        return True
     return False
 
 
@@ -157,20 +167,21 @@ def extract_work_resume_for_scoring(resume_text):
         if is_noise_line(line):
             continue
         is_contact = re.search(r"(电话|手机|邮箱|微信|@|\d{7,})", line, re.IGNORECASE)
-        if is_contact and idx > 25 and not RESUME_SIGNAL_RE.search(line):
+        if is_contact and idx > 18 and not RESUME_SIGNAL_RE.search(line):
             continue
         if RESUME_SIGNAL_RE.search(line):
-            for nearby in range(max(0, idx - 1), min(len(lines), idx + 3)):
+            for nearby in range(max(0, idx - 1), min(len(lines), idx + 5)):
                 if not is_noise_line(lines[nearby]):
                     keep.add(nearby)
-        elif len(line) >= 12 and not NOISE_RE.search(line):
-            # Conservative fallback for OCR text that lost section titles.
+        elif idx < 18 and (is_contact or len(line) >= 4):
+            keep.add(idx)
+        elif len(line) >= 10 and WORK_DETAIL_RE.search(line) and not NOISE_RE.search(line):
             keep.add(idx)
 
     cleaned_lines = [lines[idx] for idx in sorted(keep)]
     cleaned = "\n".join(cleaned_lines).strip()
 
-    if len(cleaned) < 30 or (len(cleaned) < len(original) * 0.12 and not RESUME_SIGNAL_RE.search(cleaned)):
+    if len(cleaned) < 80:
         return compact_text_for_scoring(original, MAX_TEXT_CHARS)
     return compact_text_for_scoring(cleaned, MAX_TEXT_CHARS)
 
@@ -244,7 +255,23 @@ def decode_image_b64(image_b64):
     if max(img.size) > MAX_OCR_IMAGE_SIDE:
         ratio = MAX_OCR_IMAGE_SIDE / max(img.size)
         img = img.resize((int(img.width * ratio), int(img.height * ratio)))
-    return np.array(img)
+    return img
+
+
+def image_variants_for_ocr(img):
+    from PIL import ImageEnhance, ImageFilter
+    import numpy as np
+
+    variants = [img]
+    enhanced = ImageEnhance.Contrast(img).enhance(1.35)
+    enhanced = ImageEnhance.Sharpness(enhanced).enhance(1.4)
+    variants.append(enhanced)
+    if min(img.size) < 1200:
+        ratio = min(2.0, 1600 / max(1, min(img.size)))
+        upscaled = enhanced.resize((int(img.width * ratio), int(img.height * ratio)))
+        upscaled = upscaled.filter(ImageFilter.SHARPEN)
+        variants.append(upscaled)
+    return [np.array(item) for item in variants]
 
 
 def get_rapid_ocr_engine():
@@ -279,8 +306,17 @@ def extract_rapidocr_text(result):
 def extract_text_from_image_rapidocr(image_b64):
     engine = get_rapid_ocr_engine()
     image = decode_image_b64(image_b64)
-    result = engine(image)
-    return extract_rapidocr_text(result)
+    merged = []
+    seen = set()
+    for variant in image_variants_for_ocr(image):
+        result = engine(variant)
+        for line in extract_rapidocr_text(result).splitlines():
+            clean = re.sub(r"\s+", " ", line).strip()
+            key = re.sub(r"[\W_]+", "", clean).lower()
+            if clean and key not in seen:
+                seen.add(key)
+                merged.append(clean)
+    return "\n".join(merged).strip()
 
 
 def choose_vision_model(quality):
